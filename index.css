@@ -6,7 +6,8 @@
 .bg-main {
     background: rgba(96, 187, 224, 1);
 }
-.btn-Bg{
+
+.btn-Bg {
     background: rgba(29, 45, 90, 1);
 }
 
@@ -24,12 +25,50 @@
     color: rgba(29, 45, 90, 1);
 }
 
-.text-gray{
+.text-gray {
     color: rgba(71, 85, 105, 1);
 }
-.text-lightBlue{
+
+.text-lightBlue {
     color: rgba(96, 187, 224, 1);
 }
-.questionBox{
+
+.questionBox {
     border: 1px solid rgba(29, 45, 90, 0.11)
+}
+
+.hoverState:hover {
+    background: linear-gradient(149deg, #60BBE0 0.06%, #2488B0 111.09%) !important;
+}
+
+.hoverState:hover p {
+    color: white !important;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.close .body {
+    display: none;
+}
+
+.open .body {
+    display: block;
+}
+
+.close .dropUp {
+    display: block;
+}
+
+.open .dropUp {
+    display: none;
+}
+
+.open .dropDown {
+    display: block;
 }

@@ -10,6 +10,7 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap"
             rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com/3.3.0"></script>
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
         <script src="https://cdn.tailwindcss.com/3.3.0"></script>
@@ -54,7 +55,8 @@
                     <img src="img/diamond.svg">
                     <p class="text-main text-sm font-semibold text-white">Get early access</p>
                 </div>
-                <img src="img/landingImg.svg">
+                <img src="img/landingImg.svg" class="md:block hidden">
+                <img src="img/landingImgMobile.svg" class="md:hidden block">
             </div>
         </section>
 
@@ -99,74 +101,80 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-12 md:flex hidden items-start py-10">
+            <div class="flex flex-col items-center justify-center">
+                <div class="grid grid-cols-12 md:flex hidden items-start py-10">
 
-                <div class="col-span-5 flex items-center justify-center px-5">
-                    <img src="img/clarity.svg">
-                </div>
-
-                <div class="col-span-2 flex mx-auto items-center justify-center">
-                    <img src="img/how-1.svg">
-                </div>
-
-                <div class="col-span-5 px-5 flex flex-col items-start">
-                    <div class="flex flex-col items-start">
-                        <p class="md:text-2xl text-lg font-bold text-main pb-4">  Find your perfect mentor</p>
-                        <p class="md:text-base text-sm font-normal text-main w-4/5 text-start"> Get expert guidance on
-                            essays, interviews, and navigating the application process with confidence.</p>
+                    <div class="col-span-5 flex items-center justify-center px-5">
+                        <img src="img/clarity.svg">
                     </div>
-                    <div class="flex items-center gap-x-2 leftBtn my-3 py-2 px-5 rounded-xl btn-Bg">
-                        <img src="img/diamond.svg">
-                        <p class="text-main text-sm font-semibold text-white">Get early access</p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="grid grid-cols-12 md:flex hidden items-start py-10">
-                <div class="col-span-5 px-5 flex flex-col items-end ">
-                    <div class="flex flex-col items-end ">
-                        <p class="md:text-2xl text-lg font-bold text-main pb-4"> Schedule your session
-                        </p>
-                        <p class="md:text-base text-sm font-normal text-main w-4/5 text-end"> Easy scheduling! Choose a
-                            time that
-                            suits
-                            you. No hassle, just simple planning.
-                        </p>
+                    <div class="col-span-2 flex mx-auto items-center justify-center">
+                        <img src="img/how-1.svg">
                     </div>
-                    <div class="flex items-center gap-x-2 leftBtn my-3 py-2 px-5 rounded-xl btn-Bg">
-                        <img src="img/diamond.svg">
-                        <p class="text-main text-sm font-semibold text-white">Get early access</p>
+
+                    <div class="col-span-5 px-5 flex flex-col items-start">
+                        <div class="flex flex-col items-start">
+                            <p class="md:text-2xl text-lg font-bold text-main pb-4">  Find your perfect mentor</p>
+                            <p class="md:text-base text-sm font-normal text-main w-3/5 text-start"> Get expert guidance
+                                on
+                                essays, interviews, and navigating the application process with confidence.</p>
+                        </div>
+                        <div class="flex items-center gap-x-2 leftBtn my-3 py-2 px-5 rounded-xl btn-Bg">
+                            <img src="img/diamond.svg">
+                            <p class="text-main text-sm font-semibold text-white">Get early access</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-span-2 flex mx-auto items-center justify-center">
-                    <img src="img/how-2.svg">
-                </div>
 
-                <div class="col-span-5 flex items-center justify-center px-5">
-                    <img src="img/clarity.svg">
-                </div>
-            </div>
-
-            <div class="grid grid-cols-12 md:flex hidden items-start py-10">
-
-                <div class="col-span-5 flex items-center justify-center px-5">
-                    <img src="img/clarity.svg">
-                </div>
-
-                <div class="col-span-2 flex mx-auto items-center justify-center">
-                    <img src="img/how-3.svg">
-                </div>
-
-                <div class="col-span-5 px-5 flex flex-col items-start">
-                    <div class="flex flex-col items-start">
-                        <p class="md:text-2xl text-lg font-bold text-main pb-4"> Unlock clarity for your future</p>
-                        <p class="md:text-base text-sm font-normal text-main w-4/5 text-start"> Video call one-on-one
-                            with your mentor. They'll help you figure out which college, what courses, and how to apply.
-                            Let's make your future clearer together!</p>
+                <div class="grid grid-cols-12 md:flex hidden items-start py-10">
+                    <div class="col-span-5 px-5 flex flex-col items-end ">
+                        <div class="flex flex-col items-end ">
+                            <p class="md:text-2xl text-lg font-bold text-main pb-4"> Schedule your session
+                            </p>
+                            <p class="md:text-base text-sm font-normal text-main w-3/5 text-end"> Easy scheduling!
+                                Choose a
+                                time that
+                                suits
+                                you. No hassle, just simple planning.
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-x-2 leftBtn my-3 py-2 px-5 rounded-xl btn-Bg">
+                            <img src="img/diamond.svg">
+                            <p class="text-main text-sm font-semibold text-white">Get early access</p>
+                        </div>
                     </div>
-                    <div class="flex items-center gap-x-2 leftBtn my-3 py-2 px-5 rounded-xl btn-Bg">
-                        <img src="img/diamond.svg">
-                        <p class="text-main text-sm font-semibold text-white">Get early access</p>
+                    <div class="col-span-2 flex mx-auto items-center justify-center">
+                        <img src="img/how-2.svg">
+                    </div>
+
+                    <div class="col-span-5 flex items-center justify-center px-5">
+                        <img src="img/clarity.svg">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-12 md:flex hidden items-start py-10">
+
+                    <div class="col-span-5 flex items-center justify-center px-5">
+                        <img src="img/clarity.svg">
+                    </div>
+
+                    <div class="col-span-2 flex mx-auto items-center justify-center">
+                        <img src="img/how-3.svg">
+                    </div>
+
+                    <div class="col-span-5 px-5 flex flex-col items-start">
+                        <div class="flex flex-col items-start">
+                            <p class="md:text-2xl text-lg font-bold text-main pb-4"> Unlock clarity for your future</p>
+                            <p class="md:text-base text-sm font-normal text-main w-3/5 text-start"> Video call
+                                one-on-one
+                                with your mentor. They'll help you figure out which college, what courses, and how to
+                                apply.
+                                Let's make your future clearer together!</p>
+                        </div>
+                        <div class="flex items-center gap-x-2 leftBtn my-3 py-2 px-5 rounded-xl btn-Bg">
+                            <img src="img/diamond.svg">
+                            <p class="text-main text-sm font-semibold text-white">Get early access</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -259,21 +267,18 @@
 
             <div class="py-7 flex items-center justify-between">
                 <div class="flex md:flex-row flex-col items-center justify-center gap-5">
-                    <div class="md:p-10 p-3 grid grid-cols-12 rounded md:w-4/6 md:hidden block"
+                    <div class="md:p-10 p-3 grid grid-cols-12 rounded md:w-4/6 hidden"
                         style="background: linear-gradient(278deg, #5EB6DA 0.88%, #3293BB 100.58%);">
                         <div class="col-span-8 flex flex-col items-start justify-center">
-                            <p class="md:text-2xl text-base font-bold text-white py-3 md:text-center text-start">Need
-                                help choosing the right
-                                college?
+                            <p class="md:text-2xl text-base font-bold text-white py-3 md:text-center text-start">Unsure
+                                which career path to pursue? 
                             </p>
-                            <p class="md:text-sm text-xs md:w-4/6 font-normal text-white text-start">Our mentors have
-                                been there,
-                                cracked
-                                the entrance
-                                exams, and can share their insights on different institutions and courses.</p>
+                            <p class="md:text-sm text-xs md:w-4/6 font-normal text-white text-start">They've explored
+                                diverse fields, faced challenges, and discovered their passions. Their advice can light
+                                up your options.</p>
                         </div>
                         <div class="col-span-4 flex items-center justify-center">
-                            <img src="img/forget-password.svg" class="w-2/3">
+                            <img src="img/map-location.svg" class="w-2/3">
                         </div>
                     </div>
 
@@ -296,21 +301,16 @@
                     </div>
 
 
-                    <div class="md:p-10 p-3 grid grid-cols-12 rounded md:w-4/6 md:hidden block"
+                    <div class="md:p-10 p-3 grid grid-cols-12 rounded md:w-4/6 hidden"
                         style="background: linear-gradient(278deg, #5EB6DA 0.88%, #3293BB 100.58%);">
                         <div class="col-span-8 flex flex-col items-start justify-center">
-                            <p class="md:text-2xl text-base font-bold text-white py-3 md:text-center text-start">Need
-                                help choosing the right
-                                college?
-                            </p>
-                            <p class="md:text-sm text-xs md:w-4/6 font-normal text-white text-start">Our mentors have
-                                been there,
-                                cracked
-                                the entrance
-                                exams, and can share their insights on different institutions and courses.</p>
+                            <p class="md:text-2xl text-base font-bold text-white py-3 md:text-center text-start">Feeling
+                                overwhelmed by college applications?</p>
+                            <p class="md:text-sm text-xs md:w-4/6 font-normal text-white text-start">Get expert guidance
+                                on essays, interviews, and navigating the application process with confidence.</p>
                         </div>
                         <div class="col-span-4 flex items-center justify-center">
-                            <img src="img/forget-password.svg" class="w-2/3">
+                            <img src="img/feeling.svg" class="w-2/3">
                         </div>
                     </div>
 
@@ -341,20 +341,56 @@
                 </div>
                 <div class="md:col-span-8 col-span-12">
                     <div class="">
-                        <div role="button"
-                            class="questionBox p-3 my-3 rounded flex items-center bg-white justify-between gap-x-4">
-                            <p class="text-base font-semibold text-main">Who are the mentors on Maarg?</p>
-                            <img src="img/Plus.svg">
+                        <div class="flex flex-col border w-full radius-10 my-2 close rounded-lg bg-white">
+                            <div class="flex justify-between py-4 px-5 items-center gap-7"
+                                onclick="dropDownAnswer(this)" id="question-1">
+                                <p class="text-base font-semibold text-main">Who are the mentors on Maarg?</p>
+                                <img src="img/Plus.svg" class="dropUp">
+                                <img src="images/dash.svg" class="dropDown d-none">
+                            </div>
+                            <div class="d-none body px-5 py-3" id="answer-1">
+                                <p class="text-base font-normal text-main text-justify">
+                                    Maarg connects you with a network of 1000+ university students, fresh graduates, and
+                                    established professionals from diverse fields. They all have experience navigating
+                                    the post-12th path and are passionate about guiding students like you.
+                                </p>
+                            </div>
                         </div>
-                        <div role="button"
-                            class="questionBox p-3 my-3 rounded flex items-center bg-white justify-between gap-x-4">
-                            <p class="text-base font-semibold text-main">What kind of help can I get from a mentor?</p>
-                            <img src="img/Plus.svg">
+                        <div class="flex flex-col border w-full radius-10 my-2 close rounded-lg bg-white">
+                            <div class="flex justify-between py-4 px-5 items-center gap-7"
+                                onclick="dropDownAnswer(this)" id="question-2">
+                                <p class="text-base font-semibold text-main">What kind of help can I get from a mentor?
+                                </p>
+                                <img src="img/Plus.svg" class="dropUp">
+                                <img src="images/dash.svg" class="dropDown d-none">
+                            </div>
+                            <div class="d-none body px-5 py-3" id="answer-2">
+                                <p class="text-base font-normal text-main text-justify">
+                                    Your mentor can help you with anything related to your college decisions, such as
+                                    Choosing the right college or course based on your interests and aptitude.
+                                    Preparing for entrance exams and navigating the application process.
+                                    Giving you honest feedback about their colleges and course
+                                    What entrance exams to give
+                                </p>
+                            </div>
                         </div>
-                        <div role="button"
-                            class="questionBox p-3 my-3 rounded flex items-center bg-white justify-between gap-x-4">
-                            <p class="text-base font-semibold text-main">How do I find the right mentor for me?</p>
-                            <img src="img/Plus.svg">
+                        <div class="flex flex-col border w-full radius-10 my-2 close rounded-lg bg-white">
+                            <div class="flex justify-between py-4 px-5 items-center gap-7"
+                                onclick="dropDownAnswer(this)" id="question-3">
+                                <p class="text-base font-semibold text-main">How do I find the right mentor for me?</p>
+                                <img src="img/Plus.svg" class="dropUp">
+                                <img src="images/dash.svg" class="dropDown d-none">
+                            </div>
+                            <div class="d-none body px-5 py-3" id="answer-3">
+                                <p class="text-base font-normal text-main text-justify">
+                                    Yes, you can! Family Tree allows you to invite family members to collaborate on your
+                                    family
+                                    tree. Simply send them an invitation through the app, and they can join in,
+                                    contribute, and
+                                    help expand your shared family history.
+
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -364,31 +400,37 @@
 
         <!-- ####################################### FOOTER ############################# -->
         <footer class="py-3 px-14 btn-Bg md:block hidden">
-            <div class="flex items-center justify-between py-3 px-10 border-b">
-                <div class="logo">
-                    <img src="img/footerLogo.svg">
+            <div class="flex items-center justify-between py-3 border-b">
+                <div class="w-1/3 logo">
+                    <a href="index.html">
+                        <img src="img/footerLogo.svg">
+                    </a>
                 </div>
-                <div class="middleText flex items-center justify-center gap-x-7">
-                    <p class="text-main text-sm font-semibold text-white">Become a Mentor</p>
-                    <p class="text-main text-sm font-semibold text-white">Blog</p>
-                    <p class="text-main text-sm font-semibold text-white">Webinar</p>
-                    <p class="text-main text-sm font-semibold text-white">Contact Us</p>
+                <div class="w-1/3 middleText flex items-center justify-center gap-x-7">
+                    <a href="mentor.html" class="text-main text-sm font-semibold text-white">Become a Mentor</a>
+                    <a href="" class="text-main text-sm font-semibold text-white">Blog</a>
+                    <a href="" class="text-main text-sm font-semibold text-white">Webinar</a>
+                    <a href="" class="text-main text-sm font-semibold text-white">Contact Us</a>
                 </div>
-                <div class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded bg-white">
-                    <img src="img/footerDiamond.svg">
-                    <p class="text-main text-sm font-semibold text-main">Get early access</p>
+                <div class="w-1/3">
+                    <div class="flex items-center justify-end">
+                        <div class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded bg-white">
+                            <img src="img/footerDiamond.svg">
+                            <p class="text-main text-sm font-semibold text-main">Get early access</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="flex items-center justify-between py-3 px-10">
-                <div class="logo">
+            <div class="flex items-center justify-between py-3 ">
+                <div class="w-1/3 logo">
                     <p class="text-white text-sm font-normal">Copyright Maarg Mentorship Pvt. Ltd .© 2024.</p>
                 </div>
-                <div class="middleText flex items-center justify-center gap-x-7">
+                <div class="w-1/3 middleText flex items-center justify-center gap-x-7">
                     <a href="policy.html" class="text-main text-sm font-normal text-white">Privacy Policy</a>
                     <a href="terms.html" class="text-main text-sm font-normal text-white">Terms and Conditions</a>
                     <a href="fulfilment.html" class="text-main text-sm font-normal text-white">Fulfilment Policy</a>
                 </div>
-                <div class="flex items-center gap-x-3 py-2 px-3">
+                <div class="w-1/3 flex items-center justify-end gap-x-3 py-2">
                     <img src="img/facebook.svg">
                     <img src="img/twitter.svg">
                     <img src="img/linkedin.svg">
@@ -402,7 +444,9 @@
         <footer class="py-3 px-5 btn-Bg md:hidden block">
             <div class="flex flex-col items-center justify-between py-5 gap-y-5 border-b">
                 <div class="logo">
-                    <img src="img/footerLogo.svg">
+                    <a href="index.html">
+                        <img src="img/footerLogo.svg">
+                    </a>
                 </div>
                 <div class="flex items-center gap-x-3 py-2 px-3">
                     <img src="img/facebook.svg">
@@ -412,10 +456,10 @@
                     <img src="img/instagram.svg">
                 </div>
                 <div class="middleText flex items-center justify-center gap-x-3">
-                    <p class="text-main text-sm font-semibold text-white">Become a Mentor</p>
-                    <p class="text-main text-sm font-semibold text-white">Blog</p>
-                    <p class="text-main text-sm font-semibold text-white">Webinar</p>
-                    <p class="text-main text-sm font-semibold text-white">Contact Us</p>
+                    <a href="mentor.html" class="text-main text-sm font-semibold text-white">Become a Mentor</a>
+                    <a href="" class="text-main text-sm font-semibold text-white">Blog</a>
+                    <a href="" class="text-main text-sm font-semibold text-white">Webinar</a>
+                    <a href="" class="text-main text-sm font-semibold text-white">Contact Us</a>
                 </div>
                 <div class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded-xl bg-white">
                     <img src="img/footerDiamond.svg">
@@ -435,6 +479,9 @@
                 </div>
             </div>
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+        <script src="index.js"></script>
     </body>
 
 </html>
