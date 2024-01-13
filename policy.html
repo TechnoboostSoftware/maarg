@@ -10,6 +10,7 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap"
             rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com/3.3.0"></script>
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
         <script src="https://cdn.tailwindcss.com/3.3.0"></script>
@@ -17,65 +18,63 @@
     </head>
 
     <body>
-        <nav class="md:flex hidden items-center justify-between py-3 md:px-14 px-5"
-        style="box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.05);">
-        <div class="logo">
-            <a href="index.html">
-                <img src="img/logo.svg">
-            </a>
-        </div>
-        <div class="middleText flex items-center justify-center gap-x-7">
-            <a href="mentor.html" class="text-main text-sm font-semibold">Become a Mentor</a>
-            <div class="flex items-center gap-x-2">
-                <p class="text-main text-sm font-semibold">Resources</p>
-                <img src="img/nav-arrow.svg">
-            </div>
-            <p class="text-main text-sm font-semibold">Contact Us</p>
-        </div>
-        <div class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded-xl btn-Bg">
-            <img src="img/diamond.svg">
-            <p class="text-main text-sm font-semibold text-white">Get early access</p>
-        </div>
-    </nav>
-
-    <nav class="md:hidden flex items-center justify-between py-3 md:px-14 px-2"
+        <!-- Main navigation container -->
+        <nav class="flex w-full items-center justify-between py-3 md:px-14 px-5"
             style="box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.05);">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="img/logo.svg">
-                </a>
-            </div>
-            <div class="flex items-center gap-x-2">
-                <div class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded-xl btn-Bg">
-                    <img src="img/diamond.svg" width="15px">
-                    <p class="text-main text-xs font-semibold text-white">Get early access</p>
+            <div class="flex w-full flex-wrap items-center justify-between">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo.svg">
+                    </a>
                 </div>
-                <div class="">
-                    <div class="flex justify-between items-center gap-7 p-2" onclick="dropDownAnswer(this)">
-                        <img src="img/navDropDown.svg" class="dropUp">
-                        <img src="img/navClose.svg" class="dropDown d-none ">
+
+
+                <!-- Collapsible navigation container -->
+                <div class="!visible hidden basis-[100%] items-center lg:!flex lg:basis-auto"
+                    id="navbarSupportedContent1" data-te-collapse-item>
+                    <!-- Logo -->
+
+                    <div
+                        class="middleText flex md:flex-row flex-col md:items-center items-start justify-center md:py-0 py-3 gap-x-7">
+                        <a href="mentor.html" class="text-main text-sm font-semibold md:py-0 py-2">Become a Mentor</a>
+                        <div class="flex items-center gap-x-2">
+                            <p class="text-main text-sm font-semibold md:py-0 py-2">Resources</p>
+                            <img src="img/nav-arrow.svg">
+                        </div>
+                        <p class="text-main text-sm font-semibold md:py-0 py-2">Contact Us</p>
                     </div>
                 </div>
-            </div>
 
-            <!-- <div class="flex flex-col border w-full radius-10 my-2  rounded-lg bg-white">
-                
-                
-            </div> -->
+                <!-- Right elements -->
+                <div class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded-xl btn-Bg">
+                    <img src="img/diamond.svg" width="15px">
+                    <p class="text-main md:text-sm text-xs font-semibold text-white">Get early access</p>
+                </div>
+                <!-- Hamburger button for mobile view -->
+                <button
+                    class="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+                    type="button" data-te-collapse-init data-te-target="#navbarSupportedContent1"
+                    aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- Hamburger icon -->
+                    <img src="img/navDropDown.svg">
+                </button>
+            </div>
         </nav>
 
-        <section class="mx-14 my-10">
+        <section class="md:mx-14 md:my-10 m-5">
             <div style="background: rgba(247, 248, 251, 1);">
                 <div class="flex items-center justify-center">
                     <p class="title px-5">Privacy Policy</p>
                 </div>
-                <div class="px-7 py-5">
-                    <p class="font-normal text-base text-black py-2">This Privacy Policy outlines MAARG MENTORSHIP
+                <div class="md:px-7 px-3  md:py-5 py-3">
+                    <p class="font-normal md:text-base text-sm text-black py-2">This Privacy Policy outlines MAARG
+                        MENTORSHIP
                         PRIVATE
                         LIMITED’s (including, its
                         affiliates’) approach to privacy to fulfil its obligations under the applicable privacy laws.
 
-                    <p class="font-normal text-base text-black py-2"> Throughout this document, the terms “we”, “us”,
+                    <p class="font-normal md:text-base text-sm text-black py-2"> Throughout this document, the terms
+                        “we”, “us”,
                         “our”,
                         “ours” & “MAARG” refer
                         to MAARG MENTORSHIP PRIVATE LIMITED (including its affiliates). And the terms “you”, “your”
@@ -89,7 +88,8 @@
                         selected
                         to teach on the Platform (“Instructor(s)”).
                     </p>
-                    <p class="font-normal text-base text-black py-2"> This Privacy Policy applies to all your PERSONAL
+                    <p class="font-normal md:text-base text-sm text-black py-2"> This Privacy Policy applies to all your
+                        PERSONAL
                         DATA
                         processed by us, whether
                         in physical or electronic mode. This Privacy Policy is meant to help you understand what
@@ -107,7 +107,8 @@
                         them in the Terms of Conditions.
                     </p>
 
-                    <p class="font-normal text-base text-black py-2"> Please note that this Privacy Policy is applicable
+                    <p class="font-normal md:text-base text-sm text-black py-2"> Please note that this Privacy Policy is
+                        applicable
                         to
                         all instances where we
                         play the role of a DATA CONTROLLER of your Personal Data, when we collect and process personal
@@ -116,7 +117,8 @@
                         you for offering our products or services (whether or not such role is defined in applicable
                         legislation).
                     </p>
-                    <p class="font-normal text-base text-black py-2"> Further specific privacy provisions in respect of
+                    <p class="font-normal md:text-base text-sm text-black py-2"> Further specific privacy provisions in
+                        respect of
                         the
                         EU, UK, Australia,
                         Singapore, and Malaysia are set out below in the ANNEXURE A, ANNEXURE B, ANNEXURE C, ANNEXURE D
@@ -125,7 +127,8 @@
                         E respectively.
                     </p>
 
-                    <p class="font-normal text-base text-black py-2"> We are committed to keeping your and your child's
+                    <p class="font-normal md:text-base text-sm text-black py-2"> We are committed to keeping your and
+                        your child's
                         Personal Data private and
                         secure. We process any Personal Data we collect from you and your child in accordance with the
                         applicable
@@ -134,7 +137,8 @@
                         to
                         understand our practices regarding your and your child's Personal Data and how we treat it.
                     </p>
-                    <p class="font-normal text-base text-black py-2"> By choosing to visit and/or avail any Services
+                    <p class="font-normal md:text-base text-sm text-black py-2"> By choosing to visit and/or avail any
+                        Services
                         provided by us, you agree to
                         this Privacy Policy (as may be amended from time to time). Please read the following information
                         carefully.
@@ -152,8 +156,9 @@
                         accessing the Services.</p>
                     </p>
 
-                    <p class="font-bold text-lg py-4 text-black">1. Personal Data</p>
-                    <p class="font-normal text-base text-black py-2">‘Personal Data’ means any information that may be
+                    <p class="font-bold md:text-lg text-base py-4 text-black">1. Personal Data</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">‘Personal Data’ means any information
+                        that may be
                         used
                         to identify an
                         individual, directly or indirectly, in particular by reference to an identifier, including not
@@ -165,9 +170,10 @@
                     </p>
 
 
-                    <p class="font-bold text-lg py-4 text-black">2. Children’s Privacy
+                    <p class="font-bold md:text-lg text-base py-4 text-black">2. Children’s Privacy
                     </p>
-                    <p class="font-normal text-base text-black py-2">We need to collect your and your child's Personal
+                    <p class="font-normal md:text-base text-sm text-black py-2">We need to collect your and your child's
+                        Personal
                         Data
                         to provide our services
                         to you and your child. We are committed to protecting the privacy of children who use our sites
@@ -182,15 +188,17 @@
                     </p>
 
 
-                    <p class="font-bold text-lg py-4 text-black">3. US Child Users
+                    <p class="font-bold md:text-lg text-base py-4 text-black">3. US Child Users
                     </p>
-                    <p class="font-normal text-base text-black py-2">If your child is located in the United States of
+                    <p class="font-normal md:text-base text-sm text-black py-2">If your child is located in the United
+                        States of
                         America, we handle their
                         Personal Data in compliance with the Children's Online Privacy Protection Act (“COPPA”). COPPA
                         applies to
                         child users who are under the age of 13.
                     </p>
-                    <p class="font-normal text-base text-black py-2">COPPA requires that we receive verifiable parental
+                    <p class="font-normal md:text-base text-sm text-black py-2">COPPA requires that we receive
+                        verifiable parental
                         consent from the child's
                         parent or legal guardian before the collection, use, or disclosure of the child's Personal Data.
                         To
@@ -202,14 +210,16 @@
                         notice to
                         all parents and guardians when soliciting and obtaining verifiable parental consent.
                     </p>
-                    <p class="font-normal text-base text-black py-2">If you are a parent or guardian and you believe
+                    <p class="font-normal md:text-base text-sm text-black py-2">If you are a parent or guardian and you
+                        believe
                         that
                         your child has provided us
                         with Personal Data without your consent, please contact us as at support@mymaarg.com. We will
                         dispose of
                         that data in accordance with applicable laws and regulations.
                     </p>
-                    <p class="font-normal text-base text-black py-2">Parents can always refuse to permit us to collect
+                    <p class="font-normal md:text-base text-sm text-black py-2">Parents can always refuse to permit us
+                        to collect
                         further Personal Data,
                         request to review their child's Personal Data, or request that we delete from our records the
                         personal data
@@ -227,9 +237,10 @@
                     </p>
 
 
-                    <p class="font-bold text-lg py-4 text-black">4. EU Child Users
+                    <p class="font-bold md:text-lg text-base py-4 text-black">4. EU Child Users
                     </p>
-                    <p class="font-normal text-base text-black py-2">If your child is a resident of a Member State of
+                    <p class="font-normal md:text-base text-sm text-black py-2">If your child is a resident of a Member
+                        State of
                         the
                         European Union, we will
                         treat their Personal Data as a child’s Personal Data if they are under 16 years of age, and
@@ -243,9 +254,10 @@
                     </p>
 
 
-                    <p class="font-bold text-lg py-4 text-black">5. UK Child Users
+                    <p class="font-bold md:text-lg text-base py-4 text-black">5. UK Child Users
                     </p>
-                    <p class="font-normal text-base text-black py-2">If your child is a resident of the United Kingdom,
+                    <p class="font-normal md:text-base text-sm text-black py-2">If your child is a resident of the
+                        United Kingdom,
                         we
                         will treat their Personal
                         Data as a child’s Personal Data if they are under 13 years of age, and receive consent of the
@@ -261,9 +273,10 @@
                     </p>
 
 
-                    <p class="font-bold text-lg py-4 text-black">6. Singapore Child Users
+                    <p class="font-bold md:text-lg text-base py-4 text-black">6. Singapore Child Users
                     </p>
-                    <p class="font-normal text-base text-black py-2">If your child is a resident of Singapore, we will
+                    <p class="font-normal md:text-base text-sm text-black py-2">If your child is a resident of
+                        Singapore, we will
                         treat
                         their Personal Data as
                         a minor’s Personal Data if they are under 13 years of age, and require consent of the holder of
@@ -277,7 +290,8 @@
                         support@mymaarg.com. We will dispose of that data in accordance with applicable laws and
                         regulations
                     </p>
-                    <p class="font-normal text-base text-black py-2">Parents can always refuse to permit us to collect
+                    <p class="font-normal md:text-base text-sm text-black py-2">Parents can always refuse to permit us
+                        to collect
                         further Personal Data,
                         request to review their child's Personal Data, or request that we delete from our records the
                         personal data
@@ -293,15 +307,17 @@
                         verify a
                         parent or legal guardian’s identity before granting access to any personal data.
                     </p>
-                    <p class="font-normal text-base text-black py-2">All residents of Singapore further have certain
+                    <p class="font-normal md:text-base text-sm text-black py-2">All residents of Singapore further have
+                        certain
                         specific rights granted by the
                         Personal Data Protection Act. See Annexure D to this privacy policy.
                     </p>
 
 
-                    <p class="font-bold text-lg py-4 text-black">7. UAE Child Users
+                    <p class="font-bold md:text-lg text-base py-4 text-black">7. UAE Child Users
                     </p>
-                    <p class="font-normal text-base text-black py-2">If your child is resident in the UAE, we will
+                    <p class="font-normal md:text-base text-sm text-black py-2">If your child is resident in the UAE, we
+                        will
                         receive
                         consent of the holder of
                         parental responsibility for obtaining, receiving, collecting, using, sharing, processing and
@@ -314,9 +330,10 @@
                     </p>
 
 
-                    <p class="font-bold text-lg py-4 text-black">8. Malaysian Child Users
+                    <p class="font-bold md:text-lg text-base py-4 text-black">8. Malaysian Child Users
                     </p>
-                    <p class="font-normal text-base text-black py-2">If your child is a resident of Malaysia, we will
+                    <p class="font-normal md:text-base text-sm text-black py-2">If your child is a resident of Malaysia,
+                        we will
                         treat
                         their Personal Data as a
                         child’s Personal Data if they are under 18 years of age, and receive consent of the holder of
@@ -330,13 +347,15 @@
                     </p>
 
 
-                    <p class="font-bold text-lg py-4 text-black">9. What Personal Data do we Collect & Process?
+                    <p class="font-bold md:text-lg text-base py-4 text-black">9. What Personal Data do we Collect &
+                        Process?
                     </p>
-                    <p class="font-normal text-base text-black py-2">Categories of Personal Data that we collect and
+                    <p class="font-normal md:text-base text-sm text-black py-2">Categories of Personal Data that we
+                        collect and
                         process
                         are as follows:
                     </p>
-                    <p class="font-normal text-base text-black py-2">
+                    <p class="font-normal md:text-base text-sm text-black py-2">
 
                         <li class="font-normal text-base text-black py-2"> From you/ your child, we collect demographic
                             &
@@ -381,9 +400,11 @@
                     </p>
 
 
-                    <p class="font-bold text-lg py-4 text-black">10. Where do we obtain your Personal Data from?
+                    <p class="font-bold md:text-lg text-base py-4 text-black">10. Where do we obtain your Personal Data
+                        from?
                     </p>
-                    <p class="font-normal text-base text-black py-2">Most of the Personal Data we process is provided by
+                    <p class="font-normal md:text-base text-sm text-black py-2">Most of the Personal Data we process is
+                        provided by
                         you
                         directly to us when you
                         (i) register to use our products and/or services including the registration for a free trial; or
@@ -404,7 +425,8 @@
                         allow
                         third-party behavioral trackers in areas intended to be used by children.
                     </p>
-                    <p class="font-normal text-base text-black py-2">When you sign into your social media account or
+                    <p class="font-normal md:text-base text-sm text-black py-2">When you sign into your social media
+                        account or
                         otherwise connect to your
                         social media account with the Platform, you consent to our collection, storage and use, in
                         accordance with
@@ -417,7 +439,8 @@
                         during
                         the sign-up and sign-in processes.
                     </p>
-                    <p class="font-normal text-base text-black py-2">In furtherance of your usage of our Platform, we
+                    <p class="font-normal md:text-base text-sm text-black py-2">In furtherance of your usage of our
+                        Platform, we
                         require the parents to create
                         a G-mail account on behalf of the Child in accordance with Google’s terms and conditions. This
                         account is
@@ -434,13 +457,14 @@
                         with
                         this Privacy Policy, of the information that you make available to us through the internet.
                     </p>
-                    <p class="font-normal text-base text-black py-2">We may also receive Personal Data about you from
+                    <p class="font-normal md:text-base text-sm text-black py-2">We may also receive Personal Data about
+                        you from
                         publicly available sources of
                         information.
                     </p>
 
 
-                    <p class="font-bold text-lg py-4 text-black">11. How do we use your Personal Data?
+                    <p class="font-bold md:text-lg text-base py-4 text-black">11. How do we use your Personal Data?
                     </p>
 
                     <li class="font-normal text-base text-black py-2"> To verify your identity<br>
@@ -514,9 +538,10 @@
 
 
 
-                    <p class="font-bold text-lg py-4 text-black">12. Recording
+                    <p class="font-bold md:text-lg text-base py-4 text-black">12. Recording
                     </p>
-                    <p class="font-normal text-base text-black py-2">We reserve the right and you expressly consent to
+                    <p class="font-normal md:text-base text-sm text-black py-2">We reserve the right and you expressly
+                        consent to
                         us
                         recording the classes,
                         discussions, processes, events, conversations, feedback, pertaining to our courses, offered
@@ -528,14 +553,16 @@
                     </p>
 
 
-                    <p class="font-bold text-lg py-4 text-black">13. Lawful Bases of processing your Personal Data
+                    <p class="font-bold md:text-lg text-base py-4 text-black">13. Lawful Bases of processing your
+                        Personal Data
                     </p>
-                    <p class="font-normal text-base text-black py-2">We process your Personal Data by relying on one or
+                    <p class="font-normal md:text-base text-sm text-black py-2">We process your Personal Data by relying
+                        on one or
                         more
                         of the following lawful
                         bases:
                     </p>
-                    <p class="font-normal text-base text-black py-2">
+                    <p class="font-normal md:text-base text-sm text-black py-2">
 
                         <li class="font-normal text-base text-black py-2">You have explicitly agreed to/consented to us
                             processing your Personal Data for a specific reason. This
@@ -551,7 +578,8 @@
                         b. The processing is necessary for compliance with a legal obligation we have
 
                     </p>
-                    <p class="font-normal text-base text-black py-2">Where we are able to rely on specific legal
+                    <p class="font-normal md:text-base text-sm text-black py-2">Where we are able to rely on specific
+                        legal
                         provisions<br>
                         Where the processing is based on your consent, you have the right to withdraw your consent at
                         any
@@ -571,17 +599,20 @@
                         your
                         request for withdrawal will be processed.
                     </p>
-                    <p class="font-normal text-base text-black py-2">For information on how we obtain verifiable
+                    <p class="font-normal md:text-base text-sm text-black py-2">For information on how we obtain
+                        verifiable
                         parental
                         consent for the processing
                         of US child users' Personal Data, see section US Child Users above.
                     </p>
 
 
-                    <p class="font-bold text-lg py-4 text-black">14. When do we share your Personal Data with third
+                    <p class="font-bold md:text-lg text-base py-4 text-black">14. When do we share your Personal Data
+                        with third
                         parties?
                     </p>
-                    <p class="font-normal text-base text-black py-2">We may use third parties in the provision of our
+                    <p class="font-normal md:text-base text-sm text-black py-2">We may use third parties in the
+                        provision of our
                         products and services to you.
                         You consent to us sharing your Personal Data with such third parties. We have appropriate
                         contracts
@@ -593,7 +624,7 @@
                         retain it only for the period specified in our contracts with them
                     </p>
 
-                    <p class="font-normal text-base text-black py-2">
+                    <p class="font-normal md:text-base text-sm text-black py-2">
                     <ol>
                         <li class="font-normal text-base text-black py-2">Reasons for sharing your Personal Data with
                             third
@@ -651,9 +682,11 @@
                     </p>
 
 
-                    <p class="font-bold text-lg py-4 text-black">15. Use of Cookies and other Tracking Mechanisms
+                    <p class="font-bold md:text-lg text-base py-4 text-black">15. Use of Cookies and other Tracking
+                        Mechanisms
                     </p>
-                    <p class="font-normal text-base text-black py-2">We may use cookies and other tracking mechanisms on
+                    <p class="font-normal md:text-base text-sm text-black py-2">We may use cookies and other tracking
+                        mechanisms on
                         our
                         website and other
                         digital properties to collect data about you and, subject to the provisions below in respect of
@@ -713,10 +746,11 @@
 
 
 
-                    <p class="font-bold text-lg py-4 text-black">16. How do we secure your and your child's Personal
+                    <p class="font-bold md:text-lg text-base py-4 text-black">16. How do we secure your and your child's
+                        Personal
                         Data?
                     </p>
-                    <p class="font-normal text-base text-black py-2">
+                    <p class="font-normal md:text-base text-sm text-black py-2">
                         We are committed to protecting your and your child's Personal Data in our custody. We take
                         reasonable steps
                         to ensure appropriate physical, technical and managerial safeguards are in place to protect
@@ -731,10 +765,11 @@
                     </p>
 
 
-                    <p class="font-bold text-lg py-4 text-black">17. How long do we keep your and your child's Personal
+                    <p class="font-bold md:text-lg text-base py-4 text-black">17. How long do we keep your and your
+                        child's Personal
                         Data?
                     </p>
-                    <p class="font-normal text-base text-black py-2">
+                    <p class="font-normal md:text-base text-sm text-black py-2">
                         We keep the Personal Data we collect about you and your child for as long as it is required for
                         the
                         purposes
@@ -748,7 +783,7 @@
                         (three)
                         years from when we no longer require it for offering our services to you.
                     </p>
-                    <p class="font-normal text-base text-black py-2">
+                    <p class="font-normal md:text-base text-sm text-black py-2">
                         Please note that we may, from time to time, engage an overseas recipient to provide services to
                         us,
                         such as
@@ -761,21 +796,21 @@
                     </p>
 
 
-                    <p class="font-bold text-lg py-4 text-black">18. No Sale of Personal Data
+                    <p class="font-bold md:text-lg text-base py-4 text-black">18. No Sale of Personal Data
                     </p>
-                    <p class="font-normal text-base text-black py-2">
+                    <p class="font-normal md:text-base text-sm text-black py-2">
                         We shall not sell any Personal Data of yours and/ or the children for the purpose of marketing,
                         advertising,
                         or any other third-party use, except in accordance with express consent obtained from you.
                     </p>
 
 
-                    <p class="font-bold text-lg py-4 text-black">19. Data Security
+                    <p class="font-bold md:text-lg text-base py-4 text-black">19. Data Security
                     </p>
-                    <p class="font-normal text-base text-black py-2">
+                    <p class="font-normal md:text-base text-sm text-black py-2">
                         We always strive to keep your and your child's Personal Data safe.
                     </p>
-                    <p class="font-normal text-base text-black py-2">
+                    <p class="font-normal md:text-base text-sm text-black py-2">
                         The security of your and your child's Personal Data is important to us, but remember that no
                         method
                         of
@@ -801,9 +836,9 @@
                     </p>
 
 
-                    <p class="font-bold text-lg py-4 text-black">20. Links to other Websites
+                    <p class="font-bold md:text-lg text-base py-4 text-black">20. Links to other Websites
                     </p>
-                    <p class="font-normal text-base text-black py-2">
+                    <p class="font-normal md:text-base text-sm text-black py-2">
                         Our website may contain links to websites of other organizations. This privacy notice does not
                         cover
                         how
@@ -812,7 +847,7 @@
                         other
                         websites you visit.
                     </p>
-                    <p class="font-normal text-base text-black py-2">
+                    <p class="font-normal md:text-base text-sm text-black py-2">
                         During and as part of the classes or curriculum the child might be required to access, visit,
                         browse
                         and
@@ -833,9 +868,10 @@
                     </p>
 
 
-                    <p class="font-bold text-lg py-4 text-black">21. Your Rights
+                    <p class="font-bold md:text-lg text-base py-4 text-black">21. Your Rights
                     </p>
-                    <p class="font-normal text-base text-black py-2">Depending on the jurisdiction in which you are
+                    <p class="font-normal md:text-base text-sm text-black py-2">Depending on the jurisdiction in which
+                        you are
                         resident, you may enjoy certain
                         rights regarding Personal Data that we process about you. Such rights may include:</p>
 
@@ -868,7 +904,7 @@
                         request that we restrict the processing of your Personal
                         Data.</li>
 
-                    <p class="font-normal text-base text-black py-2">
+                    <p class="font-normal md:text-base text-sm text-black py-2">
                         You may exercise your rights by managing your Participant Account and choices through our
                         products
                         and
@@ -880,16 +916,16 @@
                         services
                         to you.
                     </p>
-                    <p class="font-normal text-base text-black py-2">
+                    <p class="font-normal md:text-base text-sm text-black py-2">
                         If you are not satisfied with what we provide when you exercise your rights, you can let us know
                         by
                         contacting us.
                     </p>
 
 
-                    <p class="font-bold text-lg py-4 text-black">22. Third Party Permission
+                    <p class="font-bold md:text-lg text-base py-4 text-black">22. Third Party Permission
                     </p>
-                    <p class="font-normal text-base text-black py-2">
+                    <p class="font-normal md:text-base text-sm text-black py-2">
                         We disclose Personal Data to third party service providers to enable us to offer our services to
                         you
                         and
@@ -898,7 +934,7 @@
                         Personal
                         Data
                     </p>
-                    <p class="font-normal text-base text-black py-2">
+                    <p class="font-normal md:text-base text-sm text-black py-2">
                         We do not disclose Personal Data to third parties for the purpose of allowing them to send
                         marketing
                         material to you. However, we may share non-personal, de-identified or aggregated information
@@ -907,7 +943,8 @@
                         third parties for research, development, analytics or promotional purposes other than direct
                         marketing.
                     </p>
-                    <p class="font-normal text-base text-black py-2"> In some cases, the organisations that we may
+                    <p class="font-normal md:text-base text-sm text-black py-2"> In some cases, the organisations that
+                        we may
                         disclose
                         your personal
                         information to may be based outside the location where the information is collected. Where we do
@@ -931,7 +968,7 @@
                         accordance
                         with the terms of this policy.
                     </p>
-                    <p class="font-normal text-base text-black py-2">
+                    <p class="font-normal md:text-base text-sm text-black py-2">
                         In the event of any dispute between the third party and you the company shall not be held liable
                         in
                         any
@@ -939,9 +976,10 @@
                     </p>
 
 
-                    <p class="font-bold text-lg py-4 text-black">23. User Communication
+                    <p class="font-bold md:text-lg text-base py-4 text-black">23. User Communication
                     </p>
-                    <p class="font-normal text-base text-black py-2">You hereby explicitly consent to receive email,
+                    <p class="font-normal md:text-base text-sm text-black py-2">You hereby explicitly consent to receive
+                        email,
                         telephone, WhatsApp or text
                         messages from us, our subsidiaries, associates, or affiliates, for the purpose of providing
                         alerts
@@ -957,18 +995,18 @@
                         you
                         from us.
                     </p>
-                    <p class="font-normal text-base text-black py-2">
+                    <p class="font-normal md:text-base text-sm text-black py-2">
                         Reply 'STOP' on the same number to stop receiving any further SMS. Reply 'HELP' to get help.
                         Standard data
                         charges are applicable for SMS.
                     </p>
-                    <p class="font-normal text-base text-black py-2">
+                    <p class="font-normal md:text-base text-sm text-black py-2">
                         This consent shall override any registration the Users may have done in their respective
                         jurisdiction to opt
                         out of such communications including through registration with a Do-Not- Call-Registry, as
                         applicable.
                     </p>
-                    <p class="font-normal text-base text-black py-2">
+                    <p class="font-normal md:text-base text-sm text-black py-2">
                         Please note that this section is not applicable to EU, UK, Australian and Singapore residents.
                         User
                         Communication for Australian residents should be dealt with specifically under the AU residents
@@ -977,58 +1015,69 @@
                     </p>
 
 
-                    <p class="font-bold text-lg py-4 text-black">24. Additional Rights Applicable to EU Residents
+                    <p class="font-bold md:text-lg text-base py-4 text-black">24. Additional Rights Applicable to EU
+                        Residents
                     </p>
-                    <p class="font-normal text-base text-black py-2">
+                    <p class="font-normal md:text-base text-sm text-black py-2">
                         Additional rights are applicable to EU residents, which are provided ANNEXURE A.
                     </p>
 
 
-                    <p class="font-bold text-lg py-4 text-black">25. Additional Rights Applicable to UK Residents
+                    <p class="font-bold md:text-lg text-base py-4 text-black">25. Additional Rights Applicable to UK
+                        Residents
                     </p>
-                    <p class="font-normal text-base text-black py-2">Additional rights are applicable to UK residents,
+                    <p class="font-normal md:text-base text-sm text-black py-2">Additional rights are applicable to UK
+                        residents,
                         which
                         are provided ANNEXURE
                         B.
                     </p>
 
 
-                    <p class="font-bold text-lg py-4 text-black">26. Additional Matters for Australian Residents
+                    <p class="font-bold md:text-lg text-base py-4 text-black">26. Additional Matters for Australian
+                        Residents
                     </p>
-                    <p class="font-normal text-base text-black py-2">Additional matters for Australian Residents are
+                    <p class="font-normal md:text-base text-sm text-black py-2">Additional matters for Australian
+                        Residents are
                         provided in the below ANNEXURE
                         C.
                     </p>
 
 
-                    <p class="font-bold text-lg py-4 text-black">27. Additional Matters for Singapore Residents
+                    <p class="font-bold md:text-lg text-base py-4 text-black">27. Additional Matters for Singapore
+                        Residents
                     </p>
-                    <p class="font-normal text-base text-black py-2">Additional matters for Singapore Residents are
+                    <p class="font-normal md:text-base text-sm text-black py-2">Additional matters for Singapore
+                        Residents are
                         provided
                         in the below ANNEXURE
                         D.
                     </p>
 
 
-                    <p class="font-bold text-lg py-4 text-black">28. Additional Matters for Persons Whose Personal Data
+                    <p class="font-bold md:text-lg text-base py-4 text-black">28. Additional Matters for Persons Whose
+                        Personal Data
                         are
                         Processed in
                         Malaysia
                     </p>
-                    <p class="font-normal text-base text-black py-2">Additional matters for persons whose personal data
+                    <p class="font-normal md:text-base text-sm text-black py-2">Additional matters for persons whose
+                        personal data
                         are
                         processed in Malaysia
                         are provided in the below ANNEXURE E.
                     </p>
 
 
-                    <p class="font-bold text-lg py-4 text-black">29. Contact Us
+                    <p class="font-bold md:text-lg text-base py-4 text-black">29. Contact Us
                     </p>
-                    <p class="font-normal text-base text-black py-2">For any further queries and complaints related to
+                    <p class="font-normal md:text-base text-sm text-black py-2">For any further queries and complaints
+                        related to
                         privacy, or exercising your
                         rights, you could reach us at:
                     </p>
-                    <p class="font-normal text-base text-black py-2">Contact Email Address : support@mymaarg.com<br>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Contact Email Address :
+                        support@mymaarg.com<br>
                         Organization's Name :MAARG MENTORSHIP PRIVATE LIMITED<br>
                         Address :02B-139, Wing-A, 2nd Floor, WeWork Chromium, Near L&T Flyover, Milind Nagar, JVLR,
                         Mumbai -
@@ -1037,9 +1086,10 @@
                         Phone number : +91 2248933955</p>
 
 
-                    <p class="font-bold text-lg py-4 text-black">30. Notification of changes
+                    <p class="font-bold md:text-lg text-base py-4 text-black">30. Notification of changes
                     </p>
-                    <p class="font-normal text-base text-black py-2">We regularly review and update our Privacy Notice
+                    <p class="font-normal md:text-base text-sm text-black py-2">We regularly review and update our
+                        Privacy Notice
                         to
                         ensure it is up-to-date
                         and accurate. Any changes we may make to this Privacy Notice will be in effect immediately after
@@ -1061,195 +1111,248 @@
                         as required under COPPA.
                     </p>
 
-                    <p class="font-normal text-base text-black py-2">ANNEXURE A</p>
-                    <p class="font-normal text-base text-black py-2">The below additional rights are available to you if
+                    <p class="font-normal md:text-base text-sm text-black py-2">ANNEXURE A</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">The below additional rights are
+                        available to you if
                         you are an EU resident:</p>
-                    <p class="font-normal text-base text-black py-2">1. Right of Access</p>
-                    <p class="font-normal text-base text-black py-2">Upon request, You have the right to get
+                    <p class="font-normal md:text-base text-sm text-black py-2">1. Right of Access</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Upon request, You have the right to get
                         confirmation as to whether or not We are processing
                         Your Personal Data, a copy of Your Personal Data and any other additional information as
                         specified by EU-GDPR.</p>
-                    <p class="font-normal text-base text-black py-2">2. Right to Rectification</p>
-                    <p class="font-normal text-base text-black py-2">Upon request, You have the right to get Your
+                    <p class="font-normal md:text-base text-sm text-black py-2">2. Right to Rectification</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Upon request, You have the right to get
+                        Your
                         inaccurate Personal Data rectified and Your
                         incomplete Personal Data completed.</p>
-                    <p class="font-normal text-base text-black py-2">3. Right to Erasure</p>
-                    <p class="font-normal text-base text-black py-2">Upon request, You have the right to obtain erasure
+                    <p class="font-normal md:text-base text-sm text-black py-2">3. Right to Erasure</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Upon request, You have the right to
+                        obtain erasure
                         or deletion of Your Personal Data on the
                         grounds specified by EU-GDPR unless there is any exception specified by EU-GDPR that is
                         preventing Us to execute Your right.</p>
-                    <p class="font-normal text-base text-black py-2">4. Right to Restriction of Processing</p>
-                    <p class="font-normal text-base text-black py-2">Upon request, You have the right to request
+                    <p class="font-normal md:text-base text-sm text-black py-2">4. Right to Restriction of Processing
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Upon request, You have the right to
+                        request
                         restriction of processing of Your Personal Data
                         on the grounds specified by EU-GDPR.</p>
-                    <p class="font-normal text-base text-black py-2">5. Right to Data Portability</p>
-                    <p class="font-normal text-base text-black py-2">Upon request, You have right to receive and/or
+                    <p class="font-normal md:text-base text-sm text-black py-2">5. Right to Data Portability</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Upon request, You have right to receive
+                        and/or
                         transmittal to any other organization, Your
                         Personal Data that You have provided to Us in a structured, commonly used and machine-
                         readable format on the grounds specified by EU-GDPR unless there is any exception specified
                         by EU-GDPR is preventing Us to execute Your right.</p>
-                    <p class="font-normal text-base text-black py-2">6. Right to Object</p>
-                    <p class="font-normal text-base text-black py-2">Upon request, You have the right to object to the
+                    <p class="font-normal md:text-base text-sm text-black py-2">6. Right to Object</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Upon request, You have the right to
+                        object to the
                         processing of Your Personal Data on the
                         grounds specified by EU-GDPR.</p>
-                    <p class="font-normal text-base text-black py-2">7. Right to not be subject to Automated
+                    <p class="font-normal md:text-base text-sm text-black py-2">7. Right to not be subject to Automated
                         decision-making, including profiling</p>
-                    <p class="font-normal text-base text-black py-2">You have the right not to be subject to a decision
+                    <p class="font-normal md:text-base text-sm text-black py-2">You have the right not to be subject to
+                        a decision
                         based solely on automated processing,
                         including profiling, which produces legal or similarly significant effects concerning You.
                     </p>
-                    <p class="font-normal text-base text-black py-2">8. Right to lodge a complaint with the Supervisory
+                    <p class="font-normal md:text-base text-sm text-black py-2">8. Right to lodge a complaint with the
+                        Supervisory
                         Authority</p>
-                    <p class="font-normal text-base text-black py-2">You have the right to lodge a complaint with a
+                    <p class="font-normal md:text-base text-sm text-black py-2">You have the right to lodge a complaint
+                        with a
                         supervisory authority, specifically in the
                         Member State of Your habitual residence, place of work or place of an alleged infringement
                         of the General Data Protection Regulation.</p>
-                    <p class="font-normal text-base text-black py-2">You can identify the supervising authority of Your
+                    <p class="font-normal md:text-base text-sm text-black py-2">You can identify the supervising
+                        authority of Your
                         concern by visiting</p>
-                    <p class="font-normal text-base text-black py-2">https://edpb.europa.eu/about-edpb/board/members_en
+                    <p class="font-normal md:text-base text-sm text-black py-2">
+                        https://edpb.europa.eu/about-edpb/board/members_en
                     </p>
-                    <p class="font-normal text-base text-black py-2">ANNEXURE B</p>
-                    <p class="font-normal text-base text-black py-2">The below additional rights are available to you if
+                    <p class="font-normal md:text-base text-sm text-black py-2">ANNEXURE B</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">The below additional rights are
+                        available to you if
                         you are a UK resident:</p>
-                    <p class="font-normal text-base text-black py-2">1. Right of Access</p>
-                    <p class="font-normal text-base text-black py-2">Upon request, You have the right to get
+                    <p class="font-normal md:text-base text-sm text-black py-2">1. Right of Access</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Upon request, You have the right to get
                         confirmation as to whether or not We are processing
                         Your Personal Data, a copy of Your Personal Data and any other additional information as
                         specified by UK-GDPR.</p>
-                    <p class="font-normal text-base text-black py-2">2. Right to Rectification</p>
-                    <p class="font-normal text-base text-black py-2">Upon request, You have the right to get Your
+                    <p class="font-normal md:text-base text-sm text-black py-2">2. Right to Rectification</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Upon request, You have the right to get
+                        Your
                         inaccurate Personal Data rectified and Your
                         incomplete Personal Data completed.</p>
-                    <p class="font-normal text-base text-black py-2">3. Right to Erasure</p>
-                    <p class="font-normal text-base text-black py-2">Upon request, You have the right to obtain erasure
+                    <p class="font-normal md:text-base text-sm text-black py-2">3. Right to Erasure</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Upon request, You have the right to
+                        obtain erasure
                         or deletion of Your Personal Data on the
                         grounds specified by UK-GDPR unless there is any exception specified by UK-GDPR and/or DPA
                         that is preventing Us to execute Your right.</p>
-                    <p class="font-normal text-base text-black py-2">4. Right to Restriction of Processing</p>
-                    <p class="font-normal text-base text-black py-2">Upon request, You have the right to request
+                    <p class="font-normal md:text-base text-sm text-black py-2">4. Right to Restriction of Processing
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Upon request, You have the right to
+                        request
                         restriction of processing of Your Personal Data
                         on the grounds specified by UK-GDPR.</p>
-                    <p class="font-normal text-base text-black py-2">5. Right to Data Portability</p>
-                    <p class="font-normal text-base text-black py-2">Upon request, You have right to receive and/or
+                    <p class="font-normal md:text-base text-sm text-black py-2">5. Right to Data Portability</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Upon request, You have right to receive
+                        and/or
                         transmittal to any other organization, Your
                         Personal Data that You have provided to Us in a structured, commonly used and machine-
                         readable format on the grounds specified by UK-GDPR unless there is any exception specified
                         by UK-GDPR and/or DPA preventing Us to execute Your right.</p>
-                    <p class="font-normal text-base text-black py-2">6. Right to Object</p>
-                    <p class="font-normal text-base text-black py-2">Upon request, You have the right to object to the
+                    <p class="font-normal md:text-base text-sm text-black py-2">6. Right to Object</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Upon request, You have the right to
+                        object to the
                         processing of Your Personal Data on the
                         grounds specified by UK-GDPR.</p>
-                    <p class="font-normal text-base text-black py-2">7. Right to not be subject to Automated
+                    <p class="font-normal md:text-base text-sm text-black py-2">7. Right to not be subject to Automated
                         decision-making, including profiling</p>
-                    <p class="font-normal text-base text-black py-2">You have the right not to be subject to a decision
+                    <p class="font-normal md:text-base text-sm text-black py-2">You have the right not to be subject to
+                        a decision
                         based solely on automated processing,
                         including profiling, which produces legal or similarly significant effects concerning You.
                     </p>
-                    <p class="font-normal text-base text-black py-2">8. Right to lodge a complaint with the Supervisory
+                    <p class="font-normal md:text-base text-sm text-black py-2">8. Right to lodge a complaint with the
+                        Supervisory
                         Authority</p>
-                    <p class="font-normal text-base text-black py-2">You have the right to lodge a complaint with the UK
+                    <p class="font-normal md:text-base text-sm text-black py-2">You have the right to lodge a complaint
+                        with the UK
                         Information Commissioner’s Office in
                         relation to an alleged infringement of UK data protection law.</p>
-                    <p class="font-normal text-base text-black py-2">See https://ico.org.uk/</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">See https://ico.org.uk/</p>
 
                     <p class="font-bold text-lg text-black py-4">ANNEXURE C</p>
-                    <p class="font-normal text-base text-black py-2">The following applies if you are an Australian
+                    <p class="font-normal md:text-base text-sm text-black py-2">The following applies if you are an
+                        Australian
                         resident.</p>
-                    <p class="font-normal text-base text-black py-2">Our Privacy Policy above complies with the
+                    <p class="font-normal md:text-base text-sm text-black py-2">Our Privacy Policy above complies with
+                        the
                         Australian Privacy Principles (“APPs”) under the
                         Privacy Act 1988 (Cth) (Privacy Act), subject to the following:</p>
-                    <p class="font-normal text-base text-black py-2">A reference to Personal Data in our Privacy Policy
+                    <p class="font-normal md:text-base text-sm text-black py-2">A reference to Personal Data in our
+                        Privacy Policy
                         above (and below) is to be read as a
                         reference to Personal Information, as that term is defined under the Privacy Act as follows:
                     </p>
-                    <p class="font-normal text-base text-black py-2">“Personal Information means Information or an
+                    <p class="font-normal md:text-base text-sm text-black py-2">“Personal Information means Information
+                        or an
                         opinion about an identified individual, or an
                         individual who is reasonably identifiable, whether the information or opinion is true or
                         not, and whether the information or opinion is recorded in a material form or not”</p>
-                    <p class="font-normal text-base text-black py-2">A reference to a DATA CONTROLLER in our Privacy
+                    <p class="font-normal md:text-base text-sm text-black py-2">A reference to a DATA CONTROLLER in our
+                        Privacy
                         Policy above is to be read as a reference to
                         us i.e., Company.</p>
-                    <p class="font-normal text-base text-black py-2">The following applies to all Australian residents:
+                    <p class="font-normal md:text-base text-sm text-black py-2">The following applies to all Australian
+                        residents:
                     </p>
                     <p class="font-bold text-lg text-black py-4">1. Minors (children under 18)</p>
-                    <p class="font-normal text-base text-black py-2">The Privacy Act applies to all Australian
+                    <p class="font-normal md:text-base text-sm text-black py-2">The Privacy Act applies to all
+                        Australian
                         residents, regardless of age. For users who are
                         under 15 years of age, parental consent is required for children to sign up to and use our
                         services.</p>
                     <p class="font-bold text-lg text-black py-4">2. Collection notices</p>
-                    <p class="font-normal text-base text-black py-2">When you sign up for our services, you will be
+                    <p class="font-normal md:text-base text-sm text-black py-2">When you sign up for our services, you
+                        will be
                         asked to provide your consent (or parental
                         consent if you are under 15 years of age) to our collection, use and disclosure of your
                         Personal Information as described in this Privacy Policy including ANNEXURE C. If you do not
                         provide such consent, we may not be able to provide you with our services.</p>
                     <p class="font-bold text-lg text-black py-4">3. How we collect your Personal Information</p>
-                    <p class="font-normal text-base text-black py-2">We will collect and hold your Personal Information
+                    <p class="font-normal md:text-base text-sm text-black py-2">We will collect and hold your Personal
+                        Information
                         in a fair and lawful manner, and not in an
                         intrusive way. Where it is reasonably practical to do so, we will collect your Personal
                         Information directly from you. We may collect the Personal Information you directly give us
                         through some of the following means:</p>
-                    <p class="font-normal text-base text-black py-2">As described above in our Privacy Policy under
+                    <p class="font-normal md:text-base text-sm text-black py-2">As described above in our Privacy Policy
+                        under
                         section 10 “Where do we obtain your Personal
                         Data from?”</p>
-                    <p class="font-normal text-base text-black py-2">in administering and performing any contracts with
+                    <p class="font-normal md:text-base text-sm text-black py-2">in administering and performing any
+                        contracts with
                         service providers;</p>
-                    <p class="font-normal text-base text-black py-2">when you contact us via telephone or facsimile;</p>
-                    <p class="font-normal text-base text-black py-2">from correspondence (whether in writing or
+                    <p class="font-normal md:text-base text-sm text-black py-2">when you contact us via telephone or
+                        facsimile;</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">from correspondence (whether in writing
+                        or
                         electronically);</p>
-                    <p class="font-normal text-base text-black py-2">through any mobile applications provided by our
+                    <p class="font-normal md:text-base text-sm text-black py-2">through any mobile applications provided
+                        by our
                         organisation;</p>
-                    <p class="font-normal text-base text-black py-2">while conducting customer satisfaction and market
+                    <p class="font-normal md:text-base text-sm text-black py-2">while conducting customer satisfaction
+                        and market
                         research surveys;</p>
-                    <p class="font-normal text-base text-black py-2">when administering any of our services; and</p>
-                    <p class="font-normal text-base text-black py-2">as otherwise required to manage our business.</p>
-                    <p class="font-normal text-base text-black py-2">However, in certain cases we may collect Personal
+                    <p class="font-normal md:text-base text-sm text-black py-2">when administering any of our services;
+                        and</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">as otherwise required to manage our
+                        business.</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">However, in certain cases we may collect
+                        Personal
                         Information from publically available
                         sources and third parties, such as data suppliers, contractors, our clients and business
                         partners.</p>
-                    <p class="font-normal text-base text-black py-2">If we collect Personal Information about you from a
+                    <p class="font-normal md:text-base text-sm text-black py-2">If we collect Personal Information about
+                        you from a
                         third party we will, where appropriate,
                         request that the third party inform you that we are holding such information, how we will
                         use and disclose it, and that you may contact us to gain access to and correct and update
                         the information.</p>
                     <p class="font-bold text-lg text-black py-4">4. Types of Personal Information we collect</p>
-                    <p class="font-normal text-base text-black py-2">The type of Personal Information we may collect can
+                    <p class="font-normal md:text-base text-sm text-black py-2">The type of Personal Information we may
+                        collect can
                         include (but is not limited to):</p>
-                    <p class="font-normal text-base text-black py-2">Personal Information as described above in our
+                    <p class="font-normal md:text-base text-sm text-black py-2">Personal Information as described above
+                        in our
                         Privacy Policy under section 9 “What Personal
                         Data do we Collect & Process?”</p>
-                    <p class="font-normal text-base text-black py-2">We only collect Sensitive Information (as defined
+                    <p class="font-normal md:text-base text-sm text-black py-2">We only collect Sensitive Information
+                        (as defined
                         under the Privacy Act) about you with your
                         consent, or otherwise in accordance with the Privacy Act.</p>
-                    <p class="font-normal text-base text-black py-2">Where you do not wish to provide us with your
+                    <p class="font-normal md:text-base text-sm text-black py-2">Where you do not wish to provide us with
+                        your
                         Personal Information, we may not be able to
                         provide you with requested goods or services.</p>
                     <p class="font-bold text-lg text-black py-4">5. Our purposes for handling your Personal
                         Information</p>
-                    <p class="font-normal text-base text-black py-2">As a general rule, we only process Personal
+                    <p class="font-normal md:text-base text-sm text-black py-2">As a general rule, we only process
+                        Personal
                         Information for purposes that would be considered
                         relevant and reasonable in the circumstances. We collect, hold, use and disclose Personal
                         Information:</p>
-                    <p class="font-normal text-base text-black py-2">for the purposes set out above in our Privacy
+                    <p class="font-normal md:text-base text-sm text-black py-2">for the purposes set out above in our
+                        Privacy
                         Policy in section 11 “How do we use your
                         Personal Data?”</p>
-                    <p class="font-normal text-base text-black py-2">We may disclose your Personal Information:</p>
-                    <p class="font-normal text-base text-black py-2">to the parties set out above in our Privacy Policy
+                    <p class="font-normal md:text-base text-sm text-black py-2">We may disclose your Personal
+                        Information:</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">to the parties set out above in our
+                        Privacy Policy
                         above as per section 14 “When do we share
                         your Personal Data with third parties?”</p>
-                    <p class="font-normal text-base text-black py-2">between our organisations</p>
-                    <p class="font-normal text-base text-black py-2">Prior to disclosing any of your Personal
+                    <p class="font-normal md:text-base text-sm text-black py-2">between our organisations</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Prior to disclosing any of your Personal
                         Information to another person or organisation, we
                         will take all reasonable steps to satisfy ourselves that:</p>
-                    <p class="font-normal text-base text-black py-2">the person or organisation has a commitment to
+                    <p class="font-normal md:text-base text-sm text-black py-2">the person or organisation has a
+                        commitment to
                         protecting your Personal Information at least
                         equal to our commitment, or</p>
-                    <p class="font-normal text-base text-black py-2">you have consented to us making the disclosure.</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">you have consented to us making the
+                        disclosure.</p>
                     <p class="font-bold text-lg text-black py-4">6. Protection of Personal Information</p>
-                    <p class="font-normal text-base text-black py-2">We will hold Personal Information as either secure
+                    <p class="font-normal md:text-base text-sm text-black py-2">We will hold Personal Information as
+                        either secure
                         physical records, electronically on our
                         intranet system, in cloud storage, and in some cases, records on third party servers, which
                         may be located overseas.</p>
-                    <p class="font-normal text-base text-black py-2">We maintain appropriate physical, procedural and
+                    <p class="font-normal md:text-base text-sm text-black py-2">We maintain appropriate physical,
+                        procedural and
                         technical security for our offices and
                         information storage facilities so as to prevent any loss, misuse, unauthorised access,
                         disclosure, or modification of Personal Information. This also applies to disposal of
@@ -1257,51 +1360,60 @@
                         Personal Information to only those who need access to the Personal Information to do their
                         job. Physical, electronic and managerial procedures have been employed to safeguard the
                         security and integrity of your Personal Information.</p>
-                    <p class="font-normal text-base text-black py-2">We will destroy or de-identify Personal Information
+                    <p class="font-normal md:text-base text-sm text-black py-2">We will destroy or de-identify Personal
+                        Information
                         once it is no longer needed for a valid
                         purpose or required to be kept by law.</p>
                     <p class="font-bold text-lg text-black py-4">7. Direct marketing</p>
-                    <p class="font-normal text-base text-black py-2">Like most businesses, marketing is important to our
+                    <p class="font-normal md:text-base text-sm text-black py-2">Like most businesses, marketing is
+                        important to our
                         continued success. We believe we have a
                         unique range of products and services that we provide to customers at a high standard. We
                         therefore like to stay in touch with customers and let them know about new opportunities. We
                         may provide you with information by telephone (subject to the Do Not Call Register), SMS,
                         email or WhatsApp about new products, services and promotions either from us, or from third
                         parties which may be of interest to you.</p>
-                    <p class="font-normal text-base text-black py-2">We will not disclose your Personal Information to
+                    <p class="font-normal md:text-base text-sm text-black py-2">We will not disclose your Personal
+                        Information to
                         third parties for marketing purposes
                         without your consent.</p>
-                    <p class="font-normal text-base text-black py-2">If you do not wish to receive marketing
+                    <p class="font-normal md:text-base text-sm text-black py-2">If you do not wish to receive marketing
                         information, you may at any time decline to receive
                         such information by telephoning us on +91 2248933955 or by writing to us at: MAARG
                         MENTORSHIP PRIVATE LIMITED, Address: Phase II, Udyog Vihar, Sector 20, Gurugram, Haryana
                         122022, India.</p>
-                    <p class="font-normal text-base text-black py-2">If the direct marketing is by email, SMS or
+                    <p class="font-normal md:text-base text-sm text-black py-2">If the direct marketing is by email, SMS
+                        or
                         WhatsApp you may also use the unsubscribe
                         function. We will not charge you for giving effect to your request and will take all
                         reasonable steps to meet your request at the earliest possible opportunity.</p>
                     <p class="font-bold text-lg text-black py-4">8. Cookies</p>
-                    <p class="font-normal text-base text-black py-2">A cookie is a small text file stored in your
+                    <p class="font-normal md:text-base text-sm text-black py-2">A cookie is a small text file stored in
+                        your
                         computer’s memory or on your hard disk for a
                         pre- defined period of time. We use cookies as set out in our Privacy Policy above in
                         section 15 “Use of Cookies and other Tracking Mechanisms”.</p>
                     <p class="font-bold text-lg text-black py-4">9. Accessing and correcting your Personal
                         Information</p>
-                    <p class="font-normal text-base text-black py-2">You may contact our Privacy Officer to request
+                    <p class="font-normal md:text-base text-sm text-black py-2">You may contact our Privacy Officer to
+                        request
                         access to the Personal Information that we
                         hold about you and/or make corrections to that information, at any time. On the rare
                         occasions when we refuse access, we will provide you with a written notice stating our
                         reasons for refusing access. We may seek to recover from you reasonable costs incurred for
                         providing you with access to any of the Personal Information about you held by us.</p>
-                    <p class="font-normal text-base text-black py-2">We are not obliged to correct any of your Personal
+                    <p class="font-normal md:text-base text-sm text-black py-2">We are not obliged to correct any of
+                        your Personal
                         Information if we do not agree that it
                         requires correction and may refuse to do so. If we refuse a correction request, we will
                         provide you with a written notice stating our reasons for refusal.</p>
-                    <p class="font-normal text-base text-black py-2">We will respond to all requests for access to or
+                    <p class="font-normal md:text-base text-sm text-black py-2">We will respond to all requests for
+                        access to or
                         correction of Personal Information within a
                         reasonable time.</p>
                     <p class="font-bold text-lg text-black py-4">10. Overseas transfers of Personal Information</p>
-                    <p class="font-normal text-base text-black py-2">From time to time, we may engage an overseas
+                    <p class="font-normal md:text-base text-sm text-black py-2">From time to time, we may engage an
+                        overseas
                         recipient to provide services to us, such as
                         cloud- based storage solutions. Please note that the use of overseas service providers to
                         store Personal Information will not always involve a disclosure of Personal Information to
@@ -1311,39 +1423,47 @@
                         recipient breaches the APPs, that entity will not be bound by, and you will not be able to
                         seek redress under, the Privacy Act.</p>
                     <p class="font-bold text-lg text-black py-4">11. Resolving Personal Information concerns</p>
-                    <p class="font-normal text-base text-black py-2">If you have any questions, concerns or complaints
+                    <p class="font-normal md:text-base text-sm text-black py-2">If you have any questions, concerns or
+                        complaints
                         about this Privacy Policy, or how we handle
                         your Personal Information, please contact our Privacy Officer:</p>
                     <p class="font-bold text-lg text-black py-4">12. The Privacy Officer</p>
-                    <p class="font-normal text-base text-black py-2">Telephone: +91 9993257997</p>
-                    <p class="font-normal text-base text-black py-2">Email: support@mymaarg.com</p>
-                    <p class="font-normal text-base text-black py-2">We take all complaints seriously, and will respond
+                    <p class="font-normal md:text-base text-sm text-black py-2">Telephone: +91 9993257997</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Email: support@mymaarg.com</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">We take all complaints seriously, and
+                        will respond
                         to your complaint within a reasonable
                         period.</p>
-                    <p class="font-normal text-base text-black py-2">If you are dissatisfied with the handling of your
+                    <p class="font-normal md:text-base text-sm text-black py-2">If you are dissatisfied with the
+                        handling of your
                         complaint, you may contact the Office of
                         the Australian Information Commissioner:</p>
-                    <p class="font-normal text-base text-black py-2">Office of the Australian Information Commissioner
+                    <p class="font-normal md:text-base text-sm text-black py-2">Office of the Australian Information
+                        Commissioner
                     </p>
-                    <p class="font-normal text-base text-black py-2">GPO Box 5218</p>
-                    <p class="font-normal text-base text-black py-2">Sydney NSW 2001</p>
-                    <p class="font-normal text-base text-black py-2">Telephone: 1300 363 992</p>
-                    <p class="font-normal text-base text-black py-2">Email: enquiries@oaic.gov.au</p>
-                    <p class="font-normal text-base text-black py-2">13. Changes</p>
-                    <p class="font-normal text-base text-black py-2">We reserve the right to change the terms of this
+                    <p class="font-normal md:text-base text-sm text-black py-2">GPO Box 5218</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Sydney NSW 2001</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Telephone: 1300 363 992</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Email: enquiries@oaic.gov.au</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">13. Changes</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">We reserve the right to change the terms
+                        of this
                         Privacy Policy from time to time, without
                         notice to you. An up-to-date copy of our Privacy Policy is available on our Website.</p>
                     <p class="font-bold text-lg text-black py-4">ANNEXURE D</p>
-                    <p class="font-normal text-base text-black py-2">The following applies if you are a Singapore
+                    <p class="font-normal md:text-base text-sm text-black py-2">The following applies if you are a
+                        Singapore
                         resident.</p>
                     <p class="font-bold text-lg text-black py-4">1. Collection notices</p>
-                    <p class="font-normal text-base text-black py-2">When you sign up for our services, you will be
+                    <p class="font-normal md:text-base text-sm text-black py-2">When you sign up for our services, you
+                        will be
                         asked to provide your consent (or parental
                         consent if you are under 13 years of age) to our collection, use and disclosure of your
                         Personal Data as described in this Privacy Policy including ANNEXURE D. If you do not
                         provide such consent, we may not be able to provide you with our services.</p>
                     <p class="font-bold text-lg text-black py-4">2. Providing personal data belonging to others</p>
-                    <p class="font-normal text-base text-black py-2">In certain circumstances, you may also provide us
+                    <p class="font-normal md:text-base text-sm text-black py-2">In certain circumstances, you may also
+                        provide us
                         with personal data of persons other than
                         yourself. If you do so, you warrant that you have informed him/her of the purposes for which
                         we are collecting his/her personal data and that he/she has consented to your disclosure of
@@ -1352,7 +1472,8 @@
                         relating to our collection, use and disclosure of such personal data in accordance with the
                         terms of this Privacy Policy.</p>
                     <p class="font-bold text-lg text-black py-4">3. Direct marketing</p>
-                    <p class="font-normal text-base text-black py-2">If you have provided us with your consent, we may
+                    <p class="font-normal md:text-base text-sm text-black py-2">If you have provided us with your
+                        consent, we may
                         use your personal data for the purposes of
                         marketing our products and services and those of our strategic partners and business
                         associates (e.g. informing you of our latest activities, special offers and promotions). In
@@ -1360,18 +1481,21 @@
                         you, we may analyse and rely on your overall interaction with us (such as but not limited to
                         your participation in promotions or events and your interactions with us).</p>
                     <p class="font-bold text-lg text-black py-4">4. User Communication</p>
-                    <p class="font-normal text-base text-black py-2">When we contact or send you information for the
+                    <p class="font-normal md:text-base text-sm text-black py-2">When we contact or send you information
+                        for the
                         purposes for which you have consented, we may
                         do so by post, e-mail, SMS, telephone, instant messaging platform or such other means as may
                         be authorised by you.</p>
-                    <p class="font-normal text-base text-black py-2">We will not contact you for marketing purposes
+                    <p class="font-normal md:text-base text-sm text-black py-2">We will not contact you for marketing
+                        purposes
                         unless you have provided us with your consent,
                         or unless we are exempted by applicable law from having to obtain your consent. If you do
                         not wish to receive any communication or information from us, or wish to restrict the manner
                         by which we may contact or send you information, please contact us (See the “Contact Us”
                         section above).</p>
                     <p class="font-bold text-lg text-black py-4">5. Transfer to other countries and safeguards</p>
-                    <p class="font-normal text-base text-black py-2">You fully understand and unambiguously consent that
+                    <p class="font-normal md:text-base text-sm text-black py-2">You fully understand and unambiguously
+                        consent that
                         we may transfer your personal data to any
                         country (including to third parties where necessary) for the purposes set out in this
                         Privacy Policy or as notified to you. Where we transfer your personal data outside of
@@ -1379,40 +1503,50 @@
                         data in accordance with this policy and applicable data protection laws.</p>
                     <p class="font-bold text-lg text-black py-4">6. Rights under Singapore’s Personal Data
                         Protection Act</p>
-                    <p class="font-normal text-base text-black py-2">The below additional rights are available to you if
+                    <p class="font-normal md:text-base text-sm text-black py-2">The below additional rights are
+                        available to you if
                         you are a Singapore resident:</p>
-                    <p class="font-normal text-base text-black py-2">Access: you may ask us if we hold your personal
+                    <p class="font-normal md:text-base text-sm text-black py-2">Access: you may ask us if we hold your
+                        personal
                         data and, if we are, you can request access
                         to your personal data. This enables you to receive a copy of and information on the personal
                         data we hold about you.</p>
-                    <p class="font-normal text-base text-black py-2">Correction: you may request that any incomplete or
+                    <p class="font-normal md:text-base text-sm text-black py-2">Correction: you may request that any
+                        incomplete or
                         inaccurate personal data we hold about you
                         is corrected.</p>
-                    <p class="font-normal text-base text-black py-2">Withdrawal: you may withdraw consent for our use of
+                    <p class="font-normal md:text-base text-sm text-black py-2">Withdrawal: you may withdraw consent for
+                        our use of
                         your personal data.</p>
-                    <p class="font-normal text-base text-black py-2">Portability: you may request the transfer of
+                    <p class="font-normal md:text-base text-sm text-black py-2">Portability: you may request the
+                        transfer of
                         certain of your personal data to another party
                         under certain conditions.</p>
-                    <p class="font-normal text-base text-black py-2">If you wish to exercise any of your rights, you may
+                    <p class="font-normal md:text-base text-sm text-black py-2">If you wish to exercise any of your
+                        rights, you may
                         contact us at support@mymaarg.com. We may
                         require that you submit certain forms or provide certain information to process your
                         request. Where permitted by law, we may also charge you a fee to process your request.</p>
-                    <p class="font-normal text-base text-black py-2">We may be permitted under applicable laws to refuse
+                    <p class="font-normal md:text-base text-sm text-black py-2">We may be permitted under applicable
+                        laws to refuse
                         a request, for example, we may refuse (a)
                         a request for erasure where the personal data is required for in connection with claims; or
                         (b) an objection request and continue processing your personal data based on compelling
                         legitimate grounds for the processing.</p>
                     <p class="font-bold text-lg text-black py-4">ANNEXURE E</p>
-                    <p class="font-normal text-base text-black py-2">The following applies if your personal data is
+                    <p class="font-normal md:text-base text-sm text-black py-2">The following applies if your personal
+                        data is
                         processed in Malaysia.</p>
                     <p class="font-bold text-lg text-black py-4">1. Collection notices</p>
-                    <p class="font-normal text-base text-black py-2">When you sign up for our services, you will be
+                    <p class="font-normal md:text-base text-sm text-black py-2">When you sign up for our services, you
+                        will be
                         asked to provide your consent (or parental
                         consent if you are under 18 years of age) to our collection, use and disclosure of your
                         personal data as described in this Privacy Policy including ANNEXURE D. If you do not
                         provide such consent, we may not be able to provide you with our services.</p>
                     <p class="font-bold text-lg text-black py-4">2. Withdrawal of consent</p>
-                    <p class="font-normal text-base text-black py-2">You have the right to withdraw your consent for the
+                    <p class="font-normal md:text-base text-sm text-black py-2">You have the right to withdraw your
+                        consent for the
                         processing of your personal data at any
                         point in time. Please note that should the withdrawal of consent result in us not being able
                         to continue offering our products and services to you, we reserve the right to withdraw or
@@ -1420,7 +1554,8 @@
                         consent by contacting us with a written request to the contact details specified above in
                         the ‘Contact Us’ section. We will process your withdrawal request upon receipt of the same.
                     </p>
-                    <p class="font-normal text-base text-black py-2">If you have provided us with your consent, we may
+                    <p class="font-normal md:text-base text-sm text-black py-2">If you have provided us with your
+                        consent, we may
                         use your personal data for the purposes of
                         marketing our products and services. If you do not wish for us to begin and/or continue
                         processing your personal data for marketing purposes, or wish to limit the manner by which
@@ -1428,7 +1563,8 @@
                         specified above in the ‘Contact Us’ section.</p>
                     <p class="font-bold text-lg text-black py-4">3. Transfer of personal data outside of Malaysia
                     </p>
-                    <p class="font-normal text-base text-black py-2">You hereby consent that we may transfer your
+                    <p class="font-normal md:text-base text-sm text-black py-2">You hereby consent that we may transfer
+                        your
                         personal data to any country outside of Malaysia
                         for the purposes set out in this Privacy Policy. Where we transfer your personal data
                         outside of Malaysia, we will take all reasonable precautions and exercise all due diligence
@@ -1519,6 +1655,8 @@
                 </div>
             </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+        <script src="index.js"></script>
     </body>
 
 </html>
