@@ -18,7 +18,7 @@
     </head>
 
     <body>
-        <nav class="flex items-center justify-between py-3 md:px-14 px-5"
+        <nav class="md:flex hidden items-center justify-between py-3 md:px-14 px-5"
             style="box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.05);">
             <div class="logo">
                 <a href="index.html">
@@ -37,6 +37,32 @@
                 <img src="img/diamond.svg">
                 <p class="text-main text-sm font-semibold text-white">Get early access</p>
             </div>
+        </nav>
+
+        <nav class="md:hidden flex items-center justify-between py-3 md:px-14 px-2"
+            style="box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.05);">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.svg">
+                </a>
+            </div>
+            <div class="flex items-center gap-x-2">
+                <div class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded-xl btn-Bg">
+                    <img src="img/diamond.svg" width="15px">
+                    <p class="text-main text-xs font-semibold text-white">Get early access</p>
+                </div>
+                <div class="">
+                    <div class="flex justify-between items-center gap-7 p-2" onclick="dropDownAnswer(this)">
+                        <img src="img/navDropDown.svg" class="dropUp">
+                        <img src="img/navClose.svg" class="dropDown d-none ">
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="flex flex-col border w-full radius-10 my-2  rounded-lg bg-white">
+                
+                
+            </div> -->
         </nav>
 
         <!-- ####################################### LANDING PAGE ############################# -->
@@ -73,7 +99,7 @@
                 <div class="w-1/10 flex items-center justify-center">
                     <img src="img/arrow-square-left.svg">
                 </div>
-                <div class="grid w-full grid-cols-10 flex items-center justify-center gap-x-5">
+                <div class="grid w-full md:grid-cols-10 grid-cols-9 flex items-center justify-center gap-x-5">
                     <div class="md:col-span-2 col-span-3 flex items-center justify-center"><img src="img/mentor-1.svg">
                     </div>
                     <div class="md:col-span-2 col-span-3 flex items-center justify-center"><img src="img/mentor-2.svg">
@@ -105,7 +131,9 @@
                 <div class="grid grid-cols-12 md:flex hidden items-start py-10">
 
                     <div class="col-span-5 flex items-center justify-center px-5">
-                        <img src="img/clarity.svg">
+                        <video controls class="w-3/4 rounded">
+                            <source src="img/1.mp4" type="video/mp4">
+                        </video>
                     </div>
 
                     <div class="col-span-2 flex mx-auto items-center justify-center">
@@ -148,14 +176,18 @@
                     </div>
 
                     <div class="col-span-5 flex items-center justify-center px-5">
-                        <img src="img/clarity.svg">
+                        <video controls class="w-3/4 rounded">
+                            <source src="img/2.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </div>
 
                 <div class="grid grid-cols-12 md:flex hidden items-start py-10">
 
                     <div class="col-span-5 flex items-center justify-center px-5">
-                        <img src="img/clarity.svg">
+                        <video controls class="w-3/4 rounded">
+                            <source src="img/3.mp4" type="video/mp4">
+                        </video>
                     </div>
 
                     <div class="col-span-2 flex mx-auto items-center justify-center">
@@ -202,7 +234,11 @@
                         </div>
                     </div>
                 </div>
-                <div class=""><img src="img/clarity.svg"></div>
+                <div class="">
+                    <video class="rounded" controls>
+                        <source src="img/1.mp4" type="video/mp4">
+                    </video>
+                </div>
 
 
             </div>
@@ -225,7 +261,11 @@
                         </div>
                     </div>
                 </div>
-                <div class=""><img src="img/clarity.svg"></div>
+                <div class="">
+                    <video class="rounded" controls>
+                        <source src="img/2.mp4" type="video/mp4">
+                    </video>
+                </div>
 
 
             </div>
@@ -248,7 +288,11 @@
                         </div>
                     </div>
                 </div>
-                <div class=""><img src="img/clarity.svg"></div>
+                <div class="">
+                    <video class="rounded" controls>
+                        <source src="img/3.mp4" type="video/mp4">
+                    </video>
+                </div>
 
 
             </div>

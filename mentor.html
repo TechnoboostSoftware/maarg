@@ -17,7 +17,7 @@
     </head>
 
     <body>
-        <nav class="flex items-center justify-between py-3 md:px-14 px-5"
+        <nav class="md:flex hidden items-center justify-between py-3 md:px-14 px-5"
             style="box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.05);">
             <div class="logo">
                 <a href="index.html">
@@ -40,11 +40,38 @@
             </div>
         </nav>
 
+        <nav class="md:hidden flex items-center justify-between py-3 md:px-14 px-2"
+            style="box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.05);">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.svg">
+                </a>
+            </div>
+            <div class="flex items-center gap-x-2">
+                <div class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded-xl btn-Bg">
+                    <img src="img/diamond.svg" width="15px">
+                    <p class="text-main text-xs font-semibold text-white">Get early access</p>
+                </div>
+                <div class="">
+                    <div class="flex justify-between items-center gap-7 p-2" onclick="dropDownAnswer(this)">
+                        <img src="img/navDropDown.svg" class="dropUp">
+                        <img src="img/navClose.svg" class="dropDown d-none ">
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="flex flex-col border w-full radius-10 my-2  rounded-lg bg-white">
+                
+                
+            </div> -->
+        </nav>
+
         <!-- ####################################### LANDING ############################# -->
 
         <section class="landing py-3 md:px-14 px-5" style="border-bottom: 1px solid rgba(0, 0, 0, 0.10);">
             <div class="grid grid-cols-12 flex items-center justify-center">
-                <div class="md:col-span-8 col-span-12 flex flex-col items-center md:justify-start justify-center">
+                <div
+                    class="md:col-span-8 col-span-12 flex flex-col md:items-start items-center md:justify-start justify-center">
                     <p class="font-normal md:text-4xl text-xl text-main py-2">Guide, Share, Grow</p>
                     <p class="font-bold md:text-6xl text-3xl text-main md:py-2 md:text-start text-center"><span
                             class="text-lightBlue">Light</span> the way for
@@ -68,7 +95,7 @@
 
         <!-- ####################################### WHAT ############################# -->
 
-        <section class="md:px-14 px-5 mt-14">
+        <section class="md:px-14 px-5 md:mt-14 mt-7">
             <div class="flex flex-col items-center justify-center">
                 <p class="title md:text-sm text-base my-3">What you'll do as a Maarg mentor ?</p>
             </div>
@@ -76,10 +103,10 @@
                 <div class="md:col-span-6 col-span-12 md:mx-3">
                     <div class="box p-3 md:my-5 my-2 grid grid-cols-12 flex items-center justify-center"
                         style="border: 1px solid rgba(151, 151, 151, 0.15);">
-                        <div class="col-span-2 flex items-center justify-center">
+                        <div class="md:col-span-2 col-span-4 flex items-center justify-center">
                             <img src="img/one-one.svg" class="">
                         </div>
-                        <div class="col-span-10">
+                        <div class="md:col-span-10 col-span-8">
                             <div class="flex flex-col items-start justify-center py-2">
                                 <p class="md:text-2xl text-lg font-bold text-main pb-2">One-on-One Guidance</p>
                                 <p class="md:text-base text-sm font-normal text-main">Help students with questions about
@@ -90,10 +117,10 @@
                     </div>
                     <div class="box p-3 md:my-5 my-2 grid grid-cols-12 flex items-center justify-center"
                         style="border: 1px solid rgba(151, 151, 151, 0.15);">
-                        <div class="col-span-2 flex items-center justify-center">
+                        <div class="md:col-span-2 col-span-4 flex items-center justify-center">
                             <img src="img/support.svg" class="">
                         </div>
-                        <div class="col-span-10">
+                        <div class="md:col-span-10 col-span-8">
                             <div class="flex flex-col items-start justify-center py-2">
                                 <p class="md:text-2xl text-lg font-bold text-main pb-2">Personalised Support</p>
                                 <p class="md:text-base text-sm font-normal text-main">Give advice that fits each
@@ -106,10 +133,10 @@
                 <div class="md:col-span-6 col-span-12 md:mx-3">
                     <div class="box p-3 md:my-5 my-2 grid grid-cols-12 flex items-center justify-center"
                         style="border: 1px solid rgba(151, 151, 151, 0.15);">
-                        <div class="col-span-2 flex items-center justify-center">
+                        <div class="md:col-span-2 col-span-4 flex items-center justify-center">
                             <img src="img/honest.svg" class="">
                         </div>
-                        <div class="col-span-10">
+                        <div class="md:col-span-10 col-span-8">
                             <div class="flex flex-col items-start justify-center py-2">
                                 <p class="md:text-2xl text-lg font-bold text-main pb-2">Honest Insights</p>
                                 <p class="md:text-base text-sm font-normal text-main">Share your own experiences, the
@@ -120,10 +147,10 @@
                     </div>
                     <div class="box p-3 md:my-5 my-2 grid grid-cols-12 flex items-center justify-center"
                         style="border: 1px solid rgba(151, 151, 151, 0.15);">
-                        <div class="col-span-2 flex items-center justify-center">
+                        <div class="md:col-span-2 col-span-4 flex items-center justify-center">
                             <img src="img/speaker.svg" class="">
                         </div>
-                        <div class="col-span-10">
+                        <div class="md:col-span-10 col-span-8">
                             <div class="flex flex-col items-start justify-center py-2">
                                 <p class="md:text-2xl text-lg font-bold text-main pb-2">Be a Motivator</p>
                                 <p class="md:text-base text-sm font-normal text-main">Encourage them to overcome
@@ -260,20 +287,20 @@
                     gain insights, enhance skills, and foster personal growth in a supportive learning environment.</p>
             </div>
 
-            <div class="featureBox">
-                <div class="p-3 my-5 grid grid-cols-12 flex items-start justify-center rounded"
-                    style="background-color: rgba(247, 248, 251, 1);">
-                    <div class="col-span-6 flex items-center justify-center">
+            <div class="featureBox" style="background-color: rgba(247, 248, 251, 1);">
+                <div class="p-3 my-5 grid grid-cols-12 flex  items-start justify-center rounded"
+                    >
+                    <div class="col-span-6 md:flex hidden items-center justify-center">
                         <img src="img/featuresLeft.svg">
                     </div>
-                    <div class="col-span-6 ps-10">
-                        <div class="flex flex-col items-start justify-center">
+                    <div class="md:col-span-6 col-span-12 md:ps-10">
+                        <div class="flex flex-col md:items-start items-center justify-center">
                             <div class="py-2">
                                 <img src="img/features-1.svg" alt="">
                             </div>
                             <div class="">
-                                <p class="text-2xl font-bold text-main pb-2">Connect Mentees with Mentor</p>
-                                <p class="text-sm font-normal text-main w-5/6">Our platform enables mentees to connect
+                                <p class="md:text-2xl text-xl md:text-start text-center font-bold text-main pb-2">Connect Mentees with Mentor</p>
+                                <p class="text-sm font-normal text-main md:w-5/6 md:text-start text-center">Our platform enables mentees to connect
                                     with
                                     their
                                     mentors over high-quality video calls, facilitating a personal and effective
@@ -283,67 +310,76 @@
                         </div>
                     </div>
                 </div>
+                <div class="w-full md:hidden flex items-center justify-center">
+                    <img src="img/featuresLeft.svg">
+                </div>
             </div>
-            <div class="featureBox">
-                <div class="p-3 my-5 grid grid-cols-12 flex items-start justify-center rounded"
-                    style="background-color: rgba(247, 248, 251, 1);">
-                    <div class="col-span-6 flex items-center justify-center">
+            <div class="featureBox" style="background-color: rgba(247, 248, 251, 1);">
+                <div class="p-3 my-5 grid grid-cols-12 flex md:flex-row flex-col-reverse items-start justify-center rounded">
+                    <div class="col-span-6 md:flex hidden items-center justify-center">
                         <img src="img/featuresLeft-2.svg">
                     </div>
-                    <div class="col-span-6 ps-10">
-                        <div class="flex flex-col items-start justify-center">
+                    <div class="md:col-span-6 col-span-12 md:ps-10">
+                        <div class="flex flex-col md:items-start items-center justify-center">
                             <div class="py-2">
                                 <img src="img/features-2.svg" alt="">
                             </div>
                             <div class="">
-                                <p class="text-2xl font-bold text-main pb-2">Reschedule Meetings</p>
-                                <p class="text-sm font-normal text-main w-5/6">Our platform enables mentees to connect
+                                <p class="md:text-2xl text-xl md:text-start text-center font-bold text-main pb-2">Reschedule Meetings</p>
+                                <p class="text-sm font-normal text-main md:w-5/6 md:text-start text-center">Our platform enables mentees to connect
                                     with their mentors over high-quality video calls, facilitating a personal and
                                     effective learning experience.</p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="w-full md:hidden flex items-center justify-center">
+                    <img src="img/featuresLeft-2.svg">
+                </div>
             </div>
-            <div class="featureBox">
-                <div class="p-3 my-5 grid grid-cols-12 flex items-start justify-center rounded"
-                    style="background-color: rgba(247, 248, 251, 1);">
-                    <div class="col-span-6 flex items-center justify-center">
+            <div class="featureBox" style="background-color: rgba(247, 248, 251, 1);">
+                <div class="p-3 my-5 grid grid-cols-12 flex md:flex-row flex-col-reverse items-start justify-center rounded">
+                    <div class="col-span-6 md:flex hidden items-center justify-center">
                         <img src="img/featuresLeft-3.svg">
                     </div>
-                    <div class="col-span-6 ps-10">
-                        <div class="flex flex-col items-start justify-center">
+                    <div class="md:col-span-6 col-span-12 md:ps-10">
+                        <div class="flex flex-col md:items-start items-center justify-center">
                             <div class="py-2">
                                 <img src="img/features-3.svg" alt="">
                             </div>
                             <div class="">
-                                <p class="text-2xl font-bold text-main pb-2">Income for Mentors</p>
-                                <p class="text-sm font-normal text-main w-5/6">That’s why our platform provides mentees
+                                <p class="md:text-2xl text-xl md:text-start text-center font-bold text-main pb-2">Income for Mentors</p>
+                                <p class="text-sm font-normal text-main md:w-5/6 md:text-start text-center">That’s why our platform provides mentees
                                     with the opportunity to earn income based on their performance and contributions.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="w-full md:hidden flex items-center justify-center">
+                    <img src="img/featuresLeft-3.svg">
+                </div>
             </div>
-            <div class="featureBox">
-                <div class="p-3 my-5 grid grid-cols-12 flex items-start justify-center rounded"
-                    style="background-color: rgba(247, 248, 251, 1);">
-                    <div class="col-span-6 flex items-center justify-center">
+            <div class="featureBox" style="background-color: rgba(247, 248, 251, 1);">
+                <div class="p-3 my-5 grid grid-cols-12 flex md:flex-row flex-col-reverse items-start justify-center rounded">
+                    <div class="col-span-6 md:flex hidden items-center justify-center">
                         <img src="img/featuresLeft-4.svg">
                     </div>
-                    <div class="col-span-6 ps-10">
-                        <div class="flex flex-col items-start justify-center">
+                    <div class="md:col-span-6 col-span-12 md:ps-10">
+                        <div class="flex flex-col md:items-start items-center justify-center">
                             <div class="py-2">
                                 <img src="img/features-4.svg" alt="">
                             </div>
                             <div class="">
-                                <p class="text-2xl font-bold text-main pb-2">Contact Support</p>
-                                <p class="text-sm font-normal text-main w-5/6"> Our dedicated support team is always
+                                <p class="md:text-2xl text-xl md:text-start text-center font-bold text-main pb-2">Contact Support</p>
+                                <p class="text-sm font-normal text-main md:w-5/6 md:text-start text-center"> Our dedicated support team is always
                                     just a click away to assist you with any queries or issues you may encounter.</p>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="w-full md:hidden flex items-center justify-center">
+                    <img src="img/featuresLeft-4.svg">
                 </div>
             </div>
 
