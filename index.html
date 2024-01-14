@@ -13,6 +13,15 @@
         <script src="https://cdn.tailwindcss.com/3.3.0"></script>
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+
+        <link rel="stylesheet" type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
         <script src="https://cdn.tailwindcss.com/3.3.0"></script>
         <link rel="stylesheet" href="index.css">
     </head>
@@ -305,8 +314,72 @@
             </div>
 
             <div class="py-7 flex items-center justify-between">
-                <div class=" md:hidden flex flex-col items-center justify-center gap-5">
+                <!-- ####################################### SLIDER ############################# -->
+                <div class="stories w-full md:block hidden">
+                    <div class="px-3 h-full">
+                        <div class="md:p-6 p-3 grid grid-cols-12 rounded h-full"
+                            style="background: rgba(240, 249, 252, 1)">
+                            <div class="col-span-8 flex flex-col items-start justify-center">
+                                <p class="md:text-2xl text-base font-bold text-main py-3 md:text-start text-center">
+                                    Unsure
+                                    which career path to pursue? 
+                                </p>
+                                <p class="md:text-sm text-xs md:w-4/6 font-normal text-main text-start">They've
+                                    explored
+                                    diverse fields, faced challenges, and discovered their passions. Their
+                                    advice
+                                    can light
+                                    up your options.</p>
+                            </div>
+                            <div class="col-span-4 flex items-center justify-center">
+                                <img src="img/map-location.svg" class="w-3/5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 h-full">
+                        <div class="md:p-6 p-3 grid grid-cols-12 rounded h-full"
+                            style="background: linear-gradient(278deg, #5EB6DA 0.88%, #3293BB 100.58%);">
+                            <div class="col-span-8 flex flex-col items-start justify-center">
+                                <p class="md:text-2xl text-base font-bold text-white py-3 md:text-start text-center">
+                                    Need
+                                    help choosing the right
+                                    college?
+                                </p>
+                                <p class="md:text-sm text-xs md:w-4/6 font-normal text-white text-start">Our
+                                    mentors
+                                    have
+                                    been there,
+                                    cracked
+                                    the entrance
+                                    exams, and can share their insights on different institutions and courses.
+                                </p>
+                            </div>
+                            <div class="col-span-4 flex items-center justify-center">
+                                <img src="img/forget-password.svg" class="w-3/5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 h-full">
+                        <div class="md:p-6 p-3 grid grid-cols-12 rounded h-full"
+                            style="background: rgba(240, 249, 252, 1)">
+                            <div class="col-span-8 flex flex-col items-start justify-center">
+                                <p class="md:text-xl text-base font-bold text-main py-3 md:text-start text-center">
+                                    Feeling overwhelmed by college applications?
+                                </p>
+                                <p class="md:text-sm text-xs md:w-4/6 font-normal text-main text-start">Get
+                                    expert guidance on essays, interviews, and navigating the application
+                                    process with confidence.</p>
+                            </div>
+                            <div class="col-span-4 flex items-center justify-center">
+                                <img src="img/feeling.svg" class="w-3/5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- ####################################### MOBILE OFFER ############################# -->
+
+                <div class="md:hidden flex flex-col items-center justify-center gap-5">
                     <div class="md:p-10 p-3 grid grid-cols-12 rounded"
                         style="background: linear-gradient(278deg, #5EB6DA 0.88%, #3293BB 100.58%);">
                         <div class="col-span-8 flex flex-col items-start justify-center">
@@ -321,12 +394,11 @@
                                 exams, and can share their insights on different institutions and courses.</p>
                         </div>
                         <div class="col-span-4 flex items-center justify-center">
-                            <img src="img/forget-password.svg" class="w-2/3">
+                            <img src="img/forget-password.svg" class="w-3/5">
                         </div>
                     </div>
 
-                    <div class="md:p-10 p-3 grid grid-cols-12 rounded"
-                        style="background: rgba(240, 249, 252, 1)">
+                    <div class="md:p-10 p-3 grid grid-cols-12 rounded" style="background: rgba(240, 249, 252, 1)">
                         <div class="col-span-8 flex flex-col items-start justify-center">
                             <p class="md:text-2xl text-base font-bold text-main py-3 md:text-center text-start">
                                 Unsure
@@ -340,14 +412,12 @@
                                 up your options.</p>
                         </div>
                         <div class="col-span-4 flex items-center justify-center">
-                            <img src="img/map-location.svg" class="w-2/3">
+                            <img src="img/map-location.svg" class="w-3/5">
                         </div>
                     </div>
 
 
-
-                    <div class="md:p-10 p-3 grid grid-cols-12 rounded"
-                        style="background: rgba(240, 249, 252, 1);">
+                    <div class="md:p-10 p-3 grid grid-cols-12 rounded" style="background: rgba(240, 249, 252, 1);">
                         <div class="col-span-8 flex flex-col items-start justify-center">
                             <p class="md:text-2xl text-base font-bold text-main py-3 md:text-center text-start">
                                 Feeling
@@ -360,89 +430,7 @@
                             </p>
                         </div>
                         <div class="col-span-4 flex items-center justify-center">
-                            <img src="img/feeling.svg" class="w-2/3">
-                        </div>
-                    </div>
-
-                </div>
-
-                <div id="carouselExampleSlidesOnly" class="relative md:block hidden" data-te-carousel-init
-                    data-te-ride="carousel">
-                    <!--Carousel items-->
-                    <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-                        <!--First item-->
-                        <div class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                            data-te-carousel-item data-te-carousel-active>
-                            <div class="flex items-center justify-center">
-                                <div class="md:p-10 p-3 grid grid-cols-12 rounded md:w-4/6"
-                                    style="background: rgba(240, 249, 252, 1)">
-                                    <div class="col-span-8 flex flex-col items-start justify-center">
-                                        <p
-                                            class="md:text-2xl text-base font-bold text-main py-3 md:text-center text-start">
-                                            Unsure
-                                            which career path to pursue? 
-                                        </p>
-                                        <p class="md:text-sm text-xs md:w-4/6 font-normal text-main text-start">They've
-                                            explored
-                                            diverse fields, faced challenges, and discovered their passions. Their
-                                            advice
-                                            can light
-                                            up your options.</p>
-                                    </div>
-                                    <div class="col-span-4 flex items-center justify-center">
-                                        <img src="img/map-location.svg" class="w-2/3">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Second item-->
-                        <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                            data-te-carousel-item>
-                            <div class="flex items-center justify-center">
-                                <div class="md:p-10 p-3 grid grid-cols-12 rounded md:w-4/6"
-                                    style="background: linear-gradient(278deg, #5EB6DA 0.88%, #3293BB 100.58%);">
-                                    <div class="col-span-8 flex flex-col items-start justify-center">
-                                        <p
-                                            class="md:text-2xl text-base font-bold text-white py-3 md:text-center text-start">
-                                            Need
-                                            help choosing the right
-                                            college?
-                                        </p>
-                                        <p class="md:text-sm text-xs md:w-4/6 font-normal text-white text-start">Our
-                                            mentors
-                                            have
-                                            been there,
-                                            cracked
-                                            the entrance
-                                            exams, and can share their insights on different institutions and courses.
-                                        </p>
-                                    </div>
-                                    <div class="col-span-4 flex items-center justify-center">
-                                        <img src="img/forget-password.svg" class="w-2/3">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Third item-->
-                        <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                            data-te-carousel-item>
-                            <div class="flex items-center justify-center">
-                                <div class="md:p-10 p-3 grid grid-cols-12 rounded md:w-4/6"
-                                    style="background: rgba(240, 249, 252, 1)">
-                                    <div class="col-span-8 flex flex-col items-start justify-center">
-                                        <p
-                                            class="md:text-xl text-base font-bold text-main py-3 md:text-center text-start">
-                                            Feeling overwhelmed by college applications?
-                                        </p>
-                                        <p class="md:text-sm text-xs md:w-4/6 font-normal text-main text-start">Get
-                                            expert guidance on essays, interviews, and navigating the application
-                                            process with confidence.</p>
-                                    </div>
-                                    <div class="col-span-4 flex items-center justify-center">
-                                        <img src="img/feeling.svg" class="w-2/3">
-                                    </div>
-                                </div>
-                            </div>
+                            <img src="img/feeling.svg" class="w-3/5">
                         </div>
                     </div>
                 </div>
@@ -458,10 +446,7 @@
         </section>
 
 
-
-
         <!-- ####################################### FAQ ############################# -->
-
         <section class="md:mx-14 mx-5 my-10 rounded" style="background: rgba(247, 248, 251, 1);">
             <div class="grid grid-cols-12 md:px-5 px-3 flex md:flex-row flex-col items-center">
                 <div class="md:col-span-4 col-span-12">
@@ -613,6 +598,23 @@
             </div>
         </footer>
 
+        <!-- !-- ############################# script ##############################  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script type="text/javascript">
+            window.addEventListener('scroll', (event) => {
+                // handle the scroll event 
+                console.log(event)
+            });
+            $('.stories').slick({
+                slidesToShow: 1.6,
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                
+            });
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
         <script src="index.js"></script>
     </body>
