@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap"
+            rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+        <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <!-- Main navigation container -->
+        <nav class="flex w-full items-center justify-between py-3 md:px-14 px-5"
+            style="box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.05);">
+            <div class="flex w-full flex-wrap items-center justify-between">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo.svg">
+                    </a>
+                </div>
+
+
+                <!-- Collapsible navigation container -->
+                <div class="!visible hidden basis-[100%] items-center lg:!flex lg:basis-auto"
+                    id="navbarSupportedContent1" data-te-collapse-item>
+                    <!-- Logo -->
+
+                    <div
+                        class="middleText flex md:flex-row flex-col md:items-center items-start justify-center md:py-0 py-3 gap-x-7">
+                        <a href="mentor.html" class="text-main text-sm font-semibold md:py-0 py-2">Become a Mentor</a>
+                        <div class="flex items-center gap-x-2">
+                            <p class="text-main text-sm font-semibold md:py-0 py-2">Resources</p>
+                            <img src="img/nav-arrow.svg">
+                        </div>
+                        <p class="text-main text-sm font-semibold md:py-0 py-2">Contact Us</p>
+                    </div>
+                </div>
+
+                <!-- Right elements -->
+                <div class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded-xl btn-Bg">
+                    <img src="img/diamond.svg" width="15px">
+                    <p class="text-main md:text-sm text-xs font-semibold text-white">Get early access</p>
+                </div>
+                <!-- Hamburger button for mobile view -->
+                <button
+                    class="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+                    type="button" data-te-collapse-init data-te-target="#navbarSupportedContent1"
+                    aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- Hamburger icon -->
+                    <img src="img/navDropDown.svg">
+                </button>
+            </div>
+        </nav>
+
+        <section class="md:mx-14 md:my-10 m-5">
+            <div style="background: rgba(247, 248, 251, 1);">
+                <div class="flex items-center justify-center">
+                    <p class="title px-5">Fulfilment Policy</p>
+                </div>
+                <div class="md:px-7 px-3  md:py-5 py-3">
+                    <p class="font-bold md:text-lg text-base py-4 text-black">Fulfilment: </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">
+                        As soon as the customer purchases the plan, fulfilment happens online and calls/credits are
+                        allotted immediately.</p>
+
+                    <p class="font-bold md:text-lg text-base py-4 text-black">Refund Policy:</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">
+                        The amount of refund payable shall only be limited to the amount paid by the customer for
+                        services which were not rendered to the customer by Maarg. The deduction shall be made towards
+                        the value of any cashback, discounts or rewards, including vouchers (if applicable)..
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">
+                        A refund request will be deemed valid only if it is made through an email to
+                        support@mymaarg.com, for registering the refund request, within 15 (Fifteen) calendar days from
+                        the payment date (“Payment Date”). It is clarified that no refunds shall be processed for the
+                        refund request made after 15 (Fifteen) days from the Payment Date* of the course fee.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">
+                        Refund shall be calculated on valid credit remaining in your account as of the date the refund
+                        is requested. For more details on Refund Policy please click here.
+                    </p>
+                    <p class="font-bold md:text-lg text-base py-4 text-black">Refund Process:</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">
+                        We aim to process and refund requests within 7-10 business days of receiving the request.If
+                        request is made as per our refund policy However, if there is a delay, please notify us at
+                        support@mymaarg.com. During the refund process, we may request that you validate key information
+                        required to process your refund.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ####################################### FOOTER ############################# -->
+        <footer class="py-3 px-14 btn-Bg md:block hidden">
+            <div class="flex items-center justify-between py-3 border-b">
+                <div class="w-1/3 logo">
+                    <a href="index.html">
+                        <img src="img/footerLogo.svg">
+                    </a>
+                </div>
+                <div class="w-1/3 middleText flex items-center justify-center gap-x-7">
+                    <a href="mentor.html" class="text-main text-sm font-semibold text-white">Become a Mentor</a>
+                    <a href="" class="text-main text-sm font-semibold text-white">Blog</a>
+                    <a href="" class="text-main text-sm font-semibold text-white">Webinar</a>
+                    <a href="" class="text-main text-sm font-semibold text-white">Contact Us</a>
+                </div>
+                <div class="w-1/3">
+                    <div class="flex items-center justify-end">
+                        <div class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded bg-white">
+                            <img src="img/footerDiamond.svg">
+                            <p class="text-main text-sm font-semibold text-main">Get early access</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center justify-between py-3 ">
+                <div class="w-1/3 logo">
+                    <p class="text-white text-sm font-normal">Copyright Maarg Mentorship Pvt. Ltd .© 2024.</p>
+                </div>
+                <div class="w-1/3 middleText flex items-center justify-center gap-x-7">
+                    <a href="policy.html" class="text-main text-sm font-normal text-white">Privacy Policy</a>
+                    <a href="terms.html" class="text-main text-sm font-normal text-white">Terms and Conditions</a>
+                    <a href="fulfilment.html" class="text-main text-sm font-normal text-white">Fulfilment Policy</a>
+                </div>
+                <div class="w-1/3 flex items-center justify-end gap-x-3 py-2">
+                    <img src="img/facebook.svg">
+                    <img src="img/twitter.svg">
+                    <img src="img/linkedin.svg">
+                    <img src="img/youtube.svg">
+                    <img src="img/instagram.svg">
+                </div>
+            </div>
+        </footer>
+
+        <!-- ####################################### MOBILE FOOTER ############################# -->
+        <footer class="py-3 px-5 btn-Bg md:hidden block">
+            <div class="flex flex-col items-center justify-between py-5 gap-y-5 border-b">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/footerLogo.svg">
+                    </a>
+                </div>
+                <div class="flex items-center gap-x-3 py-2 px-3">
+                    <img src="img/facebook.svg">
+                    <img src="img/twitter.svg">
+                    <img src="img/linkedin.svg">
+                    <img src="img/youtube.svg">
+                    <img src="img/instagram.svg">
+                </div>
+                <div class="middleText flex items-center justify-center gap-x-3">
+                    <p class="text-main text-sm font-semibold text-white">Become a Mentor</p>
+                    <p class="text-main text-sm font-semibold text-white">Blog</p>
+                    <p class="text-main text-sm font-semibold text-white">Webinar</p>
+                    <p class="text-main text-sm font-semibold text-white">Contact Us</p>
+                </div>
+                <div class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded-xl bg-white">
+                    <img src="img/footerDiamond.svg">
+                    <p class="text-main text-sm font-semibold text-main">Get early access</p>
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-between pb-4">
+                <div class="middleText flex items-center justify-between py-5">
+                    <a href="policy.html" class="text-main text-sm font-normal text-white">Privacy Policy</a>
+                    <a href="terms.html" class="text-main text-sm font-normal text-white">Terms and Conditions</a>
+                    <a href="fulfilment.html" class="text-main text-sm font-normal text-white">Fulfilment Policy</a>
+                </div>
+                <div class="">
+                    <p class="text-white text-sm font-normal text-center" style="color: rgba(255, 255, 255, 0.6);">
+                        Copyright Maarg
+                        Mentorship Pvt. Ltd .© 2024.</p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+
+</html>
