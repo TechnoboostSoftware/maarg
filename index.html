@@ -99,6 +99,32 @@
                     of
                     colleges, each ready to guide you on your journey to getting into the college of your dreams.</p>
             </div>
+            <!-- <div class="mentors w-full">
+                <div class="rounded flex py-2 px-3 mx-2 justify-center items-start">
+                    <img src="img/mentor-1.svg">
+                </div>
+                <div class="rounded flex py-2 px-3 mx-2 justify-center items-start">
+                    <img src="img/mentor-2.svg">
+
+                </div>
+
+                <div class="rounded flex py-2 px-3 mx-2 justify-center items-start">
+                    <img src="img/mentor-3.svg">
+
+                </div>
+                <div class="rounded flex py-2 px-3 mx-2 justify-center items-start">
+                    <img src="img/mentor-4.svg">
+
+                </div>
+                <div class="rounded flex py-2 px-3 mx-2 justify-center items-start">
+                    <img src="img/mentor-5.svg">
+                </div>
+            </div>
+            <div class="flex justify-center items-center pt-5 pb-3">
+                <img src="img/arrow-square-right.svg" class="previousBtn inline">
+                <img src="img/arrow-square-left.svg" class="nextBtn inline">
+            </div> -->
+
             <div class="flex items-center justify-between gap-x-4 py-7">
                 <div class="w-1/10 flex items-center justify-center">
                     <img src="img/arrow-square-left.svg">
@@ -474,7 +500,7 @@
                                 onclick="dropDownAnswer(this)" id="question-1">
                                 <p class="text-base font-semibold text-main">Who are the mentors on Maarg?</p>
                                 <img src="img/Plus.svg" class="dropUp">
-                                <img src="images/dash.svg" class="dropDown d-none">
+                                <img src="img/dash.svg" class="dropDown d-none">
                             </div>
                             <div class="d-none body px-5 py-3" id="answer-1">
                                 <p class="text-base font-normal text-main text-justify">
@@ -490,7 +516,7 @@
                                 <p class="text-base font-semibold text-main">What kind of help can I get from a mentor?
                                 </p>
                                 <img src="img/Plus.svg" class="dropUp">
-                                <img src="images/dash.svg" class="dropDown d-none">
+                                <img src="img/dash.svg" class="dropDown d-none">
                             </div>
                             <div class="d-none body px-5 py-3" id="answer-2">
                                 <p class="text-base font-normal text-main text-justify">
@@ -507,7 +533,7 @@
                                 onclick="dropDownAnswer(this)" id="question-3">
                                 <p class="text-base font-semibold text-main">How do I find the right mentor for me?</p>
                                 <img src="img/Plus.svg" class="dropUp">
-                                <img src="images/dash.svg" class="dropDown d-none">
+                                <img src="img/dash.svg" class="dropDown d-none">
                             </div>
                             <div class="d-none body px-5 py-3" id="answer-3">
                                 <p class="text-base font-normal text-main text-justify">
@@ -527,7 +553,7 @@
         </section>
 
         <!-- ####################################### FOOTER ############################# -->
-        <footer class="py-3 px-14 btn-Bg md:block hidden">
+        <footer class="py-3 px-14 btn-Bg md:block hidden" style="background: rgba(15, 35, 93, 1);">
             <div class="flex items-center justify-between py-3 border-b">
                 <div class="w-1/3 logo">
                     <a href="index.html">
@@ -569,7 +595,7 @@
         </footer>
 
         <!-- ####################################### MOBILE FOOTER ############################# -->
-        <footer class="py-3 px-5 btn-Bg md:hidden block">
+        <footer class="py-3 px-5 btn-Bg md:hidden block" style="background: rgba(15, 35, 93, 1);">
             <div class="flex flex-col items-center justify-between py-5 gap-y-5 border-b">
                 <div class="logo">
                     <a href="index.html">
@@ -623,6 +649,31 @@
                 autoplay: true,
                 autoplaySpeed: 2000,
 
+            });
+        </script>
+        <script type="text/javascript">
+            window.addEventListener('scroll', (event) => {
+            });
+            $('.mentors').slick({
+                nextArrow: '.nextBtn',
+                prevArrow: '.previousBtn',
+                slidesToShow: 5,
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            arrows: false,
+                        }
+                    },
+                ]
             });
         </script>
         <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
