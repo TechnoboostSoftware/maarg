@@ -99,30 +99,36 @@
                     of
                     colleges, each ready to guide you on your journey to getting into the college of your dreams.</p>
             </div>
-            <!-- <div class="mentors w-full">
-                <div class="rounded flex py-2 px-3 mx-2 justify-center items-start">
-                    <img src="img/mentor-1.svg">
+            <!-- <div class="flex items-center justify-between py-5">
+                <div class="flex justify-center items-center pt-5 pb-3">
+                    <img src="img/arrow-square-right.svg" class="previousBtn">
                 </div>
-                <div class="rounded flex py-2 px-3 mx-2 justify-center items-start">
-                    <img src="img/mentor-2.svg">
-
+                <div class="mentors w-full">
+                    <div class="flex justify-center items-center">
+                        <img src="img/mentor-1.svg">
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <img src="img/mentor-2.svg">
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <img src="img/mentor-3.svg">
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <img src="img/mentor-4.svg">
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <img src="img/mentor-5.svg">
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <img src="img/mentor-2.svg">
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <img src="img/mentor-3.svg">
+                    </div>
                 </div>
-
-                <div class="rounded flex py-2 px-3 mx-2 justify-center items-start">
-                    <img src="img/mentor-3.svg">
-
+                <div class="flex justify-center items-center pt-5 pb-3 nextBtn">
+                    <img src="img/arrow-square-left.svg" class="">
                 </div>
-                <div class="rounded flex py-2 px-3 mx-2 justify-center items-start">
-                    <img src="img/mentor-4.svg">
-
-                </div>
-                <div class="rounded flex py-2 px-3 mx-2 justify-center items-start">
-                    <img src="img/mentor-5.svg">
-                </div>
-            </div>
-            <div class="flex justify-center items-center pt-5 pb-3">
-                <img src="img/arrow-square-right.svg" class="previousBtn inline">
-                <img src="img/arrow-square-left.svg" class="nextBtn inline">
             </div> -->
 
             <div class="flex items-center justify-between gap-x-4 py-7">
@@ -652,28 +658,28 @@
             });
         </script>
         <script type="text/javascript">
-            window.addEventListener('scroll', (event) => {
-            });
-            $('.mentors').slick({
-                nextArrow: '.nextBtn',
-                prevArrow: '.previousBtn',
-                slidesToShow: 5,
-                centerMode: true,
-                centerPadding: '60px',
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                responsive: [
-                    {
-                        breakpoint: 767,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 1,
-                            infinite: true,
-                            arrows: false,
-                        }
-                    },
-                ]
+            $(document).ready(function () {
+                $('.mentors').slick({
+                    nextArrow: '.nextBtn',
+                    prevArrow: '.previousBtn',
+                    slidesToShow: 4,
+                    centerMode: true,
+                    centerPadding: '60px',
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    responsive: [
+                        {
+                            breakpoint: 767,
+                            settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 1,
+                                infinite: true,
+                                arrows: false,
+                            }
+                        },
+                    ]
+                });
             });
         </script>
         <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
