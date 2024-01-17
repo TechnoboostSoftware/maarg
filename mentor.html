@@ -13,7 +13,7 @@
         <script src="https://cdn.tailwindcss.com/3.3.0"></script>
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
-        <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <link rel="stylesheet" href="index.css">
     </head>
 
@@ -22,32 +22,53 @@
         <nav class="flex w-full items-center justify-between py-3 md:px-14 px-5"
             style="box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.05);">
             <div class="flex w-full flex-wrap items-center justify-between">
-                <div class="logo">
+                <div class="logo" role="button">
                     <a href="index.html">
                         <img src="img/logo.svg">
                     </a>
                 </div>
 
-
-                <!-- Collapsible navigation container -->
                 <div class="!visible hidden basis-[100%] items-center lg:!flex lg:basis-auto"
                     id="navbarSupportedContent1" data-te-collapse-item>
                     <!-- Logo -->
-
                     <div
                         class="middleText flex md:flex-row flex-col md:items-center items-start justify-center md:py-0 py-3 gap-x-7">
-                        <a href="mentor.html" class="text-main text-sm font-semibold rounded p-2 "
-                            style="background: rgba(96, 187, 224, 0.20);">Become a Mentor</a>
-                        <div class="flex items-center gap-x-2">
-                            <p class="text-main text-sm font-semibold md:py-0 py-2">Resources</p>
-                            <img src="img/nav-arrow.svg">
+                        <a href="mentor.html" class="text-main text-sm font-semibold md:py-0 py-2">Become a Mentor</a>
+                        <div class="md:flex hidden flex-col md:items-center items-start relative">
+                            <div class="flex items-center gap-x-2" role="button" onclick="resourcesDropDown('web')">
+                                <p class="text-main text-sm font-semibold md:py-0 py-2">Resources</p>
+                                <img src="img/nav-arrow.svg">
+
+                            </div>
+                            <div class="flex bg-white flex-col md:absolute flex md:items-center items-start justify-center md:mt-6 py-2 px-1 hidden"
+                                id="resourcesDropDown" style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);">
+                                <a href=""
+                                    class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect border-b">Blog</a>
+                                <a href=""
+                                    class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect">Webinar</a>
+                            </div>
                         </div>
-                        <p class="text-main text-sm font-semibold md:py-0 py-2">Contact Us</p>
+                        <div class="md:hidden flex flex-col w-full items-start relative">
+                            <div class="flex items-center gap-x-2" role="button" onclick="resourcesDropDown('phone')">
+                                <p class="text-main text-sm font-semibold md:py-0 py-2">Resources</p>
+                                <img src="img/nav-arrow.svg">
+
+                            </div>
+                            <div class="flex bg-white flex-col flex w-full  items-start justify-center rounded py-2 px-5 hidden"
+                                id="resourcesDropDownMobile"
+                                style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10); background: rgba(96, 187, 224, 0.20);">
+                                <a href=""
+                                    class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect border-b">Blog</a>
+                                <a href=""
+                                    class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect">Webinar</a>
+                            </div>
+                        </div>
+                        <a class="text-main text-sm font-semibold md:py-0 py-2" role="button">Contact Us</a>
                     </div>
                 </div>
 
                 <!-- Right elements -->
-                <div class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded-xl btn-Bg">
+                <div class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded-xl btn-Bg" role="button">
                     <img src="img/diamond.svg" width="15px">
                     <p class="text-main md:text-sm text-xs font-semibold text-white">Get early access</p>
                 </div>
@@ -457,8 +478,8 @@
         <!-- ####################################### FAQ ############################# -->
 
         <section class="md:mx-14 mx-5 my-10 rounded" style="background: rgba(247, 248, 251, 1);">
-            <div class="grid grid-cols-12 md:px-5 px-3 flex md:flex-row flex-col items-center">
-                <div class="md:col-span-4 col-span-12">
+            <div class="grid grid-cols-12 md:px-5 px-3 flex md:flex-row flex-col items-start">
+                <div class="md:col-span-4 col-span-12 h-full">
                     <div class="flex flex-col items-center justify-center">
                         <p class="title md:text-sm text-base">FAQ</p>
                         <p class="text-main font-bold md:text-3xl text-2xl py-4 text-center">Frequently Asked Questions
@@ -466,7 +487,7 @@
                         <img src="img/faqImg.svg" class="md:block hidden">
                     </div>
                 </div>
-                <div class="md:col-span-8 col-span-12">
+                <div class="md:col-span-8 col-span-12 h-full flex flex-col justify-center">
                     <div class="">
                         <div class="flex flex-col border w-full radius-10 my-2 close rounded-lg bg-white">
                             <div class="flex justify-between py-4 px-5 items-center gap-7"
@@ -549,7 +570,7 @@
                 </div>
                 <div class="w-1/3">
                     <div class="flex items-center justify-end">
-                        <div class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded bg-white">
+                        <div class="flex items-center gap-x-2 bg-white my-3 py-2 px-5 rounded-xl btn-Bg">
                             <img src="img/footerDiamond.svg">
                             <p class="text-main text-sm font-semibold text-main">Get early access</p>
                         </div>
@@ -614,8 +635,6 @@
                 </div>
             </div>
         </footer>
-
-        <script src="index.js"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
         <script src="index.js"></script>
