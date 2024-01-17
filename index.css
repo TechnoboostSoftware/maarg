@@ -72,3 +72,6 @@
 .open .dropDown {
     display: block;
 }
+.navDropEffect:hover {
+    background: rgba(187, 184, 184, 0.514);
+}

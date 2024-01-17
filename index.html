@@ -31,31 +31,35 @@
         <nav class="flex w-full items-center justify-between py-3 md:px-14 px-5"
             style="box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.05);">
             <div class="flex w-full flex-wrap items-center justify-between">
-                <div class="logo">
+                <div class="logo" role="button">
                     <a href="index.html">
                         <img src="img/logo.svg">
                     </a>
                 </div>
 
-
-                <!-- Collapsible navigation container -->
                 <div class="!visible hidden basis-[100%] items-center lg:!flex lg:basis-auto"
                     id="navbarSupportedContent1" data-te-collapse-item>
                     <!-- Logo -->
-
                     <div
                         class="middleText flex md:flex-row flex-col md:items-center items-start justify-center md:py-0 py-3 gap-x-7">
                         <a href="mentor.html" class="text-main text-sm font-semibold md:py-0 py-2">Become a Mentor</a>
-                        <div class="flex items-center gap-x-2">
-                            <p class="text-main text-sm font-semibold md:py-0 py-2">Resources</p>
-                            <img src="img/nav-arrow.svg">
+                        <div class="flex flex-col md:items-center items-start relative">
+                            <div class="flex items-center gap-x-2" role="button" onclick="resourcesDropDown()">
+                                <p class="text-main text-sm font-semibold md:py-0 py-2">Resources</p>
+                                <img src="img/nav-arrow.svg">
+
+                            </div>
+                            <div class="flex bg-white flex-col md:absolute flex md:items-center items-start justify-center md:mt-6 py-2 px-1 hidden" id="resourcesDropDown" style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);">
+                                <a href="" class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect border-b">Blog</a>
+                                <a href="" class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect">Webinar</a>
+                            </div>
                         </div>
-                        <p class="text-main text-sm font-semibold md:py-0 py-2">Contact Us</p>
+                        <a class="text-main text-sm font-semibold md:py-0 py-2" role="button">Contact Us</a>
                     </div>
                 </div>
 
                 <!-- Right elements -->
-                <div class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded-xl btn-Bg">
+                <div class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded-xl btn-Bg" role="button">
                     <img src="img/diamond.svg" width="15px">
                     <p class="text-main md:text-sm text-xs font-semibold text-white">Get early access</p>
                 </div>

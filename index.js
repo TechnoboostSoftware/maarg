@@ -8,3 +8,6 @@ function dropDownAnswer(element) {
         element.parentElement.classList.remove('open');
     }
 }
+function resourcesDropDown() {
+$("#resourcesDropDown").toggleClass("hidden")
+}
