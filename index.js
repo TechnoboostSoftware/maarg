@@ -8,6 +8,11 @@ function dropDownAnswer(element) {
         element.parentElement.classList.remove('open');
     }
 }
-function resourcesDropDown() {
-$("#resourcesDropDown").toggleClass("hidden")
+function resourcesDropDown(id) {
+    if (id == 'web') {
+        $("#resourcesDropDown").toggleClass("hidden")
+    } else {
+        $("#resourcesDropDownMobile").toggleClass("hidden")
+
+    }
 }
