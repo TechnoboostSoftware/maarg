@@ -77,26 +77,25 @@
     background: rgba(187, 184, 184, 0.514);
 }
 
-@media only screen and (max-width: 586px) {
-    .offerHover {
-        background: rgba(240, 249, 252, 1);
-    }
 
-    .offerHover:hover {
-        background: linear-gradient(278deg, #5EB6DA 0.88%, #3293BB 100.58%) !important;
-    }
-
-    .offerHover p:hover {
-       color: white !important;
-    }
-
+.offerHover {
+    background: rgba(240, 249, 252, 1);
 }
+
+.offerHover:hover {
+    background: linear-gradient(278deg, #5EB6DA 0.88%, #3293BB 100.58%) !important;
+}
+
+.offerHover:hover p{
+    color: white !important;
+}
+
 
 /* ########################## LANDING PAGE WORD ############# */
 
 .wrapper {
     box-sizing: content-box;
-    height: 90px;
+    height: 80px;
     display: flex;
 }
 
