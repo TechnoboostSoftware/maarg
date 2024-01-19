@@ -72,6 +72,56 @@
 .open .dropDown {
     display: block;
 }
+
 .navDropEffect:hover {
     background: rgba(187, 184, 184, 0.514);
+}
+
+@media only screen and (max-width: 586px) {
+    .offerHover {
+        background: rgba(240, 249, 252, 1);
+    }
+
+    .offerHover:hover {
+        background: linear-gradient(278deg, #5EB6DA 0.88%, #3293BB 100.58%) !important;
+    }
+
+    .offerHover p:hover {
+       color: white !important;
+    }
+
+}
+
+/* ########################## LANDING PAGE WORD ############# */
+
+.wrapper {
+    box-sizing: content-box;
+    height: 90px;
+    display: flex;
+}
+
+.words {
+    overflow: hidden;
+}
+
+.words span {
+    display: block;
+    height: 100%;
+    padding-left: 10px;
+    animation: spin_words 6s infinite;
+}
+
+
+@keyframes spin_words {
+    33% {
+        transform: translateY(-100%);
+    }
+
+    66% {
+        transform: translateY(-200%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
 }
