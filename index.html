@@ -10,7 +10,6 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap"
             rel="stylesheet">
-        <script src="https://cdn.tailwindcss.com/3.3.0"></script>
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
 
@@ -21,6 +20,8 @@
         <script type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+        <script async src="https://tally.so/widgets/embed.js"></script>
 
         <script src="https://cdn.tailwindcss.com/3.3.0"></script>
         <link rel="stylesheet" href="index.css">
@@ -72,18 +73,39 @@
                                     class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect">Webinar</a>
                             </div>
                         </div>
-                        <a class="text-main text-sm font-semibold md:py-0 py-2" role="button">Contact Us</a>
+                        <div class="items-center justify-center w-full md:hidden flex flex-col gap-x-4">
+                            <a href="#tally-open=3jPMl1&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
+                                class="flex w-full mt-3 items-center justify-center gap-x-2 leftBtn py-2 px-3 rounded-xl btn-Bg"
+                                role="button">
+                                <img src="img/diamond.svg" width="15px">
+                                <span class="text-main md:text-sm text-xs font-semibold text-white">Get early
+                                    access</span>
+                            </a>
+                            <a class="text-main w-full mt-3 text-sm font-semibold py-2 px-3 rounded-xl gap-x-3 flex items-center justify-center"
+                                style="border: 1px solid #1D2D5A;"
+                                href="#tally-open=mDz1zE&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
+                                role="button"><img src="img/sms-tracking.svg"><span> Contact Us</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Right elements -->
-                <div class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded-xl btn-Bg" role="button">
-                    <img src="img/diamond.svg" width="15px">
-                    <p class="text-main md:text-sm text-xs font-semibold text-white">Get early access</p>
+                <div class="items-center md:flex hidden gap-x-4">
+                    <a class="text-main text-sm font-semibold py-2 px-3 rounded-xl gap-x-3 flex items-center"
+                        style="border: 1px solid #1D2D5A;"
+                        href="#tally-open=mDz1zE&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
+                        role="button"><img src="img/sms-tracking.svg"><span> Contact Us</span></a>
+
+                    <a href="#tally-open=3jPMl1&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
+                        class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded-xl btn-Bg" role="button">
+                        <img src="img/diamond.svg" width="15px">
+                        <span class="text-main md:text-sm text-xs font-semibold text-white">Get early access</span>
+                    </a>
                 </div>
                 <!-- Hamburger button for mobile view -->
                 <button
-                    class="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+                    class="block  border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
                     type="button" data-te-collapse-init data-te-target="#navbarSupportedContent1"
                     aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
                     <!-- Hamburger icon -->
@@ -103,10 +125,11 @@
                         done that.
                     </p>
                 </div>
-                <div class="flex items-center gap-x-2 leftBtn my-3 py-2 px-3 rounded-xl btn-Bg">
-                    <img src="img/diamond.svg">
-                    <p class="text-main text-sm font-semibold text-white">Get early access</p>
-                </div>
+                <a href="#tally-open=3jPMl1&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
+                    class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded-xl btn-Bg" role="button">
+                    <img src="img/diamond.svg" width="15px">
+                    <span class="text-main md:text-sm text-xs font-semibold text-white">Get early access</span>
+                </a>
                 <img src="img/landingImg.svg" class="md:block hidden">
                 <img src="img/landingImgMobile.svg" class="md:hidden block">
             </div>
@@ -115,45 +138,41 @@
         <!-- ####################################### MENTORS ############################# -->
 
         <section class="md:px-14 px-5">
-            <div class="flex flex-col items-center justify-center pt-14">
+            <div class="flex flex-col items-center justify-center md:pt-14 pt-0">
                 <p class="title md:text-sm text-base my-3">Mentors</p>
                 <p class=" md:w-1/2 text-base font-normal text-gray text-center">Connect with students from thousands
                     of
                     colleges, each ready to guide you on your journey to getting into the college of your dreams.</p>
             </div>
-            <!-- <div class="flex items-center justify-between py-5">
-                <div class="flex justify-center items-center pt-5 pb-3">
-                    <img src="img/arrow-square-right.svg" class="previousBtn">
-                </div>
-                <div class="mentors w-full">
+            <div class="flex items-center justify-center w-full p-5">
+                <img src="img/arrow-square-left.svg" id="nextBtn">
+                <div class="mentors w-full px-5">
                     <div class="flex justify-center items-center">
-                        <img src="img/mentor-1.svg">
+                        <img class="md:w-6/7 px-3" src="img/mentor-1.svg">
                     </div>
                     <div class="flex justify-center items-center">
-                        <img src="img/mentor-2.svg">
+                        <img class="md:w-6/7 px-3" src="img/mentor-2.svg">
                     </div>
                     <div class="flex justify-center items-center">
-                        <img src="img/mentor-3.svg">
+                        <img class="md:w-6/7 px-3" src="img/mentor-3.svg">
                     </div>
                     <div class="flex justify-center items-center">
-                        <img src="img/mentor-4.svg">
+                        <img class="md:w-6/7 px-3" src="img/mentor-4.svg">
                     </div>
                     <div class="flex justify-center items-center">
-                        <img src="img/mentor-5.svg">
+                        <img class="md:w-6/7 px-3" src="img/mentor-5.svg">
                     </div>
                     <div class="flex justify-center items-center">
-                        <img src="img/mentor-2.svg">
+                        <img class="md:w-6/7 px-3" src="img/mentor-2.svg">
                     </div>
                     <div class="flex justify-center items-center">
-                        <img src="img/mentor-3.svg">
+                        <img class="md:w-6/7 px-3" src="img/mentor-3.svg">
                     </div>
                 </div>
-                <div class="flex justify-center items-center pt-5 pb-3 nextBtn">
-                    <img src="img/arrow-square-left.svg" class="">
-                </div>
-            </div> -->
+                <img src="img/arrow-square-right.svg" id="previousBtn">
+            </div>
 
-            <div class="flex items-center justify-between gap-x-4 py-7">
+            <!-- <div class="flex items-center justify-between gap-x-4 py-7">
                 <div class="w-1/10 flex items-center justify-center">
                     <img src="img/arrow-square-left.svg">
                 </div>
@@ -172,12 +191,12 @@
                 <div class="w-1/10 flex items-center justify-center">
                     <img src="img/arrow-square-right.svg">
                 </div>
-            </div>
+            </div> -->
         </section>
 
         <!-- ####################################### HOW ############################# -->
 
-        <section class="md:px-14 px-5 pt-14">
+        <section class="md:px-14 px-5 md:pt-14 pt-3">
             <div class="flex flex-col items-center justify-center">
                 <p class="title md:text-sm text-base my-3">How does it work ?</p>
                 <p class="md:text-3xl text-2xl font-bold text-main text-center py-3">Talking to a mentor made as easy as
@@ -189,9 +208,7 @@
                 <div class="flex flex-col items-center justify-center pt-14">
                     <div class="grid grid-cols-11">
                         <div class="col-span-5 flex items-center justify-center px-5">
-                            <video controls class="rounded pb-8">
-                                <source src="img/1.mp4" type="video/mp4">
-                            </video>
+                            <img src="img/video-1.svg" class="p-8">
                         </div>
 
                         <div class="col-span-1 flex flex-col mx-auto items-center justify-center">
@@ -207,10 +224,12 @@
                                     on
                                     essays, interviews, and navigating the application process with confidence.</p>
                             </div>
-                            <div class="flex items-center gap-x-2 leftBtn  py-2 px-5 rounded-xl btn-Bg">
-                                <img src="img/diamond.svg">
-                                <p class="text-main text-sm font-semibold text-white">Get early access</p>
-                            </div>
+                            <a href="#tally-open=3jPMl1&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
+                                class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded-xl btn-Bg" role="button">
+                                <img src="img/diamond.svg" width="15px">
+                                <span class="text-main md:text-sm text-xs font-semibold text-white">Get early
+                                    access</span>
+                            </a>
                         </div>
                     </div>
 
@@ -226,10 +245,12 @@
                                     you. No hassle, just simple planning.
                                 </p>
                             </div>
-                            <div class="flex items-center gap-x-2 leftBtn  py-2 px-5 rounded-xl btn-Bg">
-                                <img src="img/diamond.svg">
-                                <p class="text-main text-sm font-semibold text-white">Get early access</p>
-                            </div>
+                            <a href="#tally-open=3jPMl1&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
+                                class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded-xl btn-Bg" role="button">
+                                <img src="img/diamond.svg" width="15px">
+                                <span class="text-main md:text-sm text-xs font-semibold text-white">Get early
+                                    access</span>
+                            </a>
                         </div>
                         <div class="col-span-1 flex flex-col mx-auto items-center justify-center">
                             <img src="img/how-2.svg">
@@ -237,17 +258,13 @@
                         </div>
 
                         <div class="col-span-5 flex items-center justify-center px-5">
-                            <video controls class="rounded pb-8">
-                                <source src="img/2.mp4" type="video/mp4">
-                            </video>
+                            <img src="img/video-2.svg" class="p-8">
                         </div>
                     </div>
 
                     <div class="grid grid-cols-11">
                         <div class="col-span-5 flex items-center justify-center px-5">
-                            <video controls class="rounded pb-8">
-                                <source src="img/3.mp4" type="video/mp4">
-                            </video>
+                            <img src="img/video-3.svg" class="p-8">
                         </div>
 
                         <div class="col-span-1 flex mx-auto items-start justify-center">
@@ -265,10 +282,12 @@
                                     apply.
                                     Let's make your future clearer together!</p>
                             </div>
-                            <div class="flex items-center gap-x-2 leftBtn  py-2 px-5 rounded-xl btn-Bg">
-                                <img src="img/diamond.svg">
-                                <p class="text-main text-sm font-semibold text-white">Get early access</p>
-                            </div>
+                            <a href="#tally-open=3jPMl1&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
+                                class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded-xl btn-Bg" role="button">
+                                <img src="img/diamond.svg" width="15px">
+                                <span class="text-main md:text-sm text-xs font-semibold text-white">Get early
+                                    access</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -291,17 +310,17 @@
                                 navigating
                                 the application process with confidence.</p>
                         </div>
-                        <div class="flex items-center justify-center">
-                            <div class="flex items-center gap-x-2 leftBtn my-3 py-2 px-5 rounded-xl btn-Bg">
-                                <img src="img/diamond.svg">
-                                <p class="text-main text-sm font-semibold text-white">Get early access</p>
-                            </div>
+                        <div class="flex items-center justify-center py-4">
+                            <a href="#tally-open=3jPMl1&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
+                                class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded-xl btn-Bg" role="button">
+                                <img src="img/diamond.svg" width="15px">
+                                <span class="text-main md:text-sm text-xs font-semibold text-white">Get early
+                                    access</span>
+                            </a>
                         </div>
                     </div>
                     <div class="">
-                        <video class="rounded" controls>
-                            <source src="img/1.mp4" type="video/mp4">
-                        </video>
+                        <img src="img/video-1.svg" class="p-8">
                     </div>
 
 
@@ -319,17 +338,17 @@
                                 scheduling! Choose a time thaat suits you. No hassle, just simple planning.
                             </p>
                         </div>
-                        <div class="flex items-center justify-center">
-                            <div class="flex items-center gap-x-2 leftBtn my-3 py-2 px-5 rounded-xl btn-Bg">
-                                <img src="img/diamond.svg">
-                                <p class="text-main text-sm font-semibold text-white">Get early access</p>
-                            </div>
+                        <div class="flex items-center justify-center py-4">
+                            <a href="#tally-open=3jPMl1&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
+                                class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded-xl btn-Bg" role="button">
+                                <img src="img/diamond.svg" width="15px">
+                                <span class="text-main md:text-sm text-xs font-semibold text-white">Get early
+                                    access</span>
+                            </a>
                         </div>
                     </div>
                     <div class="">
-                        <video class="rounded" controls>
-                            <source src="img/2.mp4" type="video/mp4">
-                        </video>
+                        <img src="img/video-2.svg" class="p-8">
                     </div>
 
 
@@ -348,17 +367,17 @@
                                 courses,
                                 and how to apply. Let's make your future clearer together!</p>
                         </div>
-                        <div class="flex items-center justify-center">
-                            <div class="flex items-center gap-x-2 leftBtn my-3 py-2 px-5 rounded-xl btn-Bg">
-                                <img src="img/diamond.svg">
-                                <p class="text-main text-sm font-semibold text-white">Get early access</p>
-                            </div>
+                        <div class="flex items-center justify-center py-4">
+                            <a href="#tally-open=3jPMl1&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
+                                class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded-xl btn-Bg" role="button">
+                                <img src="img/diamond.svg" width="15px">
+                                <span class="text-main md:text-sm text-xs font-semibold text-white">Get early
+                                    access</span>
+                            </a>
                         </div>
                     </div>
                     <div class="">
-                        <video class="rounded" controls>
-                            <source src="img/3.mp4" type="video/mp4">
-                        </video>
+                        <img src="img/video-3.svg" class="p-8">
                     </div>
 
 
@@ -501,11 +520,13 @@
 
             </div>
 
-            <div class="flex items-center justify-center">
-                <div class="flex items-center gap-x-2 leftBtn my-3 py-2 px-5 rounded-xl btn-Bg">
-                    <img src="img/diamond.svg">
-                    <p class="text-main text-sm font-semibold text-white">Get early access</p>
-                </div>
+            <div class="flex items-center justify-center my-4">
+                <a href="#tally-open=3jPMl1&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
+                    class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded-xl btn-Bg" role="button">
+                    <img src="img/diamond.svg" width="15px">
+                    <span class="text-main md:text-sm text-xs font-semibold text-white">Get early
+                        access</span>
+                </a>
             </div>
         </section>
 
@@ -655,14 +676,17 @@
                     <a href="mentor.html" class="text-main text-sm font-semibold text-white">Become a Mentor</a>
                     <a href="" class="text-main text-sm font-semibold text-white">Blog</a>
                     <a href="" class="text-main text-sm font-semibold text-white">Webinar</a>
-                    <a href="" class="text-main text-sm font-semibold text-white">Contact Us</a>
+                    <a href="#tally-open=mDz1zE&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
+                        class="text-main text-sm font-semibold text-white">Contact Us</a>
                 </div>
                 <div class="w-1/3">
                     <div class="flex items-center justify-end">
-                        <div class="flex items-center gap-x-2 bg-white my-3 py-2 px-5 rounded-xl btn-Bg">
+                        <a href="#tally-open=3jPMl1&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
+                            class="flex items-center gap-x-2 bg-white my-3 py-2 px-5 rounded-xl btn-Bg" role="button">
                             <img src="img/footerDiamond.svg">
-                            <p class="text-main text-sm font-semibold text-main">Get early access</p>
-                        </div>
+                            <span class="text-main text-sm font-semibold text-main">Get early
+                                access</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -678,9 +702,12 @@
                 <div class="w-1/3 flex items-center justify-end gap-x-3 py-2">
                     <img src="img/facebook.svg">
                     <img src="img/twitter.svg">
-                    <img src="img/linkedin.svg">
-                    <img src="img/youtube.svg">
-                    <img src="img/instagram.svg">
+                    <a href="https://www.linkedin.com/company/my-maarg/" target="_blank">
+                        <img src="img/linkedin.svg">
+                    </a>
+                    <a href="" target="_blank"><img src="img/youtube.svg"></a>
+                    <a href="https://www.instagram.com/my_maarg?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank"><img src="img/instagram.svg"></a>
                 </div>
             </div>
         </footer>
@@ -696,7 +723,9 @@
                 <div class="flex items-center gap-x-3 py-2 px-3">
                     <img src="img/facebook.svg">
                     <img src="img/twitter.svg">
-                    <img src="img/linkedin.svg">
+                    <a href="https://www.linkedin.com/company/my-maarg/" target="_blank">
+                        <img src="img/linkedin.svg">
+                    </a>
                     <img src="img/youtube.svg">
                     <img src="img/instagram.svg">
                 </div>
@@ -704,20 +733,24 @@
                     <a href="mentor.html" class="text-main text-sm font-semibold text-white">Become a Mentor</a>
                     <a href="" class="text-main text-sm font-semibold text-white">Blog</a>
                     <a href="" class="text-main text-sm font-semibold text-white">Webinar</a>
-                    <a href="" class="text-main text-sm font-semibold text-white">Contact Us</a>
+                    <a href="#tally-open=mDz1zE&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
+                        class="text-main text-sm font-semibold text-white">Contact Us</a>
                 </div>
-                <div class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded-xl bg-white">
+
+                <a href="#tally-open=3jPMl1&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
+                    class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded-xl bg-white" role="button">
                     <img src="img/footerDiamond.svg">
-                    <p class="text-main text-sm font-semibold text-main">Get early access</p>
-                </div>
+                    <span class="text-main text-sm font-semibold text-main">Get early
+                        access</span>
+                </a>
             </div>
-            <div class="flex flex-col items-center justify-between pb-4">
-                <div class="middleText flex items-center justify-between py-5">
-                    <a href="policy.html" class="text-main text-sm font-normal text-white">Privacy Policy</a>
-                    <a href="terms.html" class="text-main text-sm font-normal text-white">Terms and Conditions</a>
-                    <a href="fulfilment.html" class="text-main text-sm font-normal text-white">Fulfilment Policy</a>
+            <div class="flex flex-col items-start justify-between pb-4">
+                <div class="middleText flex flex-col items-start justify-start py-5">
+                    <a href="policy.html" class="text-main text-sm font-normal text-white py-2">Privacy Policy</a>
+                    <a href="terms.html" class="text-main text-sm font-normal text-white py-2">Terms and Conditions</a>
+                    <a href="fulfilment.html" class="text-main text-sm font-normal text-white py-2">Fulfilment Policy</a>
                 </div>
-                <div class="">
+                <div class="w-full">
                     <p class="text-white text-sm font-normal text-center" style="color: rgba(255, 255, 255, 0.6);">
                         Copyright Maarg
                         Mentorship Pvt. Ltd .© 2024.</p>
@@ -745,9 +778,9 @@
         <script type="text/javascript">
             $(document).ready(function () {
                 $('.mentors').slick({
-                    nextArrow: '.nextBtn',
-                    prevArrow: '.previousBtn',
-                    slidesToShow: 4,
+                    nextArrow: '#nextBtn',
+                    prevArrow: '#previousBtn',
+                    slidesToShow: 4.2,
                     centerMode: true,
                     centerPadding: '60px',
                     slidesToScroll: 1,
@@ -757,7 +790,7 @@
                         {
                             breakpoint: 767,
                             settings: {
-                                slidesToShow: 3,
+                                slidesToShow: 1.7,
                                 slidesToScroll: 1,
                                 infinite: true,
                                 arrows: false,
