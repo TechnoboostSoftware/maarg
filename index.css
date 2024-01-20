@@ -108,19 +108,20 @@
     height: 100%;
     padding-left: 10px;
     animation: spin_words 5s infinite;
+    animation-direction: initial;
 }
 
 
 @keyframes spin_words {
     33% {
-        transform: translateY(-100%);
+        transform: translateY(0%);
     }
 
     66% {
-        transform: translateY(-200%);
+        transform: translateY(-100%);
     }
 
     100% {
-        transform: translateY(0%);
+        transform: translateY(-200%);
     }
 }
