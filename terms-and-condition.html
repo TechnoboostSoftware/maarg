@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Maarg Mentorship Platform</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon3.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap"
+            rel="stylesheet">
+        <script async src="https://tally.so/widgets/embed.js"></script>
+
+        <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <!-- Main navigation container -->
+        <nav class="relative flex w-full flex-nowrap items-center justify-between bg-[#FBFBFB] py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 bg-white lg:flex-wrap lg:justify-start lg:py-3"
+            data-te-navbar-ref>
+            <div class="flex w-full flex-wrap items-center justify-between px-3">
+                <div class="ml-2">
+                    <a class="text-xl text-neutral-800 dark:text-neutral-200" href="/">
+                        <img src="img/logo.svg" alt="maarg">
+                    </a>
+                </div>
+                <!-- Hamburger button for mobile view -->
+                <button
+                    class="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+                    type="button" data-te-collapse-init data-te-target="#navbarSupportedContent14"
+                    aria-controls="navbarSupportedContent14" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- Hamburger icon -->
+                    <span class="[&>svg]:w-7">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7">
+                            <path fill-rule="evenodd"
+                                d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                </button>
+
+                <!-- Collapsible navbar container -->
+                <div class="!visible mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"
+                    id="navbarSupportedContent14" data-te-collapse-item>
+                    <!-- Left links -->
+                    <ul class="list-style-none lg:ml-auto flex flex-col pl-0 lg:mt-1 lg:flex-row text-sm font-semibold "
+                        data-te-navbar-nav-ref>
+                        <!-- Home link -->
+                        <li class="my-4 pl-2 lg:my-0 lg:pl-2 lg:pr-1 text-black/90" data-te-nav-item-ref>
+                            <a class="" aria-current="page" data-te-nav-link-ref href="mentor">Become a Mentor</a>
+                        </li>
+                        <!-- Link -->
+                        <li class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1  relative md:flex hidden" data-te-nav-item-ref
+                            data-te-dropdown-ref>
+                            <!-- Dropdown -->
+                            <a class="flex items-center text-black/90 lg:pl-4" href="javascript:;" type="button"
+                                id="dropdownMenuButton2" data-te-dropdown-toggle-ref aria-expanded="false"
+                                onclick="resourcesDropDown('web')">
+                                Resources
+                                <span class="ml-1 w-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        class="h-5 w-5">
+                                        <path fill-rule="evenodd"
+                                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                            </a>
+                            <div class="flex bg-white flex-col md:absolute flex md:items-center items-start justify-center md:mt-6 py-2 px-1 hidden"
+                                id="resourcesDropDown" style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);">
+                                <a href=""
+                                    class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect border-b">Blog</a>
+                                <a href=""
+                                    class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect">Webinar</a>
+                            </div>
+                        </li>
+
+                        <!-- mobile view -->
+
+                        <li class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1  w-full flex-col relative md:hidden flex"
+                            data-te-nav-item-ref data-te-dropdown-ref>
+                            <!-- Dropdown -->
+                            <a class="flex items-center text-black/90 lg:pl-4" href="javascript:;" type="button"
+                                id="dropdownMenuButton2" data-te-dropdown-toggle-ref aria-expanded="false"
+                                onclick="resourcesDropDown('phone')">
+                                Resources
+                                <span class="ml-1 w-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        class="h-5 w-5">
+                                        <path fill-rule="evenodd"
+                                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                            </a>
+
+                            <div class="flex bg-white flex-col flex w-full  items-start justify-center rounded py-2 px-5 hidden"
+                                id="resourcesDropDownMobile"
+                                style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10); background: rgba(96, 187, 224, 0.20);">
+                                <a href=""
+                                    class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect border-b">Blog</a>
+                                <a href=""
+                                    class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect">Webinar</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="md:w-[350px] w-full lg:pr-2 lg:ml-auto">
+                        <div class="items-center flex lg:gap-x-4  flex-col lg:flex-row">
+                            <a class="text-center text-sm font-semibold text-main flex gap-x-2 items-center justify-center py-2 md:my-0 my-1 px-3 rounded-xl w-full h-[38px]"
+                                style="border: 1px solid #1D2D5A;"
+                                href="#tally-open=mDz1zE&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
+                                role="button"><img src="img/sms-tracking.svg" class="inline"><span> Contact
+                                    Us</span></a>
+
+                            <a href="#tally-open=3jPMl1&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
+                                class="text-center text-sm font-semibold flex gap-x-2 items-center justify-center md:py-2 py-2.5 md:my-0 my-1 px-3 rounded-xl w-full h-[38px btn-Bg"
+                                style="border: 1px solid #1D2D5A;" role="button">
+                                <img src="img/diamond.svg" class="inline" width="15px">
+                                <span class=" md:text-sm text-xs font-semibold text-white ">Get early access</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="md:mx-14 md:my-10 m-5">
+            <div style="background: rgba(247, 248, 251, 1);">
+                <div class="flex items-center justify-center">
+                    <p class="title px-5">Terms and Conditions</p>
+                </div>
+                <div class="md:px-7 px-3  md:py-5 py-3">
+
+                    <p class="font-normal md:text-base text-sm text-black py-2">
+                        PLEASE READ THESE TERMS AND CONDITIONS CAREFULLY. BY USING THIS WEBSITE AND/OR PLATFORM YOU
+                        AGREE TO
+                        BE
+                        BOUND BY ALL OF THE BELOW TERMS AND CONDITIONS
+                    </p>
+
+                    <p class="font-normal md:text-base text-sm text-black py-2">
+                        Maarg Mentorship Private Limited (including its affiliates) (“Company”, “We” or “Us” and their
+                        connotations)
+                        operates a website (URL: https://www.mymaarg.com/) and mobile/tablet/application (together
+                        called as
+                        “Platform”) which is engaged in the service of online mentorship on various career aspects to
+                        children and
+                        parents.
+                    </p>
+
+                    <p class="font-normal md:text-base text-sm text-black py-2">
+                        These terms and conditions (“Terms”) describe the terms on which the Company grants end users
+                        access
+                        to the
+                        Platform (hereinafter referred to as “Services”) and shall be read with the privacy policy
+                        available
+                        on
+                        https://mymaarg.com/privacy-policy. Anyone below 18 years of age is assumed to be a child
+                        (“Child”)
+                        and
+                        requires parental consent to use the Platform. The parents of the Child or users above 18 years
+                        of
+                        age are
+                        hereinafter referred to as “you”, “your” or “yours”. The term “Users” for the purposes of these
+                        Terms shall
+                        be read as You and/or Child. Users also include all persons who access, browse, or sign up on
+                        the
+                        Platform
+                        for applying to mentor on the Platform (“Applicant(s)”) and those selected to mentor on the
+                        Platform
+                        (“Mentor(s)”).
+                    </p>
+
+                    <p class="font-normal md:text-base text-sm text-black py-2">
+                        The Company reserves the right, at its discretion, to change, modify, add, or remove portions of
+                        these Terms
+                        at any time by posting the amended Terms. Please check these Terms periodically for changes.
+                        Your
+                        continued
+                        use of the Platform or Services after the posting of changes constitutes your binding acceptance
+                        of
+                        such
+                        changes. In addition, when using any particular services or availing any promotional offer, you
+                        may
+                        be
+                        subject to additional terms and conditions, posted guidelines or rules, as may be applicable to
+                        such
+                        services and offers. All such guidelines, rules, product requirements or sometimes additional
+                        terms
+                        are
+                        hereby incorporated by reference into the Terms.
+                    </p>
+
+                    <p class="font-bold md:text-lg text-base py-4 text-black">1. Terms of Service</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">By choosing to visit the Platform and/or
+                        avail any
+                        Services provided by
+                        Company, you agree to be bound by these Terms. Please read the following information carefully.
+                        If
+                        you are a
+                        parent or guardian and you provide your consent for your child's use of the Platform, you agree
+                        to
+                        be bound
+                        by these Terms in respect to their use of the Platform. By your continued access or use of the
+                        Platform, you
+                        signify your agreement to be legally bound by the Terms set forth herein. If you do not agree to
+                        the
+                        Terms
+                        of this agreement, promptly exit this page and stop accessing the Services.
+                    </p>
+
+                    <p class="font-bold md:text-lg text-base py-4 text-black">2. Description of Services</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">The Company facilitates online
+                        mentorship services
+                        to
+                        children in various
+                        aspects of higher education. The concept is to connect a child with a mentor, which helps the
+                        Child
+                        to make
+                        informed career choices without any restrictions on information availability.
+                    </p>
+
+                    <p class="font-bold md:text-lg text-base py-4 text-black"> 3. User ID and Password</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">In order to access the Company’s
+                        Platform and its
+                        services, You may have to
+                        create an account and disclose information including, but not limited to, (i) name, e-mail ID,
+                        photograph,
+                        location and other contact information (ii) gender and other demographics (iii) birth date and
+                        year
+                        to
+                        validate the current age of the Child (iv) your email address to acquire the parental consent.
+                        You
+                        must be
+                        at least 18 years old to register on the Platform. If you are under 18 years old, you are not
+                        permitted to
+                        register on this site unless such registration is completed by a parent or legal guardian. You
+                        acknowledge
+                        that your user ID and password (“Participant Account”) is for your exclusive use only. Use or
+                        sharing of
+                        your Participant Account with another user or person is not permitted and is cause for immediate
+                        blocking of
+                        your access to the Platform, the Services and the content provided by the Company and shall lead
+                        to
+                        termination of this Agreement without any notice.
+                        You are solely responsible for maintaining the confidentiality of your Participant Account and
+                        for
+                        all
+                        activities that occur under it. You agree to immediately notify to the Company if you become
+                        aware
+                        of or
+                        have reason to believe that there is any unauthorized use of your Participant Account. You also
+                        agree to
+                        take all reasonable steps to stop such unauthorized use and to cooperate with the Company in any
+                        investigation of such unauthorized uses. The Company shall not under any circumstances be held
+                        liable for
+                        any claims related to the use or misuse of your Participant Account due to the activities of any
+                        third party
+                        outside of your control or due to tour failure to maintain the confidentiality and security of
+                        your
+                        Participant Account.
+                    </p>
+
+                    <p class="font-bold md:text-lg text-base py-4 text-black">4. Trial Mentorship Calls</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">We may offer One (1) free trial
+                        mentorship call to
+                        our
+                        new members so that you
+                        get an opportunity to experience the services provided by us. Only one (1) free trial mentorship
+                        call is
+                        permitted per new student. Multiple availment of trial mentorship call by an individual either
+                        through
+                        his/her own account or through someone else's accounts, email IDs and/or in any other manner
+                        whatsoever,
+                        without the prior written permission of the Company is not allowed and shall amount to a breach
+                        of
+                        the
+                        present Terms.<br>
+                        Any free trial mentorship call provided by the Company shall also be governed by these Terms.
+                    </p>
+
+                    <p class="font-bold md:text-lg text-base py-4 text-black">5. Mentors List</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">
+                        The Company will have its sets of mentors who will be assisting the Child in taking informed
+                        decisions.<br>
+                        The Company reserves the right to amend, revise or update the mentors list at any time. Click
+                        here
+                        to review
+                        our Call Scheduling Policy, which explains, if applicable, how to schedule, reschedule or cancel
+                        mentorship
+                        calls.
+                    </p>
+
+                    <p class="font-bold md:text-lg text-base py-4 text-black">6. Use of the Platform by Mentors</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Applicants interested in mentoring on
+                        the Platform
+                        may
+                        apply to do so by
+                        providing their full name, mobile number, and email address. A member of the Maarg team may
+                        reach
+                        out to you
+                        on your registered contact details and conduct an evaluation. If the Applicant is chosen, then
+                        she/he may be
+                        onboarded as an Mentor on the Platform. Please note, your application on the Platform does not
+                        guarantee
+                        your selection as an Mentor.<br>
+                        The Terms and Privacy Policy shall be applicable to you in addition to the Mentor engagement
+                        agreement
+                        provided to you as an Mentor.<br>
+                        You acknowledge and understand that children or their parents may leave ratings and reviews of
+                        your
+                        call and
+                        that we are not responsible for these ratings and reviews.
+                    </p>
+
+                    <p class="font-bold md:text-lg text-base py-4 text-black">7. License to Use</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">The Company hereby grants You and the
+                        Child, the
+                        limited, non-transferable,
+                        non-exclusive, and revocable license to access, view and use the Platform only for the purposes
+                        of
+                        accessing, viewing, posting or submitting user material, using the embedded link function,
+                        placing
+                        store
+                        orders or for accessing information, applications and services. The Company reserves the right
+                        to
+                        suspend or
+                        deny, in its sole discretion, your access to all or any portion of the Platform. This license is
+                        limited to
+                        personal and non-commercial uses by You and your Child. Any rights not expressly granted to You
+                        herein are
+                        reserved to Company.
+                    </p>
+
+                    <p class="font-bold md:text-lg text-base py-4 text-black">8. Intellectual Property Rights</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">You acknowledge that the Company is the
+                        sole and
+                        exclusive owner of the
+                        Platform, the services provided by the Company, the mentors, and its content and as such the
+                        Company
+                        is
+                        vested with all the Intellectual Property Rights and other proprietary rights in the Platform,
+                        the
+                        Services,
+                        and content. Further, you agree and acknowledge that:
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">The Company shall have the right to
+                        record the
+                        discussions, processes, events,
+                        conversations, feedback, pertaining to the participation of the Users in the mentorship, offered
+                        in
+                        online
+                        or any other format.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">The Company shall have an exclusive
+                        right including
+                        in
+                        the nature of
+                        intellectual properties throughout the world to use, publish, display, exhibit, transmit,
+                        broadcast,
+                        disseminate, market, advertise, license, transfer, modify, and create derivative works from such
+                        recorded
+                        contents mentioned hereinabove, for any purpose whatsoever, through various medium including but
+                        not
+                        limited
+                        to social media, webpages, electronic or print media, news articles, blogs etc.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">You agree and acknowledge that the
+                        Company may from
+                        time-to-time conduct
+                        events, contests, championships, webinars/seminars, and award ceremonies, as it may deem fit
+                        (“Events”) on
+                        or in connection with its mentorship calls which shall be the exclusive property of the Company.
+                        Further,
+                        the Company may from time-to-time (during Events or otherwise), create/record and
+                        upload/disseminate
+                        videos,
+                        audios/sound recordings, voice, image, achievements, testimonials, narratives, success stories,
+                        content and
+                        other materials pertaining to Users experiences at the Platform (Success Stories), on the
+                        Platform
+                        or any
+                        other websites or related pages or any other social media platforms in, on or in connection with
+                        its
+                        mentorship calls or its success which shall be the exclusive property of the Company. You
+                        undertake
+                        not to
+                        reproduce, transmit, retransmit, distribute, publish, post, share or make available the said
+                        videos,
+                        audios/
+                        sound recordings, content and other materials or any part thereof which are available on the
+                        Platform in any
+                        manner whatsoever.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">You agree that you shall be solely
+                        responsible for
+                        any
+                        participation
+                        in/submissions of entries/applications (as the case may be) to the Events, including its
+                        authenticity,
+                        originality and genuineness. Any responsibility for any claims, objections, and/or issues raised
+                        regarding
+                        such authenticity, originality or legality including by any third party shall be solely yours.
+                        You
+                        release
+                        the Company from any claim arising out of the use of Event related content including through its
+                        publication, exhibition, transmission, broadcast, dissemination or advertisement in any form or
+                        mode.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">You unconditionally, irrevocably release
+                        the
+                        Company
+                        from any claim arising out
+                        of the usage of Success Stories, call interactions or publications of Events, by Company through
+                        various
+                        means, including advertising or publication in any form or mode.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">You agree that the Company shall have no
+                        obligation
+                        towards User and shall not
+                        be held responsible with respect to any advertising or promotional material which the Company
+                        may
+                        create and
+                        disseminate based upon live call interactions or Success Stories.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">You agree that you shall not be entitled
+                        to any
+                        compensation or other rights or
+                        benefits against such promotional usage by the Company.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Additionally, the Company also retains
+                        all rights
+                        (including copyrights,
+                        trademarks, patents, designs, logos, trade-dress, trade-secrets, know-how as well as any other
+                        intellectual
+                        property right) in relation to all information provided on or via this Platform, including but
+                        not
+                        limited
+                        to all texts, graphics, photos, illustrations, apps and logos.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">The Company retains all the rights in
+                        the video
+                        recordings, sound/audio
+                        recordings, images, photos, pictures/ images clicked during the call, content delivered by the
+                        Company’s
+                        mentors, text and other material posted on the Platform and shall be the sole owner of the same.
+                        You
+                        undertake that you shall not record, make videos or sound/ audio recordings, take screen shots,
+                        click
+                        pictures and shall not download, publish, transmit, display, reproduce, transmit, distribute,
+                        post,
+                        share or
+                        make copies of any of the call that are conducted by the Company (including the trial mentorship
+                        calls),
+                        video recordings, sound/audio recordings, images, photos, pictures/ images, text or other
+                        material,
+                        whether
+                        in full or in part, unless you obtain prior written approval from the Company. Any recordings,
+                        videos,
+                        sound/audio recordings, screen shots, pictures, images, material or content which is obtained in
+                        any
+                        manner
+                        without the prior written consent of the Company shall amount to breach of the instant terms and
+                        conditions
+                        and you shall be solely liable for the said breach under the applicable laws. All other rights
+                        are
+                        reserved.
+                    </p>
+
+                    <p class="font-bold md:text-lg text-base py-4 text-black">9. Use of the Platform by the Child</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">You expressly acknowledge and undertake
+                        that:
+                        <li class="font-normal text-base text-black py-2">You are competent and have all the necessary
+                            legal
+                            rights to enter into this agreement on behalf of the
+                            child
+                        </li>
+                        <li class="font-normal text-base text-black py-2">You grant your consent to the Company for your
+                            child to attend and participate in the mentorship calls,
+                            tests, sessions and/or any other program conducted and/or organized by the Company on its
+                            Platform and
+                            in relation to the services provided by the Company. You undertake that the participation of
+                            the
+                            Child
+                            and all the activities done by the Child will be under your direct and constant supervision.
+                            You
+                            further
+                            accept full and complete liability arising out of the child’s acts, whether direct or
+                            indirect.
+                        </li>
+                    </p>
+
+                    <p class="font-bold md:text-lg text-base py-4 text-black">10. Payment and Refund</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">The Platform is a paid service and the
+                        payments
+                        made by
+                        You shall be according
+                        to the plans opted by You through the Platform. You explicitly agree to pay the fees for the
+                        mentorship
+                        calls/plans that you purchase, and you authorize the Company to charge you as per the applicable
+                        payment
+                        mode opted by you. All payments shall be through the payment mechanism put in place by the
+                        Company
+                        and You
+                        shall be responsible for paying all fees and applicable taxes in a timely manner as per the
+                        mechanism
+                        associated with the Plan availed by You. Users have been given various options to choose and
+                        proceed
+                        with
+                        the payment for the Services via payment mechanisms including but not limited to Card Payment
+                        facilities,
+                        EMI Payment, Online Bank Transfer and Wallet Payment. With reference to Section 10, the payment
+                        gateway
+                        mechanisms are governed by the terms and conditions of the third-party providers as listed on
+                        the
+                        Platform
+                        and the User agrees to be bound by those terms.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Valid Credit / Debit/ Cash Card/ online
+                        bank
+                        transfers
+                        and other payment
+                        instruments are processed using a Credit Card payment gateway or appropriate payment system
+                        infrastructure
+                        and the same will also be governed by the terms agreed to between the Users and the respective
+                        issuing bank
+                        and payment instrument issuing company. We shall not be liable for any unauthorized use, fraud,
+                        payment
+                        refunds, lost amount etc. in the transaction. The amount of refund payable shall only be limited
+                        to
+                        the
+                        amount paid by the User for Services which were not rendered to the User by Us. 
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">We attempt to process and complete
+                        customer refund
+                        requests within 7-10*
+                        Business days** from the time we receive a refund request. Our refund process may include a
+                        phone
+                        call to
+                        you, where we request mentorship call feedback and/or validation of key information needed to
+                        process your
+                        refund. If you have any questions about your refund request or the refund process, please
+                        contact us
+                        at
+                        support@mymaarg.com.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">We reserve the right to change any fees
+                        at any time
+                        at
+                        our sole discretion and
+                        any change, update, or modification in the fee shall become effective immediately upon the same
+                        being
+                        posted/uploaded or notified on our website.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Any processing, transaction fees, or
+                        applicable tax
+                        charged at the time of
+                        purchase will not be refunded, and refunds will be subject to deductions of the value of any
+                        cashback, extra
+                        credits, discounts, or rewards, including vouchers, product (s) e.g. laptop, tablet etc.,
+                        received
+                        by you at
+                        the time of purchase from the refund amount.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">**Business Day” shall mean any day
+                        excluding
+                        Saturday,
+                        Sunday and any bank
+                        holiday;
+                    </p>
+
+                    <p class="font-bold md:text-lg text-base py-4 text-black">11. Linking</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">You or the Child may establish a link to
+                        one or
+                        more
+                        site(s), provided that:
+
+                        <li class="font-normal text-base text-black py-2">the link is legal and not detrimental or
+                            damaging
+                            to and/or does not take unfair advantage of our
+                            reputation or business;</li>
+                        <li class="font-normal text-base text-black py-2"> such linking is not for advertising or
+                            promotional purposes (unless We have expressly agreed to it);
+                        </li>
+                        <li class="font-normal text-base text-black py-2"> the link is not from any website which
+                            promotes
+                            any political or religious views, or promotes or
+                            depicts intolerance, hatred, discrimination, violence, pornography or illegal activity;
+                        </li>
+                        <li class="font-normal text-base text-black py-2"> the link does not falsely or misleadingly
+                            imply
+                            or suggest that We endorse, approve of or are
+                            associated with the linked website, its web pages or any of its contents; and
+                        </li>
+                        <li class="font-normal text-base text-black py-2"> framing of any site on any other website is
+                            not
+                            allowed and You must not provide access to the site or
+                            part of it under any other URL.
+                        </li>
+
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">The Company may withdraw your or the
+                        Child’s right
+                        to
+                        link to any site without
+                        notice and at any time (acting in our sole discretion).
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Where any site and/or application
+                        contains links to
+                        other websites, web pages,
+                        resources, or mobile services which are proprietary to third-parties, other users, advertisers
+                        or
+                        sponsors,
+                        such websites, web pages, resources and mobile services are provided for your information only
+                        and
+                        You
+                        access them at your own risk. The Company will not be held liable or responsible for the content
+                        or
+                        operation of third-party websites, web pages, resources or mobile services.
+                    </p>
+
+
+                    <p class="font-bold md:text-lg text-base py-4 text-black">12. Third Party Services</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">You acknowledge that the Services
+                        provided by the
+                        Company uses and/or contains
+                        certain softwares, products and services which are developed and owned by third parties, the use
+                        of
+                        which is
+                        governed by terms and conditions of such third parties. Please read the User Agreement and
+                        Privacy
+                        Policy
+                        for these sites separately before using the said third party websites. By accessing the said
+                        third
+                        party
+                        websites, you agree to be bound by the respective user agreement and privacy policy of these
+                        third
+                        parties.
+                        Accordingly, you agree that the Company will not be responsible for such Third-Party software,
+                        products and
+                        services nor for any error, malfunction or defect in the Service resulted therefrom.”
+                    </p>
+
+                    <p class="font-bold md:text-lg text-base py-4 text-black">13. Third Party Permission</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">The Company has subscribed to various
+                        third-party
+                        service providers and you
+                        agree and acknowledge that, while accepting these terms, you explicitly grant permission to
+                        these
+                        service
+                        providers to use your information.<br>
+                        We do not disclose Personal Data to third parties for the purpose of allowing them to send
+                        marketing
+                        material to you. However, we may share non-personal, de-identified or aggregated information
+                        with
+                        select
+                        third parties for research, development, analytics or promotional purposes other than direct
+                        marketing.<br>
+                        In some cases, the organisations that we may disclose your personal information to may be based
+                        outside the
+                        location where the information is collected. Where we do this, we require these parties to take
+                        appropriate
+                        measures to protect that information and to restrict how they can use that information.<br>
+                        In the event of any dispute between the third party and you the company shall not be held liable
+                        in
+                        any
+                        matter whatsoever.
+                    </p>
+
+
+                    <p class="font-bold md:text-lg text-base py-4 text-black">14. User Content</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">The Company offers You and the Child the
+                        opportunity to
+                        submit, post, display,
+                        transmit, perform, publish, distribute or broadcast content and materials, including, without
+                        limitation,
+                        articles, commentaries, photographs, text, music, video, audio recordings, computer graphics,
+                        pictures,
+                        data, questions, comments, suggestions or personally identifiable information.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">The Company may remove content at its
+                        discretion,
+                        subject only to its express
+                        obligations in respect of peer-reviewed articles.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">The Child may choose to write and post
+                        reviews on
+                        the
+                        Platform. We do not
+                        encourage your Child to post any Personal Information on the Platform and the ill effects of
+                        such
+                        revelation
+                        shall be borne by you. However, you can request the Company via e-mails to delete any such
+                        information
+                        posted by the Child. For the purpose of verification, the Company will review and scrutinize
+                        such
+                        emails
+                        before responding.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">You hereby explicitly consent and grant
+                        permission
+                        to
+                        the Company to record,
+                        make videos, audio/sound recordings, take screenshots during the mentorship calls that are
+                        conducted
+                        by the
+                        Company on its Platform to the extent required to improve the services offered by the Company.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">All rights, ownership, and intellectual
+                        property in
+                        the
+                        ‘User Content’ created
+                        by your child on or by using the Platform, during the period of the mentorship, shall vest in
+                        the
+                        Company.
+                        You hereby explicitly consent and transfer all such rights, ownership, and intellectual property
+                        in
+                        the
+                        ‘User Content’ to the Company for a worldwide, royalty-free, and perpetual use. The Company
+                        shall
+                        have the
+                        sole and exclusive right to use, copy, modify, adapt, prepare derivative works from, distribute,
+                        perform,
+                        publish, post and display any/all such ‘User Content’.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">You and your Child undertake to use the
+                        Company’s
+                        platform, any third party
+                        platform and content Company may provide access to in rendering of its Services and respective
+                        intellectual
+                        properties only for the purposes envisaged in the instant terms and shall not use the same for
+                        any
+                        unauthorized or unlawful purpose. Should you and your Child use the Platform, third party
+                        platform/content
+                        and/or associated intellectual properties for any purpose other than expressly permitted, then
+                        you
+                        and your
+                        Child will be solely responsible to obtain all necessary permissions, authorizations and
+                        licenses
+                        from the
+                        said third party. In the event you and your Child use the Platform, third party platform/content
+                        and/or
+                        associated intellectual properties beyond the limited rights granted to you and your Child under
+                        the
+                        corresponding terms, then you and your Child shall be solely responsible for the same and shall
+                        indemnify
+                        the Company for all losses, claims and damages in this regard.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">The Company will not be held responsible
+                        or liable
+                        for
+                        any of the User Content
+                        provided, published or disseminated by You and your Child on the Platform or any other website.
+                        You
+                        must not
+                        attempt to avoid or undermine any protections that the Company may put in place for the security
+                        and
+                        operation of its Platform or any other website. You and your Child shall indemnify the Company
+                        for
+                        all
+                        losses, claims and damages in this regard.
+                    </p>
+
+
+                    <p class="font-bold md:text-lg text-base py-4 text-black">15. Rule of Conduct</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Users must comply with the laws that
+                        apply to You
+                        in
+                        the location that You
+                        access Company’s Services from. If any laws applicable to You restrict or prohibit You from
+                        using
+                        Services
+                        of Company, You must comply with those legal restrictions or, if applicable, stop accessing
+                        and/or
+                        using the
+                        Services of Company. You promise that all the information You provide to Company on accessing
+                        and/or
+                        using
+                        the Services of Company is and shall remain true, accurate and complete at all times.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Notwithstanding any other provision of
+                        these Terms
+                        You
+                        agree and undertake not
+                        to:
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">
+
+                        <li class="font-normal text-base text-black py-2">Hack, attempt to hack, modify, adapt, merge,
+                            translate, decompile, disassemble, reverse engineer or
+                            create derivative works out of the Service or any part of them (save to the extent which
+                            expressly
+                            cannot be prohibited in accordance with the applicable mandatory law in your jurisdiction);
+                        </li>
+                        <li class="font-normal text-base text-black py-2">Remove, disable, modify, add to or tamper with
+                            any
+                            program code or data, copyright, trademark or other
+                            proprietary notices and legends contained on or in the Service;
+                        </li>
+                        <li class="font-normal text-base text-black py-2">Create software which mimics any data or
+                            functionality in the Service;
+                        </li>
+                        <li class="font-normal text-base text-black py-2">Use or deal in the Service except as permitted
+                            by
+                            these Terms;
+                        </li>
+                        <li class="font-normal text-base text-black py-2">Include contact details intended to enable
+                            communication outside of the Service, in any Communication;
+                        </li>
+                        <li class="font-normal text-base text-black py-2">Use your access to the Service, or information
+                            gathered from it, for the sending of unsolicited bulk
+                            email;
+                        </li>
+                        <li class="font-normal text-base text-black py-2">Make any public, business or commercial use of
+                            the
+                            Service or any part of them;
+                        </li>
+                        <li class="font-normal text-base text-black py-2">Provide hypertext links, URL links, graphic
+                            links,
+                            hyperlinks or other direct connection for profit or
+                            gainto the Service without prior written permission of Company;
+                        </li>
+                        <li class="font-normal text-base text-black py-2">Make the Service or any part of it available
+                            to
+                            any third party (please note this does not stop you from
+                            fairly and honestly providing links to the Platform, or showing either to other people);
+                        </li>
+                        <li class="font-normal text-base text-black py-2">Use or process the Service or any part of them
+                            unfairly or for any illegal or immoral purpose; or
+                        </li>
+                        <li class="font-normal text-base text-black py-2">Delete or obscure any copyright or other
+                            proprietary notice on the Service.
+                        </li>
+
+                        The Service may only be accessed and used via authorized servers. You must take no action to
+                        bypass
+                        authorized
+                        servers and/or use third party software to modify any aspect of the Service, whether for the
+                        purpose
+                        of securing
+                        an unfair advantage over other users.
+                    </p>
+
+
+                    <p class="font-bold md:text-lg text-base py-4 text-black">16. Limited Liability</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">You are held personally liable for any
+                        violation of
+                        a
+                        third party's rights by
+                        You and your Child. You agree to reimburse Company for all damages resulting from the culpable
+                        non-observance of the obligations of these Terms. You release the Company from all eligible
+                        claims
+                        that
+                        other users or third parties may file against Company due to a violation of their rights by
+                        content
+                        posted
+                        by the user or due to a violation of other obligations. You shall assume the costs of Company
+                        legal
+                        defense,
+                        including all court and legal fees. This condition does not apply if the you are not responsible
+                        for
+                        the
+                        infringement.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Company ensures that the information and
+                        the
+                        training
+                        facilitated by the mentor
+                        on the Platform is accurate but does not guarantee or warrant its accuracy, adequacy,
+                        correctness,
+                        validity,
+                        completeness, or suitability for any purpose, and accepts no responsibility with respect to the
+                        information
+                        and coaching given by the mentor on the Platform.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">You agree and understand that Company
+                        does not
+                        states
+                        or claims any warranty
+                        for the quality of content delivered by the mentor listed on our Platform.<br>
+                        The Company undertakes the scrutiny of the content delivered by the mentor however, the Company
+                        does
+                        not
+                        guarantee the quality of lessons delivered to the Child. At any instance of live interactive
+                        mentorship
+                        calls, if the mentor uses any sexual or abusive language or depicts any forced sexual acts, or
+                        pornographic
+                        images or does any unethical, unlawful or immoral act, then in such cases, please immediately
+                        inform
+                        the
+                        Company at the contact provided below in Section 25. The Company will make all efforts to take
+                        any
+                        and all
+                        necessary actions as per the applicable law. However, the Company explicitly disclaims any
+                        liability
+                        or
+                        responsibility in the event of such a circumstance.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Company will not be held responsible for
+                        any
+                        unethical,
+                        illegal acts performed
+                        by the Child on the advice of mentors and it shall be your responsibility to closely monitor the
+                        activities
+                        of your Child while accessing the Platform.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">In no event shall the Company be liable
+                        for any
+                        direct,
+                        indirect, incidental,
+                        special or consequential damages, or damages for loss of profits, revenue, data or data use,
+                        incurred by you
+                        or any third-party, whether in an action in contract or tort, arising from your access to, or
+                        use
+                        of, the
+                        Platform or any content provided on or through the Platform.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">The Company facilitates educational and
+                        informational
+                        on an "as is" basis and
+                        is liable only to provide its services with reasonable skill and care.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">The Company's liability for any and all
+                        claims in
+                        the
+                        aggregate, arising out of
+                        or related to your use of the Platform, shall not under any circumstances exceed the amounts
+                        actually paid
+                        by You to the Company for its Services.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">External Sites have not been verified or
+                        reviewed
+                        by
+                        Company and all use and
+                        access of External Sites is made at your own risk. “External Sites“ means third party websites
+                        and
+                        online
+                        services to which the Service links. The Company gives no other warranty in connection with the
+                        Service and
+                        to the maximum extent permitted by law, Company excludes liability for:
+
+                        <li class="font-normal text-base text-black py-2">any loss or damage of any kind howsoever
+                            arising,
+                            including any direct, indirect, special, punitive or
+                            consequential loss whether or not such arises out of any problem which Company have been
+                            made
+                            aware of;
+                        </li>
+                        <li class="font-normal text-base text-black py-2">the accuracy, currency or validity of
+                            information
+                            and material contained within any communications or
+                            the Service;
+                        </li>
+                        <li class="font-normal text-base text-black py-2">any interruptions to or delays in updating the
+                            Service;
+                        </li>
+                        <li class="font-normal text-base text-black py-2">any incorrect or inaccurate information on the
+                            Service;
+                        </li>
+                        <li class="font-normal text-base text-black py-2">the infringement by any person of any
+                            copyright or
+                            other intellectual property rights of any third party
+                            through any communication or use of the Service;
+                        </li>
+                        <li class="font-normal text-base text-black py-2">the availability, quality, content or nature
+                            of
+                            External Sites;
+                        </li>
+                        <li class="font-normal text-base text-black py-2">any transaction involving External Sites;
+                        </li>
+                        <li class="font-normal text-base text-black py-2">any amount or kind of loss or damage due to
+                            viruses or other malicious software that may infect a user's
+                            computer equipment, software, data or other property caused by persons accessing, using or
+                            downloading
+                            the Service, or any Communication (save that, where digital content supplied to You by
+                            Company
+                            or on
+                            behalf of Company through the Service causes damage to your digital content or devices You
+                            may
+                            be
+                            entitled to compensation or repair or replacement, in which case kindly inform to Company);
+                            and
+                        </li>
+                        <li class="font-normal text-base text-black py-2">all representations, warranties, conditions
+                            and
+                            other terms and conditions which but for this notice
+                            would have an effect
+                        </li>
+
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">The Company does not warrant that the
+                        operation of
+                        the
+                        Service will be
+                        uninterrupted or error- free. The Company will not be liable in any amount for failure to
+                        perform
+                        any
+                        obligation under this agreement if such failure is caused by the occurrence of any unforeseen
+                        contingency
+                        beyond the reasonable control of Company including Internet outages, communications outages,
+                        fire,
+                        flood,
+                        war or act of God.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Except as provided above there are no
+                        other
+                        warranties,
+                        conditions or other
+                        terms and conditions, express or implied, statutory or otherwise, and all such terms and
+                        conditions
+                        are
+                        hereby excluded to the maximum extent permitted by law.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">You agree that in relation to your use
+                        of the
+                        Service
+                        You will not in any way
+                        conduct yourself in a manner which is unlawful, or which gives rise to civil or criminal
+                        liability
+                        or which
+                        might call Company or the Service into disrepute. You agree that You are and shall remain
+                        responsible for
+                        maintaining the confidentiality of your password and username and for all activities that occur
+                        under your
+                        account.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">No amendment will take place if such
+                        amendment
+                        would
+                        substantially disrupt the
+                        contractual balance between the parties. Users will be informed of any amendments to the general
+                        Terms via
+                        the Platform or via notice by email or in writing.
+                    </p>
+
+
+                    <p class="font-bold md:text-lg text-base py-4 text-black">17. Termination</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Without limiting any other rights that
+                        Company may
+                        have, Company may remove,
+                        restrict, cancel or suspend access to and/or use of the Platform, Services provided by the
+                        Company
+                        and any
+                        part of it, if Company considers (in the sole discretion of Company) that You have breached any
+                        of
+                        these
+                        Terms.<br>
+                        You may also terminate your agreement with the Company by ceasing to access the Platform,
+                        Service,
+                        deleting
+                        all copies of the Service or part thereof within your control. Termination shall not affect any
+                        rights or
+                        remedies, which have accrued up to the time of termination.</p>
+
+
+                    <p class="font-bold md:text-lg text-base py-4 text-black">18. Severability</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">If any court or competent authority
+                        finds that any
+                        provision of these Terms (or
+                        part of any provision) is invalid, illegal or unenforceable, that provision or part-provision
+                        shall,
+                        to the
+                        extent required, be deemed to be deleted, and the validity and enforceability of the other
+                        provisions of
+                        these Terms shall not be affected.
+                    </p>
+
+
+                    <p class="font-bold md:text-lg text-base py-4 text-black">19. Assignment</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Any rights and licenses granted
+                        hereunder shall not
+                        be
+                        transferred or assigned
+                        by you but, shall be assigned by the Company at its sole discretion. Any attempted transfer or
+                        assignment by
+                        you in violation hereof shall be considered as null and void.
+                    </p>
+
+
+                    <p class="font-bold md:text-lg text-base py-4 text-black">20. Waiver</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">No waiver of any terms of this agreement
+                        shall be
+                        treated as a further or
+                        continuing waiver of such term or any other term and the Company’s failure to assert any right
+                        or
+                        provision
+                        under this agreement shall not constitute a waiver of such right or provision.
+                    </p>
+
+
+                    <p class="font-bold md:text-lg text-base py-4 text-black">21. Governing Laws and Jurisdiction </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Any dispute or difference either in
+                        interpretation
+                        or
+                        otherwise, of the Terms
+                        and other Policies on the Platform, between the parties hereto, shall be referred to an
+                        independent
+                        arbitrator who will be appointed mutually and his decision shall be final and binding on the
+                        parties
+                        hereto.
+                        The above arbitration shall be in accordance with the Arbitration and Conciliation Act, 1996 as
+                        amended from
+                        time to time and judgement upon the award rendered by the arbitrator may be entered in any court
+                        having
+                        jurisdiction thereof. The seat of arbitration shall be Gwalior and the language shall be
+                        English.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">The Terms shall be construed in
+                        accordance with the
+                        applicable laws of India.
+                        For proceedings arising therein the Courts in Gwalior shall have exclusive jurisdiction.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Without any prejudice to particulars
+                        listed in
+                        Section
+                        23 above, the Company
+                        shall have the right to seek and obtain any injunctive, provisional or interim relief from any
+                        court
+                        of
+                        competent jurisdiction to protect its trade-mark or other intellectual property rights or
+                        confidential
+                        information or to preserve the status quo pending arbitration.
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">The foregoing paragraphs in this section
+                        23, shall
+                        not
+                        override and shall be
+                        without prejudice to any rights you have as a consumer under your local laws.
+                    </p>
+
+
+                    <p class="font-bold md:text-lg text-base py-4 text-black">22. Entire Agreement</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">This Agreement, along with the Privacy
+                        Policy,
+                        Terms of
+                        Use, and any additional
+                        guidelines, rules, and/or disclaimers posted on the Platform constitutes the entire agreement
+                        governing your
+                        use of our Platform and supersedes any prior agreements, if any, relating to any matter dealt
+                        within
+                        this
+                        Agreement.
+                    </p>
+
+
+                    <p class="font-bold md:text-lg text-base py-4 text-black">23. Contact</p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">If you have any questions about these
+                        Terms, please
+                        contact us by email or
+                        postal mail on the following address:
+                    </p>
+                    <p class="font-normal md:text-base text-sm text-black py-2">Name: Maarg Mentorship Private
+                        Limited<br>
+                        E-mail id: support@mymaarg.com<br>
+                        Address: Phase II, Udyog Vihar, Sector 20, Gurugram, Haryana 122022, India
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ####################################### FOOTER ############################# -->
+        <footer class="py-3 px-14 btn-Bg md:block hidden" style="background: rgba(15, 35, 93, 1);">
+            <div class="flex items-center justify-between py-3 border-b">
+                <div class="w-1/3 logo">
+                    <a href="/">
+                        <img src="img/footerLogo.svg">
+                    </a>
+                </div>
+                <div class="w-1/3 middleText flex items-center justify-center gap-x-7">
+                    <a href="mentor" class="text-main text-sm font-semibold text-white">Become a Mentor</a>
+                    <a href="" class="text-main text-sm font-semibold text-white">Blog</a>
+                    <a href="" class="text-main text-sm font-semibold text-white">Webinar</a>
+                    <a href="#tally-open=mDz1zE&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
+                        class="text-main text-sm font-semibold text-white">Contact Us</a>
+                </div>
+                <div class="w-1/3">
+                    <div class="flex items-center justify-end">
+                        <a href="#tally-open=3jPMl1&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
+                            class="flex items-center gap-x-2 bg-white my-3 py-2 px-5 rounded-xl btn-Bg" role="button">
+                            <img src="img/footerDiamond.svg">
+                            <span class="text-main text-sm font-semibold text-main">Get early
+                                access</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center justify-between py-3 ">
+                <div class="w-1/3 logo">
+                    <p class="text-white text-sm font-normal">Copyright Maarg Mentorship Pvt. Ltd .© 2024.</p>
+                </div>
+                <div class="w-1/3 middleText flex items-center justify-center gap-x-7">
+                    <a href="privacy-policy" class="text-main text-sm font-normal text-white">Privacy Policy</a>
+                    <a href="terms-and-condition" class="text-main text-sm font-normal text-white">Terms and Conditions</a>
+                    <a href="fulfilment" class="text-main text-sm font-normal text-white">Fulfilment Policy</a>
+                </div>
+                <div class="w-1/3 flex items-center justify-end gap-x-3 py-2">
+                    <!-- <a href="" target="_blank"><img src="img/facebook.svg"></a>
+                    <a href="" target="_blank"><img src="img/twitter.svg"></a> -->
+                    <a href="https://www.linkedin.com/company/my-maarg/" target="_blank">
+                        <img src="img/linkedin.svg">
+                    </a>
+                    <!-- <a href="" target="_blank"><img src="img/youtube.svg"></a> -->
+                    <a href="https://www.instagram.com/my_maarg?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank"><img src="img/instagram.svg"></a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- ####################################### MOBILE FOOTER ############################# -->
+        <footer class="py-3 px-5 btn-Bg md:hidden block" style="background: rgba(15, 35, 93, 1);">
+            <div class="flex flex-col items-center justify-between py-5 gap-y-5 border-b">
+                <div class="logo">
+                    <a href="/">
+                        <img src="img/footerLogo.svg">
+                    </a>
+                </div>
+                <div class="flex items-center gap-x-3 py-2 px-3">
+                    <!-- <a href="" target="_blank"><img src="img/facebook.svg"></a>
+                    <a href="" target="_blank"><img src="img/twitter.svg"></a> -->
+                    <a href="https://www.linkedin.com/company/my-maarg/" target="_blank">
+                        <img src="img/linkedin.svg">
+                    </a>
+                    <!-- <a href="" target="_blank"><img src="img/youtube.svg"></a> -->
+                    <a href="https://www.instagram.com/my_maarg?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank"><img src="img/instagram.svg"></a>
+                </div>
+                <div class="middleText flex items-center justify-center gap-x-3">
+                    <a href="mentor" class="text-main text-sm font-semibold text-white">Become a Mentor</a>
+                    <a href="" class="text-main text-sm font-semibold text-white">Blog</a>
+                    <a href="" class="text-main text-sm font-semibold text-white">Webinar</a>
+                    <a href="#tally-open=mDz1zE&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
+                        class="text-main text-sm font-semibold text-white">Contact Us</a>
+                </div>
+
+                <a href="#tally-open=3jPMl1&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
+                    class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded-xl bg-white" role="button">
+                    <img src="img/footerDiamond.svg">
+                    <span class="text-main text-sm font-semibold text-main">Get early
+                        access</span>
+                </a>
+            </div>
+            <div class="flex flex-col items-start justify-between pb-4">
+                <div class="middleText flex flex-col items-start justify-start py-5">
+                    <a href="privacy-policy" class="text-main text-sm font-normal text-white py-2">Privacy Policy</a>
+                    <a href="terms-and-condition" class="text-main text-sm font-normal text-white py-2">Terms and Conditions</a>
+                    <a href="fulfilment" class="text-main text-sm font-normal text-white py-2">Fulfilment
+                        Policy</a>
+                </div>
+                <div class="w-full">
+                    <p class="text-white text-sm font-normal text-center" style="color: rgba(255, 255, 255, 0.6);">
+                        Copyright Maarg
+                        Mentorship Pvt. Ltd .© 2024.</p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+
+</html>
