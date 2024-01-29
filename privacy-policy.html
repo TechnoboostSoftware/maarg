@@ -61,7 +61,7 @@
                             <!-- Dropdown -->
                             <a class="flex items-center text-black/90 lg:pl-4" href="javascript:;" type="button"
                                 id="dropdownMenuButton2" data-te-dropdown-toggle-ref aria-expanded="false"
-                                onclick="resourcesDropDown('web')">
+                                onclick="resourcesDropDown('web','resouce')">
                                 Resources
                                 <span class="ml-1 w-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
@@ -73,11 +73,34 @@
                                 </span>
                             </a>
                             <div class="flex bg-white flex-col md:absolute flex md:items-center items-start justify-center md:mt-6 py-2 px-1 hidden"
-                                id="resourcesDropDown" style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);">
+                                id="resourcesDropDownResouce" style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);">
                                 <a href=""
                                     class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect border-b">Blog</a>
                                 <a href=""
                                     class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect">Webinar</a>
+                            </div>
+                        </li>
+                        <li class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1  relative md:flex hidden" data-te-nav-item-ref
+                            data-te-dropdown-ref>
+                            <!-- Dropdown -->
+                            <a class="flex items-center text-black/90 lg:pl-4" href="javascript:;" type="button"
+                                id="dropdownMenuButton3" data-te-dropdown-toggle-ref aria-expanded="false"
+                                onclick="resourcesDropDown('web','college')">
+                                Colleges
+                                <span class="ml-1 w-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        class="h-5 w-5">
+                                        <path fill-rule="evenodd"
+                                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                            </a>
+                            <div class="flex bg-white flex-col md:absolute flex md:items-center items-start justify-center md:mt-6 py-2 px-1 hidden"
+                                id="resourcesDropDownCollege" style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);">
+                                <a href="master.html"
+                                    class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect">Master’s
+                                    Union</a>
                             </div>
                         </li>
 
@@ -88,7 +111,7 @@
                             <!-- Dropdown -->
                             <a class="flex items-center text-black/90 lg:pl-4" href="javascript:;" type="button"
                                 id="dropdownMenuButton2" data-te-dropdown-toggle-ref aria-expanded="false"
-                                onclick="resourcesDropDown('phone')">
+                                onclick="resourcesDropDown('phone','resouce')">
                                 Resources
                                 <span class="ml-1 w-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
@@ -101,12 +124,37 @@
                             </a>
 
                             <div class="flex bg-white flex-col flex w-full  items-start justify-center rounded py-2 px-5 hidden"
-                                id="resourcesDropDownMobile"
+                                id="resourcesDropDownMobileResource"
                                 style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10); background: rgba(96, 187, 224, 0.20);">
                                 <a href=""
                                     class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect border-b">Blog</a>
                                 <a href=""
                                     class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect">Webinar</a>
+                            </div>
+                        </li>
+                        <li class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1  w-full flex-col relative md:hidden flex"
+                            data-te-nav-item-ref data-te-dropdown-ref>
+                            <!-- Dropdown -->
+                            <a class="flex items-center text-black/90 lg:pl-4" href="javascript:;" type="button"
+                                id="dropdownMenuButton2" data-te-dropdown-toggle-ref aria-expanded="false"
+                                onclick="resourcesDropDown('phone','college')">
+                                Colleges
+                                <span class="ml-1 w-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        class="h-5 w-5">
+                                        <path fill-rule="evenodd"
+                                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                            </a>
+
+                            <div class="flex bg-white flex-col flex w-full  items-start justify-center rounded py-2 px-5 hidden"
+                                id="resourcesDropDownMobileCollege"
+                                style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10); background: rgba(96, 187, 224, 0.20);">
+                                <a href="master.html"
+                                    class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect">Master’s
+                                    Union</a>
                             </div>
                         </li>
 
@@ -1675,7 +1723,8 @@
                 </div>
                 <div class="w-1/3 middleText flex items-center justify-center gap-x-7">
                     <a href="privacy-policy" class="text-main text-sm font-normal text-white">Privacy Policy</a>
-                    <a href="terms-and-condition" class="text-main text-sm font-normal text-white">Terms and Conditions</a>
+                    <a href="terms-and-condition" class="text-main text-sm font-normal text-white">Terms and
+                        Conditions</a>
                     <a href="fulfilment" class="text-main text-sm font-normal text-white">Fulfilment Policy</a>
                 </div>
                 <div class="w-1/3 flex items-center justify-end gap-x-3 py-2">
@@ -1727,7 +1776,8 @@
             <div class="flex flex-col items-start justify-between pb-4">
                 <div class="middleText flex flex-col items-start justify-start py-5">
                     <a href="privacy-policy" class="text-main text-sm font-normal text-white py-2">Privacy Policy</a>
-                    <a href="terms-and-condition" class="text-main text-sm font-normal text-white py-2">Terms and Conditions</a>
+                    <a href="terms-and-condition" class="text-main text-sm font-normal text-white py-2">Terms and
+                        Conditions</a>
                     <a href="fulfilment" class="text-main text-sm font-normal text-white py-2">Fulfilment
                         Policy</a>
                 </div>
