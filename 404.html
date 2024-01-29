@@ -4,10 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+          .loader {
+            width: 100px;
+            height: 14px;
+            display: inline-block;
+            -webkit-mask:linear-gradient(90deg,#000 70%,#0000 0) 0/20%;
+            background:
+            linear-gradient(#000 0 0) 0/0% no-repeat
+            #ddd;
+            animation: l4 2s infinite steps(6);
+            }
+            @keyframes l4 {
+                100% {background-size:120%}
+            }
+    </style>
 </head>
 <body>
-    <h1>404 page not found</h1>
-    <p>Redirecting to ome page ....</p>
+    <div style="text-align: center;margin-top:50px">
+        <h1>404 page not found</h1>
+        <p>Redirecting to home page</p>
+        <div class="loader"></div> 
+        
+          
+    </div>
+    <script>
+        setTimeout(() => {
+            window,location.href="/"
+        }, 3000);
+
+    </script>
     
 </body>
 </html>
