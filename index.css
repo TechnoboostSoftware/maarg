@@ -106,23 +106,27 @@
     display: block;
     height: 100%;
     padding-left: 10px;
-    animation: spin_words 5s infinite;
+    animation: spin_words 4s infinite;
     animation-direction: initial;
 }
 
-
 @keyframes spin_words {
-    33% {
+    0% {
         transform: translateY(0%);
     }
-
-    66% {
+    25%{
         transform: translateY(-100%);
     }
-
-    100% {
+    50%{
         transform: translateY(-200%);
     }
+    75%{
+        transform: translateY(-300%);
+    }
+    100%{
+        transform: translateY(-300%);
+    }
+
 }
 
 .menterosImg{
