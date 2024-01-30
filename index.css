@@ -85,7 +85,7 @@
     background: linear-gradient(278deg, #5EB6DA 0.88%, #3293BB 100.58%) !important;
 }
 
-.offerHover:hover p{
+.offerHover:hover p {
     color: white !important;
 }
 
@@ -114,22 +114,31 @@
     0% {
         transform: translateY(0%);
     }
-    25%{
+
+    25% {
         transform: translateY(-100%);
     }
-    50%{
+
+    50% {
         transform: translateY(-200%);
     }
-    75%{
+
+    75% {
         transform: translateY(-300%);
     }
-    100%{
+
+    100% {
         transform: translateY(-300%);
     }
 
 }
 
-.menterosImg{
+.menterosImg {
     position: absolute;
-    bottom:-30px ;
+    bottom: -30px;
+}
+
+.bgImg {
+    background-image: url(/img/Landing-Page-Web.webp);
+    background-size: cover;
 }
