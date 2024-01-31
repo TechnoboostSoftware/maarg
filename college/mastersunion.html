@@ -5,190 +5,211 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Maarg Mentorship Platform</title>
-        <link rel="icon" type="image/x-icon" href="/img/favicon3.ico">
+        <link rel="icon" type="image/x-icon" href="../img/favicon3.ico">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
             href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap"
             rel="stylesheet">
         <script async src="https://tally.so/widgets/embed.js"></script>
+
         <script src="https://cdn.tailwindcss.com/3.3.0"></script>
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <link rel="stylesheet" href="/index.css">
+        <link rel="stylesheet" href="../index.css">
     </head>
 
     <body>
         <!-- Main navigation container -->
         <nav class="relative flex w-full flex-nowrap items-center justify-between bg-[#FBFBFB] py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 bg-white lg:flex-wrap lg:justify-start lg:py-3"
-        data-te-navbar-ref>
-        <div class="flex w-full flex-wrap items-center justify-between px-3">
-            <div class="ml-2">
-                <a class="text-xl text-neutral-800 dark:text-neutral-200" href="/">
-                    <img src="/img/logo.svg" alt="maarg">
-                </a>
-            </div>
-            <!-- Hamburger button for mobile view -->
-            <button
-                class="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
-                type="button" data-te-collapse-init data-te-target="#navbarSupportedContent14"
-                aria-controls="navbarSupportedContent14" aria-expanded="false" aria-label="Toggle navigation">
-                <!-- Hamburger icon -->
-                <span class="[&>svg]:w-7">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7">
-                        <path fill-rule="evenodd"
-                            d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </span>
-            </button>
+            data-te-navbar-ref>
+            <div class="flex w-full flex-wrap items-center justify-between px-3">
+                <div class="ml-2">
+                    <a class="text-xl text-neutral-800 dark:text-neutral-200" href="/">
+                        <img src="../img/logo.svg" alt="maarg">
+                    </a>
+                </div>
+                <!-- Hamburger button for mobile view -->
+                <button
+                    class="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+                    type="button" data-te-collapse-init data-te-target="#navbarSupportedContent14"
+                    aria-controls="navbarSupportedContent14" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- Hamburger icon -->
+                    <span class="[&>svg]:w-7">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7">
+                            <path fill-rule="evenodd"
+                                d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                </button>
 
-            <!-- Collapsible navbar container -->
-            <div class="!visible mt-2  hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"
-                id="navbarSupportedContent14" data-te-collapse-item>
-                <!-- Left links -->
-                <ul class="list-style-none lg:ml-auto flex flex-col pl-0 lg:mt-1 lg:flex-row text-sm font-semibold md:gap-x-5 "
-                    data-te-navbar-nav-ref>
-                    <!-- Home link -->
-                    <li class="my-4 pl-2 lg:my-0 lg:pl-2 lg:pr-1 text-black/90" data-te-nav-item-ref>
-                        <a class="" aria-current="page" data-te-nav-link-ref href="mentor">Become a Mentor</a>
-                    </li>
-                    <!-- Link -->
-                    <li class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1  relative md:flex hidden" data-te-nav-item-ref
-                        data-te-dropdown-ref>
-                        <!-- Dropdown -->
-                        <a class="flex items-center text-black/90 lg:pl-4" href="javascript:;" type="button"
-                            id="dropdownMenuButton2" data-te-dropdown-toggle-ref aria-expanded="false"
-                            onclick="resourcesDropDown('web','resouce')">
-                            Resources
-                            <span class="ml-1 w-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                    class="h-5 w-5">
-                                    <path fill-rule="evenodd"
-                                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                            </span>
-                        </a>
-                        <div class="flex bg-white flex-col md:absolute flex md:items-center items-start justify-center md:mt-6 py-2 px-1 hidden"
-                            id="resourcesDropDownResouce" style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);">
-                            <a href=""
-                                class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect border-b">Blog</a>
-                            <a href=""
-                                class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect">Webinar</a>
+                <!-- Collapsible navbar container -->
+                <div class="!visible mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"
+                    id="navbarSupportedContent14" data-te-collapse-item>
+                    <!-- Left links -->
+                    <ul class="list-style-none lg:ml-auto flex flex-col pl-0 lg:mt-1 lg:flex-row text-sm font-semibold md:gap-x-5 "
+                        data-te-navbar-nav-ref>
+                        <!-- Home link -->
+                        <li class="my-4 pl-2 lg:my-0 lg:pl-2 lg:pr-1 text-black/90" data-te-nav-item-ref>
+                            <a class="" aria-current="page" data-te-nav-link-ref href="mentor">Become a Mentor</a>
+                        </li>
+                        <!-- Link -->
+                        <li class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1  relative md:flex hidden" data-te-nav-item-ref
+                            data-te-dropdown-ref>
+                            <!-- Dropdown -->
+                            <a class="flex items-center text-black/90 lg:pl-4" href="javascript:;" type="button"
+                                id="dropdownMenuButton2" data-te-dropdown-toggle-ref aria-expanded="false"
+                                onclick="resourcesDropDown('web','resouce')">
+                                Resources
+                                <span class="ml-1 w-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        class="h-5 w-5">
+                                        <path fill-rule="evenodd"
+                                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                            </a>
+                            <div class="flex bg-white flex-col z-50 md:absolute flex md:items-center items-start justify-center md:mt-6 py-2 px-1 hidden"
+                                id="resourcesDropDownResouce" style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);">
+                                <a href=""
+                                    class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect border-b">Blog</a>
+                                <a href=""
+                                    class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect">Webinar</a>
+                            </div>
+                        </li>
+                        <li class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1  relative md:flex hidden" data-te-nav-item-ref
+                            data-te-dropdown-ref>
+                            <!-- Dropdown -->
+                            <a class="flex items-center text-black/90 lg:pl-3 lg:pr-9" href="javascript:;" type="button"
+                                id="dropdownMenuButton3" data-te-dropdown-toggle-ref aria-expanded="false"
+                                onclick="resourcesDropDown('web','college')">
+                                Colleges
+                                <span class="ml-1 w-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        class="h-5 w-5">
+                                        <path fill-rule="evenodd"
+                                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                            </a>
+                            <div class="flex bg-white flex-col  z-50 md:absolute flex md:items-center items-start justify-center md:mt-6 py-2 px-1 hidden"
+                                id="resourcesDropDownCollege" style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);">
+                                <a href="/college/mastersunion"
+                                    class="md:text-sm text-xs w-full py-2 md:px-2 font-semibold navDropEffect">Master’s
+                                    Union</a>
+                            </div>
+                        </li>
+
+                        <!-- mobile view -->
+
+                        <li class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1  w-full flex-col relative md:hidden flex"
+                            data-te-nav-item-ref data-te-dropdown-ref>
+                            <!-- Dropdown -->
+                            <a class="flex items-center text-black/90 lg:pl-4" href="javascript:;" type="button"
+                                id="dropdownMenuButton2" data-te-dropdown-toggle-ref aria-expanded="false"
+                                onclick="resourcesDropDown('phone','resouce')">
+                                Resources
+                                <span class="ml-1 w-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        class="h-5 w-5">
+                                        <path fill-rule="evenodd"
+                                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                            </a>
+
+                            <div class="flex bg-white flex-col flex w-full  items-start justify-center rounded py-2 px-5 hidden"
+                                id="resourcesDropDownMobileResource"
+                                style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10); background: rgba(96, 187, 224, 0.20);">
+                                <a href=""
+                                    class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect border-b">Blog</a>
+                                <a href=""
+                                    class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect">Webinar</a>
+                            </div>
+                        </li>
+                        <li class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1  w-full flex-col relative md:hidden flex"
+                            data-te-nav-item-ref data-te-dropdown-ref>
+                            <!-- Dropdown -->
+                            <a class="flex items-center text-black/90 lg:pl-4" href="javascript:;" type="button"
+                                id="dropdownMenuButton2" data-te-dropdown-toggle-ref aria-expanded="false"
+                                onclick="resourcesDropDown('phone','college')">
+                                Colleges
+                                <span class="ml-1 w-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        class="h-5 w-5">
+                                        <path fill-rule="evenodd"
+                                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                            </a>
+
+                            <div class="flex bg-white flex-col flex w-full  items-start justify-center rounded py-2 px-5 hidden"
+                                id="resourcesDropDownMobileCollege"
+                                style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10); background: rgba(96, 187, 224, 0.20);">
+                                <a href="/college/mastersunion"
+                                    class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect">Master’s
+                                    Union</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="md:w-[350px] w-full lg:pr-2 lg:ml-auto">
+                        <div class="items-center flex lg:gap-x-4  flex-col lg:flex-row">
+                            <a class="text-center text-sm font-semibold text-main flex gap-x-2 items-center justify-center py-2 md:my-0 my-1 px-3 rounded-xl w-full h-[38px]"
+                                style="border: 1px solid #1D2D5A;"
+                                href="#tally-open=mDz1zE&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
+                                role="button"><img src="../img/sms-tracking.svg" class="inline"><span> Contact
+                                    Us</span></a>
+
+                            <a href="#tally-open=3jPMl1&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
+                                class="text-center text-sm font-semibold flex gap-x-2 items-center justify-center md:py-2 py-2.5 md:my-0 my-1 px-3 rounded-xl w-full h-[38px btn-Bg"
+                                style="border: 1px solid #1D2D5A;" role="button">
+                                <img src="../img/diamond.svg" class="inline" width="15px">
+                                <span class=" md:text-sm text-xs font-semibold text-white ">Get early access</span>
+                            </a>
                         </div>
-                    </li>
-                    <li class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1  relative md:flex hidden" data-te-nav-item-ref
-                        data-te-dropdown-ref>
-                        <!-- Dropdown -->
-                        <a class="flex items-center text-black/90 lg:pl-3 lg:pr-9" href="javascript:;" type="button"
-                            id="dropdownMenuButton3" data-te-dropdown-toggle-ref aria-expanded="false"
-                            onclick="resourcesDropDown('web','college')">
-                            Colleges
-                            <span class="ml-1 w-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                    class="h-5 w-5">
-                                    <path fill-rule="evenodd"
-                                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                            </span>
-                        </a>
-                        <div class="flex bg-white flex-col md:absolute flex md:items-center items-start justify-center md:mt-6 py-2 px-1 hidden"
-                            id="resourcesDropDownCollege" style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);">
-                            <a href="/college/mastersunion"
-                                class="md:text-sm text-xs w-full py-2 md:px-2 font-semibold navDropEffect">Master’s
-                                Union</a>
-                        </div>
-                    </li>
-
-                    <!-- mobile view -->
-
-                    <li class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1  w-full flex-col relative md:hidden flex"
-                        data-te-nav-item-ref data-te-dropdown-ref>
-                        <!-- Dropdown -->
-                        <a class="flex items-center text-black/90 lg:pl-4" href="javascript:;" type="button"
-                            id="dropdownMenuButton2" data-te-dropdown-toggle-ref aria-expanded="false"
-                            onclick="resourcesDropDown('phone','resouce')">
-                            Resources
-                            <span class="ml-1 w-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                    class="h-5 w-5">
-                                    <path fill-rule="evenodd"
-                                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                            </span>
-                        </a>
-
-                        <div class="flex bg-white flex-col flex w-full  items-start justify-center rounded py-2 px-5 hidden"
-                            id="resourcesDropDownMobileResource"
-                            style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10); background: rgba(96, 187, 224, 0.20);">
-                            <a href=""
-                                class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect border-b">Blog</a>
-                            <a href=""
-                                class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect">Webinar</a>
-                        </div>
-                    </li>
-                    <li class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1  w-full flex-col relative md:hidden flex"
-                        data-te-nav-item-ref data-te-dropdown-ref>
-                        <!-- Dropdown -->
-                        <a class="flex items-center text-black/90 lg:pl-4" href="javascript:;" type="button"
-                            id="dropdownMenuButton2" data-te-dropdown-toggle-ref aria-expanded="false"
-                            onclick="resourcesDropDown('phone','college')">
-                            Colleges
-                            <span class="ml-1 w-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                    class="h-5 w-5">
-                                    <path fill-rule="evenodd"
-                                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                            </span>
-                        </a>
-
-                        <div class="flex bg-white flex-col flex w-full  items-start justify-center rounded py-2 px-5 hidden"
-                            id="resourcesDropDownMobileCollege"
-                            style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10); background: rgba(96, 187, 224, 0.20);">
-                            <a href="/college/mastersunion"
-                                class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect">Master’s
-                                Union</a>
-                        </div>
-                    </li>
-                </ul>
-
-                <div class="md:w-[350px] w-full lg:pr-2 lg:ml-auto">
-                    <div class="items-center flex lg:gap-x-4  flex-col lg:flex-row">
-                        <a class="text-center text-sm font-semibold text-main flex gap-x-2 items-center justify-center py-2 md:my-0 my-1 px-3 rounded-xl w-full h-[38px]"
-                            style="border: 1px solid #1D2D5A;"
-                            href="#tally-open=mDz1zE&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
-                            role="button"><img src="/img/sms-tracking.svg" class="inline"><span> Contact
-                                Us</span></a>
-
-                        <a href="#tally-open=3jPMl1&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
-                            class="text-center text-sm font-semibold flex gap-x-2 items-center justify-center md:py-2 py-2.5 md:my-0 my-1 px-3 rounded-xl w-full h-[38px btn-Bg"
-                            style="border: 1px solid #1D2D5A;" role="button">
-                            <img src="/img/diamond.svg" class="inline" width="15px">
-                            <span class=" md:text-sm text-xs font-semibold text-white ">Get early access</span>
-                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
-        <!-- ####################################### LANDING ############################# -->
+        </nav>
 
-        <section class="landing z-10 md:block hidden">
-            <div class=" flex items-start justify-start bgImg">
-                <div class="md:px-0 px-5 w-full flex flex-col items-start  justify-start z-10 py-20 md:px-14 px-0 "
-                    style="border-radius: 0px 200px 200px 0px;
-                background: linear-gradient(90deg, #FFF 42.07%, rgba(255, 255, 255, 0.49) 70.14%, rgba(255, 255, 255, 0.00) 86.18%, rgba(255, 255, 255, 0.00) 100%);">
-                    <div class="pb-2">
-                        <img src="/img/landingText.webp" class="md:w-full w-3/5">
+            <!-- ####################################### LANDING ############################# -->
+    
+            <section class="landing z-10 md:block hidden">
+                <div class=" flex items-start justify-start bgImg">
+                    <div class="md:px-0 px-5 w-full flex flex-col items-start  justify-start z-10 py-20 md:px-14 px-0 "
+                        style="border-radius: 0px 200px 200px 0px;
+                    background: linear-gradient(90deg, #FFF 42.07%, rgba(255, 255, 255, 0.49) 70.14%, rgba(255, 255, 255, 0.00) 86.18%, rgba(255, 255, 255, 0.00) 100%);">
+                        <div class="pb-2">
+                            <img src="../img/landingText.svg" class="md:w-full w-3/5">
+                        </div>
+                        <p class="font-normal md:text-5xl text-main py-2">1 : 1 Call With</p>
+                        <p class="font-semibold md:text-6xl  text-main md:py-2 md:text-start text-center"><span
+                                class="text-lightBlue">Master’s Union</span> Students</p>
+                        <p class="font-normal md:text-lg text-sm md:text-start text-center text-main py-2 w-4/5"
+                            style="color: #475569;">Talk to students who are studying there </p>
+                        <div class="flex items-start py-3">
+                            <a href="#tally-open=mOGP4k&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
+                                class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded-xl btn-Bg text-sm font-semibold text-white">Book
+                                Now</a>
+                        </div>
                     </div>
-                    <p class="font-normal md:text-5xl text-main py-2">1 : 1 Call With</p>
-                    <p class="font-semibold md:text-6xl  text-main md:py-2 md:text-start text-center"><span
+                </div>
+            </section>
+    
+            <section class="md:hidden block">
+                <div class="flex flex-col items-start justify-start p-5">
+                    <div class="pb-2">
+                        <img src="../img/landingText.svg" class="md:w-full w-4/5">
+                    </div>
+                    <p class="font-normal md:text-5xl text-3xl text-main py-2">1 : 1 Call With</p>
+                    <p class="font-semibold md:text-6xl text-3xl text-main md:py-2 text-start"><span
                             class="text-lightBlue">Master’s Union</span> Students</p>
                     <p class="font-normal md:text-lg text-sm md:text-start text-center text-main py-2 w-4/5"
                         style="color: #475569;">Talk to students who are studying there </p>
@@ -198,580 +219,562 @@
                             Now</a>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="md:hidden block">
-            <div class="flex flex-col items-start justify-start p-5">
-                <div class="pb-2">
-                    <img src="/img/landingText.webp" class="md:w-full w-4/5">
+                <div class="flex items-center justify-center">
+                    <img src="../img/masterLandingPhoneImg.webp">
                 </div>
-                <p class="font-normal md:text-5xl text-3xl text-main py-2">1 : 1 Call With</p>
-                <p class="font-semibold md:text-6xl text-3xl text-main md:py-2 text-start"><span
-                        class="text-lightBlue">Master’s Union</span> Students</p>
-                <p class="font-normal md:text-lg text-sm md:text-start text-center text-main py-2 w-4/5"
-                    style="color: #475569;">Talk to students who are studying there </p>
-                <div class="flex items-start py-3">
-                    <a href="#tally-open=mOGP4k&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
-                        class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded-xl btn-Bg text-sm font-semibold text-white">Book
-                        Now</a>
+            </section>
+    
+            <!-- ####################################### HOW  ############################# -->
+    
+            <section class="md:px-14 px-5 pb-5" style="background: rgba(247, 248, 251, 1);">
+                <div class="flex flex-col items-center justify-center md:pt-10 pt-7 pb-5">
+                    <p class="title md:text-sm text-base my-3">How it works ?</p>
                 </div>
-            </div>
-            <div class="flex items-center justify-center">
-                <img src="/img/masterLandingPhoneImg.webp">
-            </div>
-        </section>
-
-        <!-- ####################################### HOW  ############################# -->
-
-        <section class="md:px-14 px-5 pb-5" style="background: rgba(247, 248, 251, 1);">
-            <div class="flex flex-col items-center justify-center md:pt-10 pt-7 pb-5">
-                <p class="title md:text-sm text-base my-3">How it works ?</p>
-            </div>
-
-            <div class="flex flex-col justify-center items-center py-5">
-                <div class="grid grid-cols-12 md:py-3">
-                    <div class="md:col-span-6 md:my-0 my-2 col-span-12 px-3">
-                        <div class="box bg-white py-3 md:px-7 px-3 rounded-lg flex flex-col md:items-start items-center justify-center h-full"
-                            style="border: 1px solid rgba(151, 151, 151, 0.15);">
-                            <div class=""><img src="/img/masters-1.svg" alt=""></div>
-                            <div class="flex flex-col md:items-start items-center justify-center py-2">
-                                <p class="md:text-2xl text-lg font-bold text-main pb-2 md:text-start text-center">Book a
-                                    Call</p>
-                                <p class="md:text-base text-sm font-normal text-main md:text-start text-center">Request
-                                    a call using our 'Book a
-                                    Call' form. Share your details, aspirations, and preferences, allowing us to
-                                    understand your unique needs.</p>
+    
+                <div class="flex flex-col justify-center items-center py-5">
+                    <div class="grid grid-cols-12 md:py-3">
+                        <div class="md:col-span-6 md:my-0 my-2 col-span-12 px-3">
+                            <div class="box bg-white py-3 md:px-7 px-3 rounded-lg flex flex-col md:items-start items-center justify-center h-full"
+                                style="border: 1px solid rgba(151, 151, 151, 0.15);">
+                                <div class=""><img src="../img/masters-1.svg" alt=""></div>
+                                <div class="flex flex-col md:items-start items-center justify-center py-2">
+                                    <p class="md:text-2xl text-lg font-bold text-main pb-2 md:text-start text-center">Book a
+                                        Call</p>
+                                    <p class="md:text-base text-sm font-normal text-main md:text-start text-center">Request
+                                        a call using our 'Book a
+                                        Call' form. Share your details, aspirations, and preferences, allowing us to
+                                        understand your unique needs.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="md:col-span-6 md:my-0 my-2 col-span-12 px-3">
+                            <div class="box bg-white py-3 md:px-7 px-3 rounded-lg flex flex-col md:items-start items-center justify-center h-full"
+                                style="border: 1px solid rgba(151, 151, 151, 0.15);">
+                                <div class=""><img src="../img/masters-2.svg" alt=""></div>
+                                <div class="flex flex-col md:items-start items-center justify-center py-2">
+                                    <p class="md:text-2xl text-lg font-bold text-main pb-2 md:text-start text-center">
+                                        Matching</p>
+                                    <p class="md:text-base text-sm font-normal text-main md:text-start text-center">We match
+                                        you with a current MU
+                                        student
+                                        who shares your pre-MBA background.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="md:col-span-6 md:my-0 my-2 col-span-12 px-3">
-                        <div class="box bg-white py-3 md:px-7 px-3 rounded-lg flex flex-col md:items-start items-center justify-center h-full"
-                            style="border: 1px solid rgba(151, 151, 151, 0.15);">
-                            <div class=""><img src="/img/masters-2.svg" alt=""></div>
-                            <div class="flex flex-col md:items-start items-center justify-center py-2">
-                                <p class="md:text-2xl text-lg font-bold text-main pb-2 md:text-start text-center">
-                                    Matching</p>
-                                <p class="md:text-base text-sm font-normal text-main md:text-start text-center">We match
-                                    you with a current MU
-                                    student
-                                    who shares your pre-MBA background.
+                    <div class="grid grid-cols-12 md:py-3">
+                        <div class="md:col-span-6 md:my-0 my-2 col-span-12 px-3">
+                            <div class="box bg-white py-3 md:px-7 px-3 rounded-lg flex flex-col md:items-start items-center justify-center h-full"
+                                style="border: 1px solid rgba(151, 151, 151, 0.15);">
+                                <div class=""><img src="../img/masters-3.svg" alt=""></div>
+                                <div class="flex flex-col md:items-start items-center justify-center py-2">
+                                    <p class="md:text-2xl text-lg font-bold text-main pb-2 md:text-start text-center">
+                                        Scheduling</p>
+                                    <p class="md:text-base text-sm font-normal text-main md:text-start text-center">A quick
+                                        2-minute call to check
+                                        availability and schedule your 30-minute mentorship session.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="md:col-span-6 md:my-0 my-2 col-span-12 px-3">
+                            <div class="box bg-white py-3 md:px-7 px-3 rounded-lg flex flex-col md:items-start items-center justify-center h-full"
+                                style="border: 1px solid rgba(151, 151, 151, 0.15);">
+                                <div class=""><img src="../img/masters-4.svg" alt=""></div>
+                                <div class="flex flex-col md:items-start items-center justify-center py-2">
+                                    <p class="md:text-2xl text-lg font-bold text-main pb-2 md:text-start text-center">
+                                        Mentorship Sessions</p>
+                                    <p class="md:text-base text-sm font-normal text-main md:text-start text-center">Connect
+                                        in a 1-on-1 video call
+                                        with your MU mentor for personalized guidance.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </section>
+    
+            <!-- ####################################### OUR MENTORS ############################# -->
+    
+            <section class="md:px-14 px-5 pb-5">
+                <div class="flex flex-col items-center justify-center md:pt-10 pt-0 pb-5">
+                    <p class="title md:text-sm text-base my-3">Our Mentors</p>
+                </div>
+    
+                <div class="grid md:grid-cols-3  h-full flex items-center justify-center gap-x-10 gap-y-5">
+                    <div class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center">
+                        <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
+                            style="border: 1px solid rgba(96, 187, 224, 0.50);">
+                            <div class="flex justify-center items-center relative">
+                                <img src="../img/masterMentors-1.png" class="menterosImg 2xl:w-1/5 w-2/5">
+    
+                            </div>
+                            <div class="flex justify-end items-end">
+                                <a href="https://www.linkedin.com/in/harsh-patel01/"><img src="../img/masterLinkedin.png"></a>
+                            </div>
+                            <div class="">
+                                <p class="tex-2xl text-center font-bold pt-3">Harsh Patel</p>
+                                <p class="tex-base text-center font-normal">BBA, SPPU, Pune | B.Tech, Bharati Vidyapeeth |
+                                    Founder-
+                                    Ziparr</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center">
+                        <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
+                            style="border: 1px solid rgba(96, 187, 224, 0.50);">
+                            <div class="flex justify-center items-center relative">
+                                <img src="../img/masterMentors-2.png" class="menterosImg 2xl:w-1/5 w-2/5">
+    
+                            </div>
+                            <div class="flex justify-end items-end">
+                                <a href="https://www.linkedin.com/in/vanshmiglani01/"><img
+                                        src="../img/masterLinkedin.png"></a>
+                            </div>
+                            <div class="">
+                                <p class="tex-2xl text-center font-bold pt-3">Vansh Miglani</p>
+                                <p class="tex-base text-center font-normal">BBA, MGSU, Bikaner | Founder- Retailzoid &
+                                    Pentazoid</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center">
+                        <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
+                            style="border: 1px solid rgba(96, 187, 224, 0.50);">
+                            <div class="flex justify-center items-center relative">
+                                <img src="../img/masterMentors-3.png" class="menterosImg 2xl:w-1/5 w-2/5">
+    
+                            </div>
+                            <div class="flex justify-end items-end">
+                                <a href="https://www.linkedin.com/in/harsh-mudgil/"><img src="../img/masterLinkedin.png"></a>
+                            </div>
+                            <div class="">
+                                <p class="tex-2xl text-center font-bold pt-3">Harsh Mudgil</p>
+                                <p class="tex-base text-center font-normal">B.Tech, JIIT, Noida | Ex- Alma Better</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center">
+                        <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
+                            style="border: 1px solid rgba(96, 187, 224, 0.50);">
+                            <div class="flex justify-center items-center relative">
+                                <img src="../img/masterMentors-4.png" class="menterosImg 2xl:w-1/5 w-2/5">
+    
+                            </div>
+                            <div class="flex justify-end items-end">
+                                <a href=""><img src="../img/masterLinkedin.png"></a>
+                            </div>
+                            <div class="">
+                                <p class="tex-2xl text-center font-bold pt-3">Krishna Goyal</p>
+                                <p class="tex-base text-center font-normal">BBA, Christ University | Ex- VWO | Ex- Hevo Data
+                                    | Co-Founder - MAARG</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center">
+                        <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
+                            style="border: 1px solid rgba(96, 187, 224, 0.50);">
+                            <div class="flex justify-center items-center relative">
+                                <img src="../img/masterMentors-5.png" class="menterosImg 2xl:w-1/5 w-2/5">
+    
+                            </div>
+                            <div class="flex justify-end items-end">
+                                <a href=""><img src="../img/masterLinkedin.png"></a>
+                            </div>
+                            <div class="">
+                                <p class="tex-2xl text-center font-bold pt-3">Udit Agarwal</p>
+                                <p class="tex-base text-center font-normal">BBA, DY Patil University | Ex- Emami | Ex-
+                                    jumper.ai</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center">
+                        <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
+                            style="border: 1px solid rgba(96, 187, 224, 0.50);">
+                            <div class="flex justify-center items-center relative">
+                                <img src="../img/masterMentors-6.png" class="menterosImg 2xl:w-1/5 w-2/5">
+    
+                            </div>
+                            <div class="flex justify-end items-end">
+                                <a href=""><img src="../img/masterLinkedin.png"></a>
+                            </div>
+                            <div class="">
+                                <p class="tex-2xl text-center font-bold pt-3">Nandan Tawari</p>
+                                <p class="tex-base text-center font-normal">B.Tech, VIT, Pune | Ex- Deutsche Bank</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div
+                        class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center mentorBoxes hidden">
+                        <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
+                            style="border: 1px solid rgba(96, 187, 224, 0.50);">
+                            <div class="flex justify-center items-center relative">
+                                <img src="../img/masterMentors-7.png" class="menterosImg 2xl:w-1/5 w-2/5">
+    
+                            </div>
+                            <div class="flex justify-end items-end">
+                                <a href="https://www.linkedin.com/in/nidhi-s-373845154/"><img src="../img/masterLinkedin.png"></a>
+                            </div>
+                            <div class="">
+                                <p class="tex-2xl text-center font-bold pt-3">Nidhi S</p>
+                                <p class="tex-base text-center font-normal">BE, Ramaiah Institute Of Technology | Ex- Target
+                                    | Ex- EY | Co-Founder - MAARG</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div
+                        class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center mentorBoxes hidden">
+                        <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
+                            style="border: 1px solid rgba(96, 187, 224, 0.50);">
+                            <div class="flex justify-center items-center relative">
+                                <img src="../img/masterMentors-8.png" class="menterosImg 2xl:w-1/5 w-2/5">
+    
+                            </div>
+                            <div class="flex justify-end items-end">
+                                <a href=""><img src="../img/masterLinkedin.png"></a>
+                            </div>
+                            <div class="">
+                                <p class="tex-2xl text-center font-bold pt-3">Aadi Jain</p>
+                                <p class="tex-base text-center font-normal">B.Tech, Mahindra University | Ex- Dell Inc.</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div
+                        class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center mentorBoxes hidden">
+                        <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
+                            style="border: 1px solid rgba(96, 187, 224, 0.50);">
+                            <div class="flex justify-center items-center relative">
+                                <img src="../img/masterMentors-9.png" class="menterosImg 2xl:w-1/5 w-2/5">
+    
+                            </div>
+                            <div class="flex justify-end items-end">
+                                <a href="https://www.linkedin.com/in/samkitnahar/"><img src="../img/masterLinkedin.png"></a>
+                            </div>
+                            <div class="">
+                                <p class="tex-2xl text-center font-bold pt-3">Samkit Nahar</p>
+                                <p class="tex-base text-center font-normal">BCA, Christ University | Ex- Searce Inc | Ex-
+                                    Yellowchalk Design</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div
+                        class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center mentorBoxes hidden">
+                        <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
+                            style="border: 1px solid rgba(96, 187, 224, 0.50);">
+                            <div class="flex justify-center items-center relative">
+                                <img src="../img/masterMentors-10.png" class="menterosImg 2xl:w-1/5 w-2/5">
+    
+                            </div>
+                            <div class="flex justify-end items-end">
+                                <a href="https://www.linkedin.com/in/taabish-iqbal/"><img src="../img/masterLinkedin.png"></a>
+                            </div>
+                            <div class="">
+                                <p class="tex-2xl text-center font-bold pt-3">Tabish Iqbal</p>
+                                <p class="tex-base text-center font-normal">B.Tech, MNIT Jaipur | Ex- Hero MotoCorp | Ex-
+                                    Tata Motors</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div
+                        class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center mentorBoxes hidden">
+                        <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
+                            style="border: 1px solid rgba(96, 187, 224, 0.50);">
+                            <div class="flex justify-center items-center relative">
+                                <img src="../img/masterMentors-11.png" class="menterosImg 2xl:w-1/5 w-2/5">
+    
+                            </div>
+                            <div class="flex justify-end items-end">
+                                <a href="https://www.linkedin.com/in/rohan-tomar-54242414a/"><img src="../img/masterLinkedin.png"></a>
+                            </div>
+                            <div class="">
+                                <p class="tex-2xl text-center font-bold pt-3">Rohan Tomar</p>
+                                <p class="tex-base text-center font-normal">B.Tech, SRM University | Ex- FrontRow | Ex-
+                                    Ontop | Ex- RecruitGo</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div
+                        class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center mentorBoxes hidden">
+                        <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
+                            style="border: 1px solid rgba(96, 187, 224, 0.50);">
+                            <div class="flex justify-center items-center relative">
+                                <img src="../img/masterMentors-12.png" class="menterosImg 2xl:w-1/5 w-2/5">
+    
+                            </div>
+                            <div class="flex justify-end items-end">
+                                <a href="https://www.linkedin.com/in/dhanush-varun-1a23b4176/"><img src="../img/masterLinkedin.png"></a>
+                            </div>
+                            <div class="">
+                                <p class="tex-2xl text-center font-bold pt-3">Dhanush Varun</p>
+                                <p class="tex-base text-center font-normal">B.Tech, NIT | Ex- ZS</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div
+                        class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center mentorBoxes hidden">
+                        <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
+                            style="border: 1px solid rgba(96, 187, 224, 0.50);">
+                            <div class="flex justify-center items-center relative">
+                                <img src="../img/masterMentors-13.png" class="menterosImg 2xl:w-1/5 w-2/5">
+    
+                            </div>
+                            <div class="flex justify-end items-end">
+                                <a href=""><img src="../img/masterLinkedin.png"></a>
+                            </div>
+                            <div class="">
+                                <p class="tex-2xl text-center font-bold pt-3">Aditi Lahane</p>
+                                <p class="tex-base text-center font-normal">B.Tech, Vishwakarma Institute Of Tech., Pune |
+                                    Ex-Sthapatya Consultants</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div
+                        class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center mentorBoxes hidden">
+                        <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
+                            style="border: 1px solid rgba(96, 187, 224, 0.50);">
+                            <div class="flex justify-center items-center relative">
+                                <img src="../img/masterMentors-14.png" class="menterosImg 2xl:w-1/5 w-2/5">
+    
+                            </div>
+                            <div class="flex justify-end items-end">
+                                <a href=""><img src="../img/masterLinkedin.png"></a>
+                            </div>
+                            <div class="">
+                                <p class="tex-2xl text-center font-bold pt-3">Deepak S</p>
+                                <p class="tex-base text-center font-normal">CA | B.Com, IGNOU | Ex- Deloitte Consulting</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div
+                        class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center mentorBoxes hidden">
+                        <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
+                            style="border: 1px solid rgba(96, 187, 224, 0.50);">
+                            <div class="flex justify-center items-center relative">
+                                <img src="../img/masterMentors-15.png" class="menterosImg 2xl:w-1/5 w-2/5">
+    
+                            </div>
+                            <div class="flex justify-end items-end">
+                                <a href=""><img src="../img/masterLinkedin.png"></a>
+                            </div>
+                            <div class="">
+                                <p class="tex-2xl text-center font-bold pt-3">Pavan Krishna</p>
+                                <p class="tex-base text-center font-normal">CA | B.Com, Univ. of Madras | Ex-Deloitte</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div
+                        class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center mentorBoxes hidden">
+                        <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
+                            style="border: 1px solid rgba(96, 187, 224, 0.50);">
+                            <div class="flex justify-center items-center relative">
+                                <img src="../img/masterMentors-16.png" class="menterosImg 2xl:w-1/5 w-2/5">
+    
+                            </div>
+                            <div class="flex justify-end items-end">
+                                <a href="https://www.linkedin.com/in/kakaraparthi-sri-badarinadh-570863134/"><img src="../img/masterLinkedin.png"></a>
+                            </div>
+                            <div class="">
+                                <p class="tex-2xl text-center font-bold pt-3">Sri Badarinadh</p>
+                                <p class="tex-base text-center font-normal">B.Tech, Amrita School of Engineering | Ex-
+                                    Ericsson | Ex- CoinSwitch Kuber</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div
+                        class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center mentorBoxes hidden">
+                        <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
+                            style="border: 1px solid rgba(96, 187, 224, 0.50);">
+                            <div class="flex justify-center items-center relative">
+                                <img src="../img/masterMentors-17.png" class="menterosImg 2xl:w-1/5 w-2/5">
+    
+                            </div>
+                            <div class="flex justify-end items-end">
+                                <a href="https://www.linkedin.com/in/prishtagrover/"><img src="../img/masterLinkedin.png"></a>
+                            </div>
+                            <div class="">
+                                <p class="tex-2xl text-center font-bold pt-3">Prishta Grover</p>
+                                <p class="tex-base text-center font-normal">B.A. (Hons.), DU | Ex- Athena Education</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div
+                        class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center mentorBoxes hidden">
+                        <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
+                            style="border: 1px solid rgba(96, 187, 224, 0.50);">
+                            <div class="flex justify-center items-center relative">
+                                <img src="../img/masterMentors-18.png" class="menterosImg 2xl:w-1/5 w-2/5">
+    
+                            </div>
+                            <div class="flex justify-end items-end">
+                                <a href="https://www.linkedin.com/in/savrang-jain-r-a81a8290/"><img src="../img/masterLinkedin.png"></a>
+                            </div>
+                            <div class="">
+                                <p class="tex-2xl text-center font-bold pt-3">Savrang Jain</p>
+                                <p class="tex-base text-center font-normal">B.Com, Loyola College | Ex- Hiya Enterprises |
+                                    Ex- Symbiate Ventures</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div
+                        class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center mentorBoxes hidden">
+                        <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
+                            style="border: 1px solid rgba(96, 187, 224, 0.50);">
+                            <div class="flex justify-center items-center relative">
+                                <img src="../img/masterMentors-19.png" class="menterosImg 2xl:w-1/5 w-2/5">
+    
+                            </div>
+                            <div class="flex justify-end items-end">
+                                <a href="https://www.linkedin.com/in/suryanshu-panda-633810174/?original_referer=https%3A%2F%2Fmastersunion%2Eorg%2F&originalSubdomain=in"><img src="../img/masterLinkedin.png"></a>
+                            </div>
+                            <div class="">
+                                <p class="tex-2xl text-center font-bold pt-3">Suryanshu Panda</p>
+                                <p class="tex-base text-center font-normal">BBM, Xavier University, Bhubaneswar | Founder-
+                                    Chef Junction | Ex- Tata STRIVE</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div
+                        class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center mentorBoxes hidden">
+                        <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
+                            style="border: 1px solid rgba(96, 187, 224, 0.50);">
+                            <div class="flex justify-center items-center relative">
+                                <img src="../img/masterMentors-20.png" class="menterosImg 2xl:w-1/5 w-2/5">
+    
+                            </div>
+                            <div class="flex justify-end items-end">
+                                <a href="https://www.linkedin.com/in/vaibhavmahajan-outontrip/"><img src="../img/masterLinkedin.png"></a>
+                            </div>
+                            <div class="">
+                                <p class="tex-2xl text-center font-bold pt-3">Vaibhav Mahajan</p>
+                                <p class="tex-base text-center font-normal">B.Des, FDDI, Noida | Ex - Glassrock Traders LLP
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="grid grid-cols-12 md:py-3">
-                    <div class="md:col-span-6 md:my-0 my-2 col-span-12 px-3">
-                        <div class="box bg-white py-3 md:px-7 px-3 rounded-lg flex flex-col md:items-start items-center justify-center h-full"
-                            style="border: 1px solid rgba(151, 151, 151, 0.15);">
-                            <div class=""><img src="/img/masters-3.svg" alt=""></div>
-                            <div class="flex flex-col md:items-start items-center justify-center py-2">
-                                <p class="md:text-2xl text-lg font-bold text-main pb-2 md:text-start text-center">
-                                    Scheduling</p>
-                                <p class="md:text-base text-sm font-normal text-main md:text-start text-center">A quick
-                                    2-minute call to check
-                                    availability and schedule your 30-minute mentorship session.</p>
-                            </div>
+                <div class="flex items-center justify-center md:py-14 pt-14 pb-7 less hidden">
+                    <button class="md:w-1/3 w-full rounded-lg font-semibold text-main py-2"
+                        style="border: 1px solid #1D2D5A;" onclick="lessDisplay()">View
+                        less</button>
+                </div>
+                <div class="flex items-center justify-center md:py-14 pt-14 pb-7 more ">
+                    <button class="md:w-1/3 w-full rounded-lg font-semibold text-main py-2"
+                        style="border: 1px solid #1D2D5A;" onclick="displayMore()">View more</button>
+                </div>
+    
+            </section>
+    
+    
+            <section class="md:px-14 px-5 md:py-10">
+                <div class="md:p-10 p-3 grid md:grid-cols-12 rounded h-full"
+                    style="background: linear-gradient(278deg, #5EB6DA 0.88%, #3293BB 100.58%);">
+                    <div class="md:col-span-8 flex flex-col md:items-start items-center justify-center md:pt-0 pt-10">
+                        <p class="font-bold md:text-4xl text-2xl md:w-3/5 text-center md:text-start text-white">Let’s shape
+                            the future together!</p>
+                        <div class="flex items-center md:justify-end justify-center pt-5">
+                            <a href="#" class="flex items-center gap-x-2 bg-white my-3 py-2 px-5 rounded-xl btn-Bg"
+                                role="button">
+                                <img src="../img/footerDiamond.svg">
+                                <span class="text-main text-sm font-semibold text-main">Book Now</span>
+                            </a>
                         </div>
                     </div>
-
-                    <div class="md:col-span-6 md:my-0 my-2 col-span-12 px-3">
-                        <div class="box bg-white py-3 md:px-7 px-3 rounded-lg flex flex-col md:items-start items-center justify-center h-full"
-                            style="border: 1px solid rgba(151, 151, 151, 0.15);">
-                            <div class=""><img src="/img/masters-4.svg" alt=""></div>
-                            <div class="flex flex-col md:items-start items-center justify-center py-2">
-                                <p class="md:text-2xl text-lg font-bold text-main pb-2 md:text-start text-center">
-                                    Mentorship Sessions</p>
-                                <p class="md:text-base text-sm font-normal text-main md:text-start text-center">Connect
-                                    in a 1-on-1 video call
-                                    with your MU mentor for personalized guidance.</p>
-                            </div>
-                        </div>
+                    <div class="md:col-span-4 md:pt-0 pt-10 md:pb-2 pb-4 flex items-center justify-center">
+                        <img src="../img/lets.svg" class="w-4/5">
                     </div>
                 </div>
-            </div>
-
-        </section>
-
-        <!-- ####################################### OUR MENTORS ############################# -->
-
-        <section class="md:px-14 px-5 pb-5">
-            <div class="flex flex-col items-center justify-center md:pt-10 pt-0 pb-5">
-                <p class="title md:text-sm text-base my-3">Our Mentors</p>
-            </div>
-
-            <div class="grid md:grid-cols-3  h-full flex items-center justify-center gap-x-10 gap-y-5">
-                <div class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center">
-                    <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
-                        style="border: 1px solid rgba(96, 187, 224, 0.50);">
-                        <div class="flex justify-center items-center relative">
-                            <img src="/img/masterMentors-1.png" class="menterosImg 2xl:w-1/5 w-2/5">
-
-                        </div>
-                        <div class="flex justify-end items-end">
-                            <a href="https://www.linkedin.com/in/harsh-patel01/"><img src="/img/masterLinkedin.png"></a>
-                        </div>
-                        <div class="">
-                            <p class="tex-2xl text-center font-bold pt-3">Harsh Patel</p>
-                            <p class="tex-base text-center font-normal">BBA, SPPU, Pune | B.Tech, Bharati Vidyapeeth |
-                                Founder-
-                                Ziparr</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center">
-                    <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
-                        style="border: 1px solid rgba(96, 187, 224, 0.50);">
-                        <div class="flex justify-center items-center relative">
-                            <img src="/img/masterMentors-2.png" class="menterosImg 2xl:w-1/5 w-2/5">
-
-                        </div>
-                        <div class="flex justify-end items-end">
-                            <a href="https://www.linkedin.com/in/vanshmiglani01/"><img
-                                    src="/img/masterLinkedin.png"></a>
-                        </div>
-                        <div class="">
-                            <p class="tex-2xl text-center font-bold pt-3">Vansh Miglani</p>
-                            <p class="tex-base text-center font-normal">BBA, MGSU, Bikaner | Founder- Retailzoid &
-                                Pentazoid</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center">
-                    <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
-                        style="border: 1px solid rgba(96, 187, 224, 0.50);">
-                        <div class="flex justify-center items-center relative">
-                            <img src="/img/masterMentors-3.png" class="menterosImg 2xl:w-1/5 w-2/5">
-
-                        </div>
-                        <div class="flex justify-end items-end">
-                            <a href="https://www.linkedin.com/in/harsh-mudgil/"><img src="/img/masterLinkedin.png"></a>
-                        </div>
-                        <div class="">
-                            <p class="tex-2xl text-center font-bold pt-3">Harsh Mudgil</p>
-                            <p class="tex-base text-center font-normal">B.Tech, JIIT, Noida | Ex- Alma Better</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center">
-                    <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
-                        style="border: 1px solid rgba(96, 187, 224, 0.50);">
-                        <div class="flex justify-center items-center relative">
-                            <img src="/img/masterMentors-4.png" class="menterosImg 2xl:w-1/5 w-2/5">
-
-                        </div>
-                        <div class="flex justify-end items-end">
-                            <a href=""><img src="/img/masterLinkedin.png"></a>
-                        </div>
-                        <div class="">
-                            <p class="tex-2xl text-center font-bold pt-3">Krishna Goyal</p>
-                            <p class="tex-base text-center font-normal">BBA, Christ University | Ex- VWO | Ex- Hevo Data
-                                | Co-Founder - MAARG</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center">
-                    <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
-                        style="border: 1px solid rgba(96, 187, 224, 0.50);">
-                        <div class="flex justify-center items-center relative">
-                            <img src="/img/masterMentors-5.png" class="menterosImg 2xl:w-1/5 w-2/5">
-
-                        </div>
-                        <div class="flex justify-end items-end">
-                            <a href=""><img src="/img/masterLinkedin.png"></a>
-                        </div>
-                        <div class="">
-                            <p class="tex-2xl text-center font-bold pt-3">Udit Agarwal</p>
-                            <p class="tex-base text-center font-normal">BBA, DY Patil University | Ex- Emami | Ex-
-                                jumper.ai</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center">
-                    <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
-                        style="border: 1px solid rgba(96, 187, 224, 0.50);">
-                        <div class="flex justify-center items-center relative">
-                            <img src="/img/masterMentors-6.png" class="menterosImg 2xl:w-1/5 w-2/5">
-
-                        </div>
-                        <div class="flex justify-end items-end">
-                            <a href=""><img src="/img/masterLinkedin.png"></a>
-                        </div>
-                        <div class="">
-                            <p class="tex-2xl text-center font-bold pt-3">Nandan Tawari</p>
-                            <p class="tex-base text-center font-normal">B.Tech, VIT, Pune | Ex- Deutsche Bank</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div
-                    class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center mentorBoxes hidden">
-                    <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
-                        style="border: 1px solid rgba(96, 187, 224, 0.50);">
-                        <div class="flex justify-center items-center relative">
-                            <img src="/img/masterMentors-7.png" class="menterosImg 2xl:w-1/5 w-2/5">
-
-                        </div>
-                        <div class="flex justify-end items-end">
-                            <a href="https://www.linkedin.com/in/nidhi-s-373845154/"><img src="/img/masterLinkedin.png"></a>
-                        </div>
-                        <div class="">
-                            <p class="tex-2xl text-center font-bold pt-3">Nidhi S</p>
-                            <p class="tex-base text-center font-normal">BE, Ramaiah Institute Of Technology | Ex- Target
-                                | Ex- EY | Co-Founder - MAARG</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div
-                    class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center mentorBoxes hidden">
-                    <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
-                        style="border: 1px solid rgba(96, 187, 224, 0.50);">
-                        <div class="flex justify-center items-center relative">
-                            <img src="/img/masterMentors-8.png" class="menterosImg 2xl:w-1/5 w-2/5">
-
-                        </div>
-                        <div class="flex justify-end items-end">
-                            <a href=""><img src="/img/masterLinkedin.png"></a>
-                        </div>
-                        <div class="">
-                            <p class="tex-2xl text-center font-bold pt-3">Aadi Jain</p>
-                            <p class="tex-base text-center font-normal">B.Tech, Mahindra University | Ex- Dell Inc.</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div
-                    class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center mentorBoxes hidden">
-                    <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
-                        style="border: 1px solid rgba(96, 187, 224, 0.50);">
-                        <div class="flex justify-center items-center relative">
-                            <img src="/img/masterMentors-9.png" class="menterosImg 2xl:w-1/5 w-2/5">
-
-                        </div>
-                        <div class="flex justify-end items-end">
-                            <a href="https://www.linkedin.com/in/samkitnahar/"><img src="/img/masterLinkedin.png"></a>
-                        </div>
-                        <div class="">
-                            <p class="tex-2xl text-center font-bold pt-3">Samkit Nahar</p>
-                            <p class="tex-base text-center font-normal">BCA, Christ University | Ex- Searce Inc | Ex-
-                                Yellowchalk Design</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div
-                    class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center mentorBoxes hidden">
-                    <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
-                        style="border: 1px solid rgba(96, 187, 224, 0.50);">
-                        <div class="flex justify-center items-center relative">
-                            <img src="/img/masterMentors-10.png" class="menterosImg 2xl:w-1/5 w-2/5">
-
-                        </div>
-                        <div class="flex justify-end items-end">
-                            <a href="https://www.linkedin.com/in/taabish-iqbal/"><img src="/img/masterLinkedin.png"></a>
-                        </div>
-                        <div class="">
-                            <p class="tex-2xl text-center font-bold pt-3">Tabish Iqbal</p>
-                            <p class="tex-base text-center font-normal">B.Tech, MNIT Jaipur | Ex- Hero MotoCorp | Ex-
-                                Tata Motors</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div
-                    class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center mentorBoxes hidden">
-                    <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
-                        style="border: 1px solid rgba(96, 187, 224, 0.50);">
-                        <div class="flex justify-center items-center relative">
-                            <img src="/img/masterMentors-11.png" class="menterosImg 2xl:w-1/5 w-2/5">
-
-                        </div>
-                        <div class="flex justify-end items-end">
-                            <a href="https://www.linkedin.com/in/rohan-tomar-54242414a/"><img src="/img/masterLinkedin.png"></a>
-                        </div>
-                        <div class="">
-                            <p class="tex-2xl text-center font-bold pt-3">Rohan Tomar</p>
-                            <p class="tex-base text-center font-normal">B.Tech, SRM University | Ex- FrontRow | Ex-
-                                Ontop | Ex- RecruitGo</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div
-                    class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center mentorBoxes hidden">
-                    <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
-                        style="border: 1px solid rgba(96, 187, 224, 0.50);">
-                        <div class="flex justify-center items-center relative">
-                            <img src="/img/masterMentors-12.png" class="menterosImg 2xl:w-1/5 w-2/5">
-
-                        </div>
-                        <div class="flex justify-end items-end">
-                            <a href="https://www.linkedin.com/in/dhanush-varun-1a23b4176/"><img src="/img/masterLinkedin.png"></a>
-                        </div>
-                        <div class="">
-                            <p class="tex-2xl text-center font-bold pt-3">Dhanush Varun</p>
-                            <p class="tex-base text-center font-normal">B.Tech, NIT | Ex- ZS</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div
-                    class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center mentorBoxes hidden">
-                    <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
-                        style="border: 1px solid rgba(96, 187, 224, 0.50);">
-                        <div class="flex justify-center items-center relative">
-                            <img src="/img/masterMentors-13.png" class="menterosImg 2xl:w-1/5 w-2/5">
-
-                        </div>
-                        <div class="flex justify-end items-end">
-                            <a href=""><img src="/img/masterLinkedin.png"></a>
-                        </div>
-                        <div class="">
-                            <p class="tex-2xl text-center font-bold pt-3">Aditi Lahane</p>
-                            <p class="tex-base text-center font-normal">B.Tech, Vishwakarma Institute Of Tech., Pune |
-                                Ex-Sthapatya Consultants</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div
-                    class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center mentorBoxes hidden">
-                    <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
-                        style="border: 1px solid rgba(96, 187, 224, 0.50);">
-                        <div class="flex justify-center items-center relative">
-                            <img src="/img/masterMentors-14.png" class="menterosImg 2xl:w-1/5 w-2/5">
-
-                        </div>
-                        <div class="flex justify-end items-end">
-                            <a href=""><img src="/img/masterLinkedin.png"></a>
-                        </div>
-                        <div class="">
-                            <p class="tex-2xl text-center font-bold pt-3">Deepak S</p>
-                            <p class="tex-base text-center font-normal">CA | B.Com, IGNOU | Ex- Deloitte Consulting</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div
-                    class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center mentorBoxes hidden">
-                    <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
-                        style="border: 1px solid rgba(96, 187, 224, 0.50);">
-                        <div class="flex justify-center items-center relative">
-                            <img src="/img/masterMentors-15.png" class="menterosImg 2xl:w-1/5 w-2/5">
-
-                        </div>
-                        <div class="flex justify-end items-end">
-                            <a href=""><img src="/img/masterLinkedin.png"></a>
-                        </div>
-                        <div class="">
-                            <p class="tex-2xl text-center font-bold pt-3">Pavan Krishna</p>
-                            <p class="tex-base text-center font-normal">CA | B.Com, Univ. of Madras | Ex-Deloitte</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div
-                    class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center mentorBoxes hidden">
-                    <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
-                        style="border: 1px solid rgba(96, 187, 224, 0.50);">
-                        <div class="flex justify-center items-center relative">
-                            <img src="/img/masterMentors-16.png" class="menterosImg 2xl:w-1/5 w-2/5">
-
-                        </div>
-                        <div class="flex justify-end items-end">
-                            <a href="https://www.linkedin.com/in/kakaraparthi-sri-badarinadh-570863134/"><img src="/img/masterLinkedin.png"></a>
-                        </div>
-                        <div class="">
-                            <p class="tex-2xl text-center font-bold pt-3">Sri Badarinadh</p>
-                            <p class="tex-base text-center font-normal">B.Tech, Amrita School of Engineering | Ex-
-                                Ericsson | Ex- CoinSwitch Kuber</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div
-                    class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center mentorBoxes hidden">
-                    <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
-                        style="border: 1px solid rgba(96, 187, 224, 0.50);">
-                        <div class="flex justify-center items-center relative">
-                            <img src="/img/masterMentors-17.png" class="menterosImg 2xl:w-1/5 w-2/5">
-
-                        </div>
-                        <div class="flex justify-end items-end">
-                            <a href="https://www.linkedin.com/in/prishtagrover/"><img src="/img/masterLinkedin.png"></a>
-                        </div>
-                        <div class="">
-                            <p class="tex-2xl text-center font-bold pt-3">Prishta Grover</p>
-                            <p class="tex-base text-center font-normal">B.A. (Hons.), DU | Ex- Athena Education</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div
-                    class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center mentorBoxes hidden">
-                    <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
-                        style="border: 1px solid rgba(96, 187, 224, 0.50);">
-                        <div class="flex justify-center items-center relative">
-                            <img src="/img/masterMentors-18.png" class="menterosImg 2xl:w-1/5 w-2/5">
-
-                        </div>
-                        <div class="flex justify-end items-end">
-                            <a href="https://www.linkedin.com/in/savrang-jain-r-a81a8290/"><img src="/img/masterLinkedin.png"></a>
-                        </div>
-                        <div class="">
-                            <p class="tex-2xl text-center font-bold pt-3">Savrang Jain</p>
-                            <p class="tex-base text-center font-normal">B.Com, Loyola College | Ex- Hiya Enterprises |
-                                Ex- Symbiate Ventures</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div
-                    class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center mentorBoxes hidden">
-                    <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
-                        style="border: 1px solid rgba(96, 187, 224, 0.50);">
-                        <div class="flex justify-center items-center relative">
-                            <img src="/img/masterMentors-19.png" class="menterosImg 2xl:w-1/5 w-2/5">
-
-                        </div>
-                        <div class="flex justify-end items-end">
-                            <a href="https://www.linkedin.com/in/suryanshu-panda-633810174/?original_referer=https%3A%2F%2Fmastersunion%2Eorg%2F&originalSubdomain=in"><img src="/img/masterLinkedin.png"></a>
-                        </div>
-                        <div class="">
-                            <p class="tex-2xl text-center font-bold pt-3">Suryanshu Panda</p>
-                            <p class="tex-base text-center font-normal">BBM, Xavier University, Bhubaneswar | Founder-
-                                Chef Junction | Ex- Tata STRIVE</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div
-                    class="lg:h-72 md:h-64 h-72 w-full md:pt-0 pt-4 mt-4 flex items-end justify-center mentorBoxes hidden">
-                    <div class="rounded p-3 border flex flex-col relative w-full lg:h-40 h-48"
-                        style="border: 1px solid rgba(96, 187, 224, 0.50);">
-                        <div class="flex justify-center items-center relative">
-                            <img src="/img/masterMentors-20.png" class="menterosImg 2xl:w-1/5 w-2/5">
-
-                        </div>
-                        <div class="flex justify-end items-end">
-                            <a href="https://www.linkedin.com/in/vaibhavmahajan-outontrip/"><img src="/img/masterLinkedin.png"></a>
-                        </div>
-                        <div class="">
-                            <p class="tex-2xl text-center font-bold pt-3">Vaibhav Mahajan</p>
-                            <p class="tex-base text-center font-normal">B.Des, FDDI, Noida | Ex - Glassrock Traders LLP
+            </section>
+    
+            <!-- ####################################### FAQ ############################# -->
+    
+            <section class="md:mx-14 mx-5 my-10 rounded" style="background: rgba(247, 248, 251, 1);">
+                <div class="grid grid-cols-12 md:px-5 px-3 flex md:flex-row flex-col items-start">
+                    <div class="md:col-span-4 col-span-12 h-full">
+                        <div class="flex flex-col items-center justify-center">
+                            <p class="title md:text-sm text-base">FAQ</p>
+                            <p class="text-main font-bold md:text-3xl text-2xl py-4 text-center">Frequently Asked Questions
                             </p>
+                            <img src="../img/faqImg.svg" class="md:block hidden">
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="flex items-center justify-center md:py-14 pt-14 pb-7 less hidden">
-                <button class="md:w-1/3 w-full rounded-lg font-semibold text-main py-2"
-                    style="border: 1px solid #1D2D5A;" onclick="lessDisplay()">View
-                    less</button>
-            </div>
-            <div class="flex items-center justify-center md:py-14 pt-14 pb-7 more ">
-                <button class="md:w-1/3 w-full rounded-lg font-semibold text-main py-2"
-                    style="border: 1px solid #1D2D5A;" onclick="displayMore()">View more</button>
-            </div>
-
-        </section>
-
-
-        <section class="md:px-14 px-5 md:py-10">
-            <div class="md:p-10 p-3 grid md:grid-cols-12 rounded h-full"
-                style="background: linear-gradient(278deg, #5EB6DA 0.88%, #3293BB 100.58%);">
-                <div class="md:col-span-8 flex flex-col md:items-start items-center justify-center md:pt-0 pt-10">
-                    <p class="font-bold md:text-4xl text-2xl md:w-3/5 text-center md:text-start text-white">Let’s shape
-                        the future together!</p>
-                    <div class="flex items-center md:justify-end justify-center pt-5">
-                        <a href="#" class="flex items-center gap-x-2 bg-white my-3 py-2 px-5 rounded-xl btn-Bg"
-                            role="button">
-                            <img src="/img/footerDiamond.svg">
-                            <span class="text-main text-sm font-semibold text-main">Book Now</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="md:col-span-4 md:pt-0 pt-10 md:pb-2 pb-4 flex items-center justify-center">
-                    <img src="/img/lets.svg" class="w-4/5">
-                </div>
-            </div>
-        </section>
-
-        <!-- ####################################### FAQ ############################# -->
-
-        <section class="md:mx-14 mx-5 my-10 rounded" style="background: rgba(247, 248, 251, 1);">
-            <div class="grid grid-cols-12 md:px-5 px-3 flex md:flex-row flex-col items-start">
-                <div class="md:col-span-4 col-span-12 h-full">
-                    <div class="flex flex-col items-center justify-center">
-                        <p class="title md:text-sm text-base">FAQ</p>
-                        <p class="text-main font-bold md:text-3xl text-2xl py-4 text-center">Frequently Asked Questions
-                        </p>
-                        <img src="/img/faqImg.svg" class="md:block hidden">
-                    </div>
-                </div>
-                <div class="md:col-span-8 col-span-12 h-full flex flex-col justify-center">
-                    <div class="">
-                        <div class="flex flex-col border w-full radius-10 my-2 close rounded-lg bg-white">
-                            <div class="flex justify-between py-4 px-5 items-center gap-7"
-                                onclick="dropDownAnswer(this)" id="question-1">
-                                <p class="text-base font-semibold text-main">How do I register?</p>
-                                <img src="/img/Plus.svg" class="dropUp">
-                                <img src="/img/dash.svg" class="dropDown d-none">
+                    <div class="md:col-span-8 col-span-12 h-full flex flex-col justify-center">
+                        <div class="">
+                            <div class="flex flex-col border w-full radius-10 my-2 close rounded-lg bg-white">
+                                <div class="flex justify-between py-4 px-5 items-center gap-7"
+                                    onclick="dropDownAnswer(this)" id="question-1">
+                                    <p class="text-base font-semibold text-main">How do I register?</p>
+                                    <img src="../img/Plus.svg" class="dropUp">
+                                    <img src="../img/dash.svg" class="dropDown d-none">
+                                </div>
+                                <div class="d-none body px-5 py-3" id="answer-1">
+                                    <p class="text-base font-normal text-main text-justify">
+                                        No prior mentoring experience is required. Your unique experiences and insights are
+                                        what make you a valuable mentor.
+    
+                                    </p>
+                                </div>
                             </div>
-                            <div class="d-none body px-5 py-3" id="answer-1">
-                                <p class="text-base font-normal text-main text-justify">
-                                    No prior mentoring experience is required. Your unique experiences and insights are
-                                    what make you a valuable mentor.
-
-                                </p>
+                            <div class="flex flex-col border w-full radius-10 my-2 close rounded-lg bg-white">
+                                <div class="flex justify-between py-4 px-5 items-center gap-7"
+                                    onclick="dropDownAnswer(this)" id="question-2">
+                                    <p class="text-base font-semibold text-main"> How are mentors and mentees matched?</p>
+                                    <img src="../img/Plus.svg" class="dropUp">
+                                    <img src="../img/dash.svg" class="dropDown d-none">
+                                </div>
+                                <div class="d-none body px-5 py-3" id="answer-2">
+                                    <p class="text-base font-normal text-main text-justify">
+                                        The commitment is flexible and based on your availability. Whether you can spare a
+                                        few hours a week or more, you can contribute meaningfully.</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="flex flex-col border w-full radius-10 my-2 close rounded-lg bg-white">
-                            <div class="flex justify-between py-4 px-5 items-center gap-7"
-                                onclick="dropDownAnswer(this)" id="question-2">
-                                <p class="text-base font-semibold text-main"> How are mentors and mentees matched?</p>
-                                <img src="/img/Plus.svg" class="dropUp">
-                                <img src="/img/dash.svg" class="dropDown d-none">
-                            </div>
-                            <div class="d-none body px-5 py-3" id="answer-2">
-                                <p class="text-base font-normal text-main text-justify">
-                                    The commitment is flexible and based on your availability. Whether you can spare a
-                                    few hours a week or more, you can contribute meaningfully.</p>
-                            </div>
-                        </div>
-                        <div class="flex flex-col border w-full radius-10 my-2 close rounded-lg bg-white">
-                            <div class="flex justify-between py-4 px-5 items-center gap-7"
-                                onclick="dropDownAnswer(this)" id="question-3">
-                                <p class="text-base font-semibold text-main"> Is there a cost to use this service?</p>
-                                <img src="/img/Plus.svg" class="dropUp">
-                                <img src="/img/dash.svg" class="dropDown d-none">
-                            </div>
-                            <div class="d-none body px-5 py-3" id="answer-3">
-                                <p class="text-base font-normal text-main text-justify">
-                                    After your application, we'll schedule a 30-minute call to verify your profile and
-                                    onboard you seamlessly into the Maarg community.
-                                </p>
+                            <div class="flex flex-col border w-full radius-10 my-2 close rounded-lg bg-white">
+                                <div class="flex justify-between py-4 px-5 items-center gap-7"
+                                    onclick="dropDownAnswer(this)" id="question-3">
+                                    <p class="text-base font-semibold text-main"> Is there a cost to use this service?</p>
+                                    <img src="../img/Plus.svg" class="dropUp">
+                                    <img src="../img/dash.svg" class="dropDown d-none">
+                                </div>
+                                <div class="d-none body px-5 py-3" id="answer-3">
+                                    <p class="text-base font-normal text-main text-justify">
+                                        After your application, we'll schedule a 30-minute call to verify your profile and
+                                        onboard you seamlessly into the Maarg community.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+    
+            </section>
 
-        </section>
 
         <!-- ####################################### FOOTER ############################# -->
         <footer class="py-3 px-14 btn-Bg md:block hidden" style="background: rgba(15, 35, 93, 1);">
             <div class="flex items-center justify-between py-3 border-b">
                 <div class="w-1/3 logo">
                     <a href="/">
-                        <img src="/img/footerLogo.svg">
+                        <img src="../img/footerLogo.svg">
                     </a>
                 </div>
                 <div class="w-1/3 middleText flex items-center justify-center gap-x-7">
@@ -785,7 +788,7 @@
                     <div class="flex items-center justify-end">
                         <a href="#tally-open=3jPMl1&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
                             class="flex items-center gap-x-2 bg-white my-3 py-2 px-5 rounded-xl btn-Bg" role="button">
-                            <img src="/img/footerDiamond.svg">
+                            <img src="../img/footerDiamond.svg">
                             <span class="text-main text-sm font-semibold text-main">Get early
                                 access</span>
                         </a>
@@ -803,14 +806,14 @@
                     <a href="fulfilment" class="text-main text-sm font-normal text-white">Fulfilment Policy</a>
                 </div>
                 <div class="w-1/3 flex items-center justify-end gap-x-3 py-2">
-                    <!-- <a href="" target="_blank"><img src="/img/facebook.svg"></a>
-                            <a href="" target="_blank"><img src="/img/twitter.svg"></a> -->
+                    <!-- <a href="" target="_blank"><img src="../img/facebook.svg"></a>
+                    <a href="" target="_blank"><img src="../img/twitter.svg"></a> -->
                     <a href="https://www.linkedin.com/company/my-maarg/" target="_blank">
-                        <img src="/img/linkedin.svg">
+                        <img src="../img/linkedin.svg">
                     </a>
-                    <!-- <a href="" target="_blank"><img src="/img/youtube.svg"></a> -->
+                    <!-- <a href="" target="_blank"><img src="../img/youtube.svg"></a> -->
                     <a href="https://www.instagram.com/my_maarg?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                        target="_blank"><img src="/img/instagram.svg"></a>
+                        target="_blank"><img src="../img/instagram.svg"></a>
                 </div>
             </div>
         </footer>
@@ -820,18 +823,18 @@
             <div class="flex flex-col items-center justify-between py-5 gap-y-5 border-b">
                 <div class="logo">
                     <a href="/">
-                        <img src="/img/footerLogo.svg">
+                        <img src="../img/footerLogo.svg">
                     </a>
                 </div>
                 <div class="flex items-center gap-x-3 py-2 px-3">
-                    <!-- <a href="" target="_blank"><img src="/img/facebook.svg"></a>
-                            <a href="" target="_blank"><img src="/img/twitter.svg"></a> -->
+                    <!-- <a href="" target="_blank"><img src="../img/facebook.svg"></a>
+                    <a href="" target="_blank"><img src="../img/twitter.svg"></a> -->
                     <a href="https://www.linkedin.com/company/my-maarg/" target="_blank">
-                        <img src="/img/linkedin.svg">
+                        <img src="../img/linkedin.svg">
                     </a>
-                    <!-- <a href="" target="_blank"><img src="/img/youtube.svg"></a> -->
+                    <!-- <a href="" target="_blank"><img src="../img/youtube.svg"></a> -->
                     <a href="https://www.instagram.com/my_maarg?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                        target="_blank"><img src="/img/instagram.svg"></a>
+                        target="_blank"><img src="../img/instagram.svg"></a>
                 </div>
                 <div class="middleText flex items-center justify-center gap-x-3">
                     <a href="mentor" class="text-main text-sm font-semibold text-white">Become a Mentor</a>
@@ -843,7 +846,7 @@
 
                 <a href="#tally-open=3jPMl1&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
                     class="flex items-center gap-x-2 leftBtn py-2 px-3 rounded-xl bg-white" role="button">
-                    <img src="/img/footerDiamond.svg">
+                    <img src="../img/footerDiamond.svg">
                     <span class="text-main text-sm font-semibold text-main">Get early
                         access</span>
                 </a>
@@ -864,8 +867,8 @@
             </div>
         </footer>
 
-
-        <script src="/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+        <script src="../index.js"></script>
     </body>
 
 </html>

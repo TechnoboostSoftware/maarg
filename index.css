@@ -139,6 +139,6 @@
 }
 
 .bgImg {
-    background-image: url(/img/Landing-Page-Web.webp);
+    background-image: url('img/Landing-Page-Web.webp');
     background-size: cover;
 }
