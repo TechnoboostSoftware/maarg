@@ -12,25 +12,31 @@ function resourcesDropDown(id, name) {
     if (id == 'web' && name == 'resouce') {
         $("#resourcesDropDownResouce").toggleClass("hidden")
     }
-    else if  (id == 'web' && name == 'college') {
+    else if (id == 'web' && name == 'college') {
         $("#resourcesDropDownCollege").toggleClass("hidden")
     }
-    else if  (id == 'phone' && name == 'resouce') {
+    else if (id == 'phone' && name == 'resouce') {
         $("#resourcesDropDownMobileResource").toggleClass("hidden")
     }
-     else {
+    else {
         $("#resourcesDropDownMobileCollege").toggleClass("hidden")
     }
 }
 
-function lessDisplay(){
+function lessDisplay() {
     $(".mentorBoxes").addClass("hidden")
     $(".less").addClass("hidden")
     $(".more").removeClass("hidden")
 
 }
-function displayMore(){
+function displayMore() {
     $(".mentorBoxes").removeClass("hidden")
     $(".more").addClass("hidden")
     $(".less").removeClass("hidden")
+}
+
+function filterDrop(id) {
+    
+    $('.dontShow').addClass('hidden')
+    $('#' + id).removeClass('hidden')
 }
