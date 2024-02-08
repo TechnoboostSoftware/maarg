@@ -35,8 +35,15 @@ function displayMore() {
     $(".less").removeClass("hidden")
 }
 
+function filterTypeDrop(id) {
+    $('.dontShowMobile').addClass('hidden')
+    $('#' + id).removeClass('hidden')
+}
+
 function filterDrop(id) {
-    
     $('.dontShow').addClass('hidden')
     $('#' + id).removeClass('hidden')
+}
+function mobileFilterDisplay(id) {
+    $(id).toggleClass('hidden')
 }
