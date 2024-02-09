@@ -12,7 +12,7 @@ $(document).ready(function () {
             "college": "Maharaja Ganga Singh University, Rajasthan",
             "linkedInUrl": "https://www.linkedin.com/in/vaibhavmahajan-outontrip/",
             "calendarLink": "https://calendly.com/vansh-miglani/30min",
-            "img" : "../img/mentorPic-0.webpp",
+            "img" : "../img/mentorPic-0.webp",
             "mobileImg" : "../img/mentorMobile-0.png",
             "ComapniesAndroles": [
                 {
@@ -38,7 +38,7 @@ $(document).ready(function () {
             "college": "FOOTWEAR DESIGN AND DEVELOPMENT INSTITUTE",
             "linkedInUrl": "https://www.linkedin.com/in/vaibhavmahajan-outontrip/",
             "calendarLink": "",
-            "img" : "../img/mentorPic-1.webp",
+            "img" : "../img/mentorPic-1.png",
             "mobileImg" : "../img/mentorMobile-1.png",
             "ComapniesAndroles": [
                 {
@@ -506,10 +506,10 @@ $(document).ready(function () {
                     </div>
                     <div class="md:hidden flex flex-col">
                         <div class="flex">
-                            <p class="px-5 py-2 rounded-md bg-lightBlue text-white text-xs font-normal">
+                            <p class="px-5 py-2 currently bg-lightBlue text-white text-xs font-normal">
                                 Currently</p>
                         </div>
-                        <div class="flex p-3 items-center bg-white rounded-lg"
+                        <div class="flex p-3 notCurrently items-center bg-white"
                             style="border: 1px solid #60BBE0;">
                             <p class="text-xs text-main font-normal text-center"><span
                                     class="font-bold">PGP-TBM </span> Student at Masters' Union | Cohort
@@ -553,10 +553,10 @@ $(document).ready(function () {
                 <div class="">
                     <div class="md:block hidden">
                         <div class="flex">
-                            <p class="px-5 py-2 rounded-md bg-lightBlue text-white text-xs font-normal">
+                            <p class="px-5 py-2 currently bg-lightBlue text-white text-xs font-normal">
                                 Currently</p>
                         </div>
-                        <div class="flex p-3 items-center bg-white rounded-lg"
+                        <div class="flex p-3 notCurrently items-center bg-white"
                             style="border: 1px solid #60BBE0;">
                             <p class="text-xs text-main font-normal text-center"><span
                                     class="font-bold">PGP-TBM </span> Student at Masters' Union | Cohort

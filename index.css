@@ -170,3 +170,10 @@
     border-bottom-right-radius: 40%;
     border-top-right-radius: 40%;
 }
+
+.currently{
+    border-radius: 10px 10px 0px 0px;
+}
+.notCurrently{
+    border-radius: 0px 10px 10px 10px;
+}
