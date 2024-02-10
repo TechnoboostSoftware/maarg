@@ -1,6 +1,7 @@
+var mentorObj;
 $(document).ready(function () {
 
-    var mentorObj = [
+     mentorObj = [
         {
             "name": "Vansh Miglani",
             "city": "Sri Ganganagar",
@@ -10,7 +11,7 @@ $(document).ready(function () {
             "workExperience": 2.5,
             "course": "BBA",
             "college": "Maharaja Ganga Singh University, Rajasthan",
-            "linkedInUrl": "https://www.linkedin.com/in/vaibhavmahajan-outontrip/",
+            "linkedInUrl": "https://www.linkedin.com/in/vanshmiglani01/",
             "calendarLink": "https://calendly.com/vansh-miglani/30min",
             "img" : "../img/mentorPic-0.webp",
             "mobileImg" : "../img/mentorMobile-0.png",
@@ -62,7 +63,7 @@ $(document).ready(function () {
             "workExperience": 4.2,
             "course": "BBA",
             "college": "D.Y. Patil University School of Business, Maharashtra",
-            "linkedInUrl": "https://www.linkedin.com/in/rohan-tomar-54242414a/",
+            "linkedInUrl": "https://calendly.com/udit-pym/30min",
             "calendarLink": "",
             "img" : "../img/mentorPic-2.webp",
             "mobileImg" : "../img/mentorMobile-2.png",
@@ -162,8 +163,8 @@ $(document).ready(function () {
             "workExperience": 2.2,
             "course": "B.Com Hons.",
             "college": "Loyola College, Madras",
-            "linkedInUrl": "",
-            "calendarLink": "",
+            "linkedInUrl": "https://www.linkedin.com/in/savrang-jain/",
+            "calendarLink": "https://calendly.com/savrang-jain",
             "img" : "../img/mentorPic-6.webp",
             "mobileImg" : "../img/mentorMobile-6.png",
             "ComapniesAndroles": [
@@ -213,7 +214,7 @@ $(document).ready(function () {
             "course": "B.Tech",
             "college": "SRM Institute Of Sciences And Technology, Chennai",
             "linkedInUrl": "https://www.linkedin.com/in/aadi-jainn/",
-            "calendarLink": "https://calendly.com/aadi-jain",
+            "calendarLink": "",
             "img" : "../img/mentorPic-8.webp",
             "mobileImg" : "../img/mentorMobile-8.png",
             "ComapniesAndroles": [
@@ -237,8 +238,8 @@ $(document).ready(function () {
             "workExperience": 4.9,
             "course": "B.A. (Hons.)",
             "college": "Moti Lal Nehru College, Delhi University",
-            "linkedInUrl": "https://www.linkedin.com/in/pavan-krishna-/",
-            "calendarLink": "https://calendly.com/pavan-krishna/30min?back=1&month=2024-02",
+            "linkedInUrl": "https://www.linkedin.com/in/prishtagrover/",
+            "calendarLink": "https://calendly.com/groverprishta/prishta-mu",
             "img" : "../img/mentorPic-9.webp",
             "mobileImg" : "../img/mentorMobile-9.png",
             "ComapniesAndroles": [
@@ -262,8 +263,8 @@ $(document).ready(function () {
             "workExperience": 4,
             "course": "B.Com",
             "college": "Institute of Distance Education, University Of Madras, Tamil Nadu",
-            "linkedInUrl": "https://www.linkedin.com/in/harsh-patel01",
-            "calendarLink": "https://calendly.com/harsh-patel-08/meeting-with-harsh",
+            "linkedInUrl": "https://www.linkedin.com/in/pavan-krishna-/",
+            "calendarLink": "https://calendly.com/pavan-krishna/30min?back=1&month=2024-02",
             "img" : "../img/mentorPic-10.webp",
             "mobileImg" : "../img/mentorMobile-10.png",
             "ComapniesAndroles": [
@@ -328,7 +329,7 @@ $(document).ready(function () {
             "course": "BBA (Hons)",
             "college": "Christ University, Karnataka",
             "linkedInUrl": "https://www.linkedin.com/in/krishnaa-goyal/",
-            "calendarLink": "",
+            "calendarLink": "https://calendly.com/krishna-goyal/30min",
             "img" : "../img/mentorPic-13.webp",
             "mobileImg" : "../img/mentorMobile-13.png",
             "ComapniesAndroles": [
@@ -352,8 +353,8 @@ $(document).ready(function () {
             "workExperience": 0,
             "course": "BBA",
             "college": "Savitribai Phule Pune University, Maharashtra",
-            "linkedInUrl": "https://www.linkedin.com/in/uditt/",
-            "calendarLink": "https://calendly.com/udit-pym/30min",
+            "linkedInUrl": "https://www.linkedin.com/in/harsh-patel01",
+            "calendarLink": "https://calendly.com/harsh-patel-08/meeting-with-harsh",
             "img" : "../img/mentorPic-14.webp",
             "mobileImg" : "../img/mentorMobile-14.png",
             "ComapniesAndroles": []
@@ -391,8 +392,8 @@ $(document).ready(function () {
             "workExperience": 2,
             "course": "B.Tech",
             "college": "National Institute of Technology, Calicut, Kerala",
-            "linkedInUrl": "https://www.linkedin.com/in/prishtagrover/",
-            "calendarLink": "https://calendly.com/groverprishta/prishta-mu",
+            "linkedInUrl": "https://www.linkedin.com/in/dhanush-varun",
+            "calendarLink": "https://calendly.com/dhanush-siddanathi/explore-mu-with-dhanush",
             "img" : "../img/mentorPic-16.webp",
             "mobileImg" : "../img/mentorMobile-16.png",
             "ComapniesAndroles": [
@@ -457,8 +458,8 @@ $(document).ready(function () {
             "workExperience": 2.9,
             "course": "B.Tech",
             "college": "Jawaharlal Nehru Technological University, Hyderabad, Telangana",
-            "linkedInUrl": "https://www.linkedin.com/in/dhanush-varun",
-            "calendarLink": "https://calendly.com/dhanush-siddanathi/explore-mu-with-dhanush",
+            "linkedInUrl": "https://www.linkedin.com/in/aadi-jainn/",
+            "calendarLink": "https://calendly.com/aadi-jain",
             "img" : "../img/mentorPic-19.webp",
             "mobileImg" : "../img/mentorMobile-19.png",
             "ComapniesAndroles": [
@@ -566,7 +567,7 @@ $(document).ready(function () {
                     </div>
 
                     <div class="mt-5">
-                        <a href=""
+                        <a href="javascript:;" onclick="openCalendar(${[i]})"
                             class="w-full flex items-center justify-center text-sm text-white btn-Bg font-semibold py-2 text-center rounded-lg">
                             <span>Book Now</span></a>
                     </div>
@@ -632,4 +633,10 @@ function filterDrop(id) {
 }
 function mobileFilterDisplay(id) {
     $(id).toggleClass('hidden')
+}
+
+function openCalendar(index){
+    let calendarLink = mentorObj[index].calendarLink
+    Calendly.initPopupWidget({url:calendarLink})
+
 }
