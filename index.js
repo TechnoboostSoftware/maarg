@@ -478,6 +478,12 @@ $(document).ready(function () {
 
     ]
 
+    initilise();
+   
+})
+
+function initilise(){
+    filterApplied = false
     var filterObj = {
         "domain": [],
         "state": [],
@@ -488,6 +494,14 @@ $(document).ready(function () {
         filterObj[key] = [...new Set(mentorObj.map((element) => element[key]))];
     }
 
+    createMentorCard(mentorObj)
+
+    createFilter(filterObj)
+
+}
+
+
+function createMentorCard(mentorObj){
     let mentorHtml = ''
     for (let i = 0; i < mentorObj.length; i++) {
         mentorHtml += `<div class="flex items-center gap-y-3 py-3">
@@ -579,11 +593,92 @@ $(document).ready(function () {
         </div>`
         $("#mentorList").html(mentorHtml)
     }
-    function filter() {
+}
+
+function createFilter(filterObj){
+    createExpFilter(filterObj['experience'])
+    createDomainFilter(filterObj['domain'])
+    createStateFilter(filterObj['state'])
+
+ 
+
+}
+
+function createExpFilter(filter){
+    let filterHtml =''
+    filterHtml+=' <ul class="filter">'
+    filter.forEach(element => {
+        filterHtml+=' <li class="flex gap-x-3 py-2">';
+        filterHtml+='<input type="radio" class="" name="experience" value="'+element+'" onclick="applyFilter(this,`experience`)">';
+        filterHtml+='<span class="text-sm text-main">'+element+'</span>';
+        filterHtml+='</li>';                       
+    });
+    filterHtml+='</ul>';
+    $("#experience").html(filterHtml)
+
+}
+
+function createDomainFilter(filter){
+    filterHtml =''
+    filterHtml+=' <ul class="filter">'
+    filter.forEach(element => {
+        filterHtml+=' <li class="flex gap-x-3 py-2">';
+        filterHtml+='<input type="radio" class=""   name="domain" value="'+element+'" onclick="applyFilter(this,`domain`)">';
+        filterHtml+='<span class="text-sm text-main">'+element+'</span>';
+        filterHtml+='</li>';                       
+    });
+    filterHtml+='</ul>';
+    $("#domain").html(filterHtml)
+}
+
+function createStateFilter(filter){
+    filterHtml =''
+    filterHtml+=' <ul class="filter">'
+    filter.forEach(element => {
+        filterHtml+=' <li class="flex gap-x-3 py-2">';
+        filterHtml+='<input type="radio" class=""  name="state" value="'+element+'" onclick="applyFilter(this,`state`)">';
+        filterHtml+='<span class="text-sm text-main">'+element+'</span>';
+        filterHtml+='</li>';                       
+    });
+    filterHtml+='</ul>';
+    $("#state").html(filterHtml)
+}
+
+var filterApplied = false
+let clonedMentorObj
+function applyFilter(elem,filter){
+  
+    if(!filterApplied){
+        clonedMentorObj =[...mentorObj]
+        filterApplied = true
+    }
+
+    let currentFilter = elem.value;    
+
+    if(filter == 'experience'){
+         clonedMentorObj =[...mentorObj]
+        experiencedFiltered = clonedMentorObj.filter(d=> d['experience'] == currentFilter)
+        domain =[ ...new Set(experiencedFiltered.map((element) => element['domain']))];
+        state  =[ ...new Set(experiencedFiltered.map((element) => element['state']))];
+        createDomainFilter(domain)
+        createStateFilter(state)
+        createMentorCard(experiencedFiltered)
 
     }
-})
 
+    if(filter == 'domain'){
+        domainFiltered = experiencedFiltered.filter(d=> d['domain'] == currentFilter)
+        state  =[ ...new Set(domainFiltered.map((element) => element['state']))];
+        createStateFilter(state)
+        createMentorCard(domainFiltered)
+
+    }
+    if(filter == 'state'){
+        stateFiltered = domainFiltered.filter(d=> d['state'] == currentFilter)
+        createMentorCard(stateFiltered)
+    }
+    //reateMentorCard(clonedMentorObj)
+}
 
 function dropDownAnswer(element) {
     if (element.parentElement.classList.contains('close')) {

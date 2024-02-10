@@ -24,7 +24,7 @@
 
     <body>
         <!-- Main navigation container -->
-        <nav class="relative flex w-full flex-nowrap items-center justify-between bg-[#FBFBFB] py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 bg-white lg:flex-wrap lg:justify-start lg:py-3"
+        <nav style="position: sticky;top: 0px;z-index: 100;" class="relative flex w-full flex-nowrap items-center justify-between bg-[#FBFBFB] py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 bg-white lg:flex-wrap lg:justify-start lg:py-3"
             data-te-navbar-ref>
             <div class="flex w-full flex-wrap items-center justify-between px-3">
                 <div class="ml-2">
@@ -458,147 +458,55 @@
 
             </div>
 
-            <div class="grid grid-cols-12 flex lg:items-start items-center lg:gap-x-10 ">
-                <div class="lg:col-span-3 col-span-12 lg:block hidden">
+            <div class="grid grid-cols-12 flex lg:items-start items-center lg:gap-x-10 " style="height: 100vh;overflow: auto;">
+                <div class="lg:col-span-3 col-span-12 lg:block hidden pt-3" style="position: sticky;top: 0px;">
                     <div class="flex flex-col rounded-xl" style="border: 1px solid rgba(0, 0, 0, 0.11);">
                         <div class="flex justify-between itmes-center px-5 py-3"
                             style="border-bottom: 1px solid rgba(0, 0, 0, 0.11);">
                             <p class="font-bold text-xl text-main">Filters</p>
-                            <p class="font-normal text-sm text-main">Clear</p>
+                            <p class="font-normal text-sm text-main cursor-pointer" onclick="initilise()">Clear</p>
                         </div>
 
                         <div class="py-3 px-5 gap-y-3 flex flex-col">
                             <div class="flex flex-col rounded-md"
                                 style="border: 1px solid rgba(0, 0, 0, 0.11); background: #F7F8FB;">
                                 <div class="flex justify-between itmes-center p-3" role="button"
-                                    onclick="filterDrop('exp')" style="border-bottom: 1px solid rgba(0, 0, 0, 0.11);">
+                                    onclick="filterDrop('experience')" style="border-bottom: 1px solid rgba(0, 0, 0, 0.11);">
                                     <p class="font-normal text-sm text-main">Experience</p>
                                     <img src="../img/Vector.png" class="dropImg">
                                 </div>
-                                <div class="flex justify-between itmes-center p-3 dontShow" id="exp">
-                                    <ul class="filter">
-                                        <li class="flex gap-x-3 py-3">
-                                            <input type="radio" class="">
-                                            <span class="font-medium text-sm text-main">Upto 3 Years</span>
-                                        </li>
-
-                                        <li class="flex gap-x-3 py-3">
-                                            <input type="radio" class="">
-                                            <span class="font-medium text-sm text-main">3-5 Years</span>
-                                        </li>
-
-                                        <li class="flex gap-x-3 py-3">
-                                            <input type="radio" class="">
-                                            <span class="font-medium text-sm text-main">5-10 Years</span>
-                                        </li>
-
-                                        <li class="flex gap-x-3 py-3">
-                                            <input type="radio" class="">
-                                            <span class="font-medium text-sm text-main">Over 15 Years</span>
-                                        </li>
-                                    </ul>
+                                <div class="flex justify-between itmes-center p-3 dontShow" id="experience">
+                                    
                                 </div>
 
                             </div>
                             <div class="flex flex-col rounded-md"
                                 style="border: 1px solid rgba(0, 0, 0, 0.11); background: #F7F8FB;">
                                 <div class="flex justify-between itmes-center p-3" role="button"
-                                    onclick="filterDrop('education')"
+                                    onclick="filterDrop('domain')"
                                     style="border-bottom: 1px solid rgba(0, 0, 0, 0.11);">
-                                    <p class="font-normal text-sm text-main">Education</p>
+                                    <p class="font-normal text-sm text-main">Domain</p>
                                     <img src="../img/Vector.png" class="dropImg">
                                 </div>
-                                <div class="flex justify-between itmes-center p-3 dontShow hidden" id="education">
-                                    <ul class="filter">
-                                        <li class="flex gap-x-3 py-3">
-                                            <input type="radio" class="">
-                                            <span class="font-medium text-sm text-main">Upto 3 Years</span>
-                                        </li>
-
-                                        <li class="flex gap-x-3 py-3">
-                                            <input type="radio" class="">
-                                            <span class="font-medium text-sm text-main">3-5 Years</span>
-                                        </li>
-
-                                        <li class="flex gap-x-3 py-3">
-                                            <input type="radio" class="">
-                                            <span class="font-medium text-sm text-main">5-10 Years</span>
-                                        </li>
-
-                                        <li class="flex gap-x-3 py-3">
-                                            <input type="radio" class="">
-                                            <span class="font-medium text-sm text-main">Over 15 Years</span>
-                                        </li>
-                                    </ul>
+                                <div class="flex justify-between itmes-center p-3 dontShow hidden" id="domain">
+                                    
                                 </div>
 
                             </div>
                             <div class="flex flex-col rounded-md"
                                 style="border: 1px solid rgba(0, 0, 0, 0.11); background: #F7F8FB;">
                                 <div class="flex justify-between itmes-center p-3" role="button"
-                                    onclick="filterDrop('location')"
+                                    onclick="filterDrop('state')"
                                     style="border-bottom: 1px solid rgba(0, 0, 0, 0.11);">
-                                    <p class="font-normal text-sm text-main">Location</p>
+                                    <p class="font-normal text-sm text-main">state</p>
                                     <img src="../img/Vector.png" class="dropImg">
                                 </div>
-                                <div class="flex justify-between itmes-center p-3 dontShow hidden" id="location">
-                                    <ul class="filter">
-                                        <li class="flex gap-x-3 py-3">
-                                            <input type="radio" class="">
-                                            <span class="font-medium text-sm text-main">Upto 3 Years</span>
-                                        </li>
-
-                                        <li class="flex gap-x-3 py-3">
-                                            <input type="radio" class="">
-                                            <span class="font-medium text-sm text-main">3-5 Years</span>
-                                        </li>
-
-                                        <li class="flex gap-x-3 py-3">
-                                            <input type="radio" class="">
-                                            <span class="font-medium text-sm text-main">5-10 Years</span>
-                                        </li>
-
-                                        <li class="flex gap-x-3 py-3">
-                                            <input type="radio" class="">
-                                            <span class="font-medium text-sm text-main">Over 15 Years</span>
-                                        </li>
-                                    </ul>
+                                <div class="flex justify-between itmes-center p-3 dontShow hidden" id="state">
+                                    
                                 </div>
 
                             </div>
-                            <div class="flex flex-col rounded-md"
-                                style="border: 1px solid rgba(0, 0, 0, 0.11); background: #F7F8FB;">
-                                <div class="flex justify-between itmes-center p-3" role="button"
-                                    onclick="filterDrop('mba')" style="border-bottom: 1px solid rgba(0, 0, 0, 0.11);">
-                                    <p class="font-normal text-sm text-main">Pre-MBA Domain</p>
-                                    <img src="../img/Vector.png" class="dropImg">
-                                </div>
-                                <div class="flex justify-between itmes-center p-3 dontShow hidden" id="mba">
-                                    <ul class="filter">
-                                        <li class="flex gap-x-3 py-3">
-                                            <input type="radio" class="">
-                                            <span class="font-medium text-sm text-main">Upto 3 Years</span>
-                                        </li>
-
-                                        <li class="flex gap-x-3 py-3">
-                                            <input type="radio" class="">
-                                            <span class="font-medium text-sm text-main">3-5 Years</span>
-                                        </li>
-
-                                        <li class="flex gap-x-3 py-3">
-                                            <input type="radio" class="">
-                                            <span class="font-medium text-sm text-main">5-10 Years</span>
-                                        </li>
-
-                                        <li class="flex gap-x-3 py-3">
-                                            <input type="radio" class="">
-                                            <span class="font-medium text-sm text-main">Over 15 Years</span>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-
+                         
                         </div>
                     </div>
                 </div>
