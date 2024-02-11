@@ -732,6 +732,10 @@ function mobileFilterDisplay(id) {
 
 function openCalendar(index){
     let calendarLink = mentorObj[index].calendarLink
-    Calendly.initPopupWidget({url:calendarLink})
+    if(calendarLink == ""){
+        alert("Something went wrong ! please try after sometime")
+    }else{
+        Calendly.initPopupWidget({url:calendarLink})
+    }
 
 }
