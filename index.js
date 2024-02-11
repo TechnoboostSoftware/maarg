@@ -646,6 +646,9 @@ function createStateFilter(filter){
 
 var filterApplied = false
 let clonedMentorObj
+let experiencedFiltered;
+let stateFiltered;
+let domainFiltered;
 function applyFilter(elem,filter){
   
     if(!filterApplied){
@@ -667,6 +670,9 @@ function applyFilter(elem,filter){
     }
 
     if(filter == 'domain'){
+        if(experiencedFiltered == undefined){
+            experiencedFiltered = clonedMentorObj.filter(d=> d['domain'] == currentFilter)
+        }
         domainFiltered = experiencedFiltered.filter(d=> d['domain'] == currentFilter)
         state  =[ ...new Set(domainFiltered.map((element) => element['state']))];
         createStateFilter(state)
@@ -674,6 +680,9 @@ function applyFilter(elem,filter){
 
     }
     if(filter == 'state'){
+        if(domainFiltered == undefined){
+            domainFiltered = clonedMentorObj.filter(d=> d['domain'] == currentFilter)
+        }
         stateFiltered = domainFiltered.filter(d=> d['state'] == currentFilter)
         createMentorCard(stateFiltered)
     }
