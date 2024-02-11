@@ -1,5 +1,5 @@
 var mentorObj;
-var mentorsOrder =[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,0]
+var mentorsOrder =[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
 $(document).ready(function () {
 
 
@@ -508,7 +508,7 @@ function createMentorCard(mentorObj){
     let mentorHtml = ''
     if(filterApplied){
 
-        for (let i = 0; i < mentorsOrder.length; i++) {
+        for (let i = 0; i < mentorObj.length; i++) {
             // let i = mentorsOrder[j]
             mentorHtml += `<div class="flex items-center gap-y-3 py-3">
             <div class="flex  w-full gap-x-5 items-center grid grid-cols-12 rounded-lg"
