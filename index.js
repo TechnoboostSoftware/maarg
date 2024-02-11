@@ -1,5 +1,8 @@
 var mentorObj;
+var mentorsOrder =[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,0]
 $(document).ready(function () {
+
+
 
      mentorObj = [
         {
@@ -138,7 +141,7 @@ $(document).ready(function () {
             "course": "B.Tech",
             "college": "Amrita Vishwa Vidyapeetham, Tamilnadu",
             "linkedInUrl": "https://www.linkedin.com/in/kakaraparthi-sri-badarinadh-570863134/",
-            "calendarLink": "https://calendly.com/sri-badarinadh",
+            "calendarLink": "https://calendly.com/sri-badarinadh/30min",
             "img" : "../img/mentorPic-5.webp",
             "mobileImg" : "../img/mentorMobile-5.png",
             "ComapniesAndroles": [
@@ -503,95 +506,191 @@ function initilise(){
 
 function createMentorCard(mentorObj){
     let mentorHtml = ''
-    for (let i = 0; i < mentorObj.length; i++) {
-        mentorHtml += `<div class="flex items-center gap-y-3 py-3">
-        <div class="flex  w-full gap-x-5 items-center grid grid-cols-12 rounded-lg"
-            style="border: 1px solid #60BBE0; background: #F7F8FB;">
-            <div class="md:col-span-3 col-span-12  md:block hidden h-full w-full bgRounded" style="background: rgba(96, 187, 224, 0.10);">
-            <div class="flex justify-center items-center"><img src="${mentorObj[i].img}" class="w-3/4 pb-2"></div>
-            </div>
-            <div class="md:col-span-3 col-span-12 flex items-center md:hidden block">
-                <img src="${mentorObj[i].mobileImg}" class="xl:w-3/4 w-full">
-            </div>
-            <div class="md:col-span-6 col-span-12 py-5 md:px-0 px-5">
-                <div class="flex flex-col justify-start md:items-start items-center">
-                    <div class="flex items-end md:justify-start justify-center gap-x-3 mb-3">
-                        <span class="mentorName font-bold text-2xl text-main">${mentorObj[i].name}</span>
-                        <a href="${mentorObj[i].linkedInUrl}"><img src="../img/masterLinkedin.png" class="mentorLinked"></a>
-                    </div>
-                    <div class="md:hidden flex flex-col">
-                        <div class="flex">
-                            <p class="px-5 py-2 currently bg-lightBlue text-white text-xs font-normal">
-                                Currently</p>
+    if(filterApplied){
+
+        for (let i = 0; i < mentorsOrder.length; i++) {
+            // let i = mentorsOrder[j]
+            mentorHtml += `<div class="flex items-center gap-y-3 py-3">
+            <div class="flex  w-full gap-x-5 items-center grid grid-cols-12 rounded-lg"
+                style="border: 1px solid #60BBE0; background: #F7F8FB;">
+                <div class="md:col-span-3 col-span-12  md:block hidden h-full w-full bgRounded" style="background: rgba(96, 187, 224, 0.10);">
+                <div class="flex justify-center items-center"><img src="${mentorObj[i].img}" class="w-3/4 pb-2"></div>
+                </div>
+                <div class="md:col-span-3 col-span-12 flex items-center md:hidden block">
+                    <img src="${mentorObj[i].mobileImg}" class="xl:w-3/4 w-full">
+                </div>
+                <div class="md:col-span-6 col-span-12 py-5 md:px-0 px-5">
+                    <div class="flex flex-col justify-start md:items-start items-center">
+                        <div class="flex items-end md:justify-start justify-center gap-x-3 mb-3">
+                            <span class="mentorName font-bold text-2xl text-main">${mentorObj[i].name}</span>
+                            <a href="${mentorObj[i].linkedInUrl}"><img src="../img/masterLinkedin.png" class="mentorLinked"></a>
                         </div>
-                        <div class="flex p-3 notCurrently items-center bg-white"
-                            style="border: 1px solid #60BBE0;">
-                            <p class="text-xs text-main font-normal text-center"><span
-                                    class="font-bold">PGP-TBM </span> Student at Masters' Union | Cohort
-                                of
-                                2024</p>
+                        <div class="md:hidden flex flex-col">
+                            <div class="flex">
+                                <p class="px-5 py-2 currently bg-lightBlue text-white text-xs font-normal">
+                                    Currently</p>
+                            </div>
+                            <div class="flex p-3 notCurrently items-center bg-white"
+                                style="border: 1px solid #60BBE0;">
+                                <p class="text-xs text-main font-normal text-center"><span
+                                        class="font-bold">PGP-TBM </span> Student at Masters' Union | Cohort
+                                    of
+                                    2024</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="flex flex-col gap-y-3 md:pt-0 pt-5">
-                        <div class="flex gap-x-3 items-center">
-                            <img src="../img/teacher.svg" class="mentorLinked">
-                            <p class="mentorName font-normal md:text-base text-sm text-main"><span class="text-base font-bold text-lightBlue">${mentorObj[i].course}, </span> ${mentorObj[i].college}</p>
-                        </div>
-                        <div class="flex gap-x-3 items-center">
-                        <img src="../img/briefcase.svg" class="mentorLinked">
-                        <p class="mentorName font-normal md:text-base text-sm text-main">`
-        for (let j = 0; j < mentorObj[i].ComapniesAndroles.length; j++) {
-            if (mentorObj[i].ComapniesAndroles.length > 1) {
-                if (mentorObj[i].ComapniesAndroles.length -1 != j){
-                    mentorHtml += `<span>${mentorObj[i].ComapniesAndroles[j].role} @ ${mentorObj[i].ComapniesAndroles[j].company} | </span>`
+                        <div class="flex flex-col gap-y-3 md:pt-0 pt-5">
+                            <div class="flex gap-x-3 items-center">
+                                <img src="../img/teacher.svg" class="mentorLinked">
+                                <p class="mentorName font-normal md:text-base text-sm text-main"><span class="text-base font-bold text-lightBlue">${mentorObj[i].course}, </span> ${mentorObj[i].college}</p>
+                            </div>
+                            <div class="flex gap-x-3 items-center">
+                            <img src="../img/briefcase.svg" class="mentorLinked">
+                            <p class="mentorName font-normal md:text-base text-sm text-main">`
+            for (let j = 0; j < mentorObj[i].ComapniesAndroles.length; j++) {
+                if (mentorObj[i].ComapniesAndroles.length > 1) {
+                    if (mentorObj[i].ComapniesAndroles.length -1 != j){
+                        mentorHtml += `<span>${mentorObj[i].ComapniesAndroles[j].role} @ ${mentorObj[i].ComapniesAndroles[j].company} | </span>`
+                    }
+                    else{
+                        mentorHtml += `<span>${mentorObj[i].ComapniesAndroles[j].role} @ ${mentorObj[i].ComapniesAndroles[j].company}.</span>`
+                    }
+                } else {
+                    mentorHtml += `<span>${mentorObj[i].ComapniesAndroles[j].role} @ ${mentorObj[i].ComapniesAndroles[j].company} .</span>`
                 }
-                else{
-                    mentorHtml += `<span>${mentorObj[i].ComapniesAndroles[j].role} @ ${mentorObj[i].ComapniesAndroles[j].company}.</span>`
-                }
-            } else {
-                mentorHtml += `<span>${mentorObj[i].ComapniesAndroles[j].role} @ ${mentorObj[i].ComapniesAndroles[j].company} .</span>`
             }
-        }
-        mentorHtml += `</p></div>
-                        <div class="flex gap-x-3 items-center">
-                            <img src="../img/brifecase-timer.svg" class="mentorLinked">
-                            <p class="mentorName font-normal md:text-base text-sm text-main"><span class="text-base font-bold text-lightBlue">${mentorObj[i].workExperience} </span>  Years of Experience</p>
-                        </div>
-                        <div class="flex gap-x-3 items-center">
-                            <img src="../img/location.svg" class="mentorLinked">
-                            <p class="mentorName font-normal md:text-base text-sm text-main">${mentorObj[i].city}</p>
+            mentorHtml += `</p></div>
+                            <div class="flex gap-x-3 items-center">
+                                <img src="../img/brifecase-timer.svg" class="mentorLinked">
+                                <p class="mentorName font-normal md:text-base text-sm text-main"><span class="text-base font-bold text-lightBlue">${mentorObj[i].workExperience} </span>  Years of Experience</p>
+                            </div>
+                            <div class="flex gap-x-3 items-center">
+                                <img src="../img/location.svg" class="mentorLinked">
+                                <p class="mentorName font-normal md:text-base text-sm text-main">${mentorObj[i].city}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="md:col-span-3 col-span-12 py-5 md:pr-5 md:pl-0 px-5">
-                <div class="">
-                    <div class="md:block hidden">
-                        <div class="flex">
-                            <p class="px-5 py-2 currently bg-lightBlue text-white text-xs font-normal">
-                                Currently</p>
+                <div class="md:col-span-3 col-span-12 py-5 md:pr-5 md:pl-0 px-5">
+                    <div class="">
+                        <div class="md:block hidden">
+                            <div class="flex">
+                                <p class="px-5 py-2 currently bg-lightBlue text-white text-xs font-normal">
+                                    Currently</p>
+                            </div>
+                            <div class="flex p-3 notCurrently items-center bg-white"
+                                style="border: 1px solid #60BBE0;">
+                                <p class="text-xs text-main font-normal text-center"><span
+                                        class="font-bold">PGP-TBM </span> Student at Masters' Union | Cohort
+                                    of
+                                    2024</p>
+                            </div>
                         </div>
-                        <div class="flex p-3 notCurrently items-center bg-white"
-                            style="border: 1px solid #60BBE0;">
-                            <p class="text-xs text-main font-normal text-center"><span
-                                    class="font-bold">PGP-TBM </span> Student at Masters' Union | Cohort
-                                of
-                                2024</p>
-                        </div>
-                    </div>
-
-                    <div class="md:mt-5 m-0">
-                        <a href="javascript:;" onclick="openCalendar(${[i]})"
-                            class="w-full flex items-center justify-center text-sm text-white btn-Bg font-semibold py-2 text-center rounded-lg">
-                            <span>Book Now</span></a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
     
-        </div>`
-        $("#mentorList").html(mentorHtml)
+                        <div class="md:mt-5 m-0">
+                            <a href="javascript:;" onclick="openCalendar(${[i]})"
+                                class="w-full flex items-center justify-center text-sm text-white btn-Bg font-semibold py-2 text-center rounded-lg">
+                                <span>Book Now</span></a>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        
+            </div>`
+            $("#mentorList").html(mentorHtml)
+        }
+    }else{
+        for (let j = 0; j < mentorsOrder.length; j++) {
+            let i = mentorsOrder[j]
+            mentorHtml += `<div class="flex items-center gap-y-3 py-3">
+            <div class="flex  w-full gap-x-5 items-center grid grid-cols-12 rounded-lg"
+                style="border: 1px solid #60BBE0; background: #F7F8FB;">
+                <div class="md:col-span-3 col-span-12  md:block hidden h-full w-full bgRounded" style="background: rgba(96, 187, 224, 0.10);">
+                <div class="flex justify-center items-center"><img src="${mentorObj[i].img}" class="w-3/4 pb-2"></div>
+                </div>
+                <div class="md:col-span-3 col-span-12 flex items-center md:hidden block">
+                    <img src="${mentorObj[i].mobileImg}" class="xl:w-3/4 w-full">
+                </div>
+                <div class="md:col-span-6 col-span-12 py-5 md:px-0 px-5">
+                    <div class="flex flex-col justify-start md:items-start items-center">
+                        <div class="flex items-end md:justify-start justify-center gap-x-3 mb-3">
+                            <span class="mentorName font-bold text-2xl text-main">${mentorObj[i].name}</span>
+                            <a href="${mentorObj[i].linkedInUrl}"><img src="../img/masterLinkedin.png" class="mentorLinked"></a>
+                        </div>
+                        <div class="md:hidden flex flex-col">
+                            <div class="flex">
+                                <p class="px-5 py-2 currently bg-lightBlue text-white text-xs font-normal">
+                                    Currently</p>
+                            </div>
+                            <div class="flex p-3 notCurrently items-center bg-white"
+                                style="border: 1px solid #60BBE0;">
+                                <p class="text-xs text-main font-normal text-center"><span
+                                        class="font-bold">PGP-TBM </span> Student at Masters' Union | Cohort
+                                    of
+                                    2024</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-y-3 md:pt-0 pt-5">
+                            <div class="flex gap-x-3 items-center">
+                                <img src="../img/teacher.svg" class="mentorLinked">
+                                <p class="mentorName font-normal md:text-base text-sm text-main"><span class="text-base font-bold text-lightBlue">${mentorObj[i].course}, </span> ${mentorObj[i].college}</p>
+                            </div>
+                            <div class="flex gap-x-3 items-center">
+                            <img src="../img/briefcase.svg" class="mentorLinked">
+                            <p class="mentorName font-normal md:text-base text-sm text-main">`
+            for (let j = 0; j < mentorObj[i].ComapniesAndroles.length; j++) {
+                if (mentorObj[i].ComapniesAndroles.length > 1) {
+                    if (mentorObj[i].ComapniesAndroles.length -1 != j){
+                        mentorHtml += `<span>${mentorObj[i].ComapniesAndroles[j].role} @ ${mentorObj[i].ComapniesAndroles[j].company} | </span>`
+                    }
+                    else{
+                        mentorHtml += `<span>${mentorObj[i].ComapniesAndroles[j].role} @ ${mentorObj[i].ComapniesAndroles[j].company}.</span>`
+                    }
+                } else {
+                    mentorHtml += `<span>${mentorObj[i].ComapniesAndroles[j].role} @ ${mentorObj[i].ComapniesAndroles[j].company} .</span>`
+                }
+            }
+            mentorHtml += `</p></div>
+                            <div class="flex gap-x-3 items-center">
+                                <img src="../img/brifecase-timer.svg" class="mentorLinked">
+                                <p class="mentorName font-normal md:text-base text-sm text-main"><span class="text-base font-bold text-lightBlue">${mentorObj[i].workExperience} </span>  Years of Experience</p>
+                            </div>
+                            <div class="flex gap-x-3 items-center">
+                                <img src="../img/location.svg" class="mentorLinked">
+                                <p class="mentorName font-normal md:text-base text-sm text-main">${mentorObj[i].city}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-3 col-span-12 py-5 md:pr-5 md:pl-0 px-5">
+                    <div class="">
+                        <div class="md:block hidden">
+                            <div class="flex">
+                                <p class="px-5 py-2 currently bg-lightBlue text-white text-xs font-normal">
+                                    Currently</p>
+                            </div>
+                            <div class="flex p-3 notCurrently items-center bg-white"
+                                style="border: 1px solid #60BBE0;">
+                                <p class="text-xs text-main font-normal text-center"><span
+                                        class="font-bold">PGP-TBM </span> Student at Masters' Union | Cohort
+                                    of
+                                    2024</p>
+                            </div>
+                        </div>
+    
+                        <div class="md:mt-5 m-0">
+                            <a href="javascript:;" onclick="openCalendar(${[i]})"
+                                class="w-full flex items-center justify-center text-sm text-white btn-Bg font-semibold py-2 text-center rounded-lg">
+                                <span>Book Now</span></a>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        
+            </div>`
+            $("#mentorList").html(mentorHtml)
+        }
     }
 }
 
@@ -599,9 +698,6 @@ function createFilter(filterObj){
     createExpFilter(filterObj['experience'])
     createDomainFilter(filterObj['domain'])
     createStateFilter(filterObj['state'])
-
- 
-
 }
 
 function createExpFilter(filter){
