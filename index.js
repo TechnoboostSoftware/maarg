@@ -7,8 +7,8 @@ $(document).ready(function () {
             "city": "Sri Ganganagar",
             "state": "Rajasthan",
             "experience": "Fresher (0-1 year)",
-            "domain": "NA",
-            "workExperience": 2.5,
+            "domain": "Other",
+            "workExperience": 0,
             "course": "BBA",
             "college": "Maharaja Ganga Singh University, Rajasthan",
             "linkedInUrl": "https://www.linkedin.com/in/vanshmiglani01/",
@@ -32,11 +32,11 @@ $(document).ready(function () {
             "name": "Vaibhav Mahajan",
             "city": "Sonipat",
             "state": "Haryana",
-            "experience": "Family Business/Startup background",
-            "domain": "NA",
+            "experience": "Family Business/ Entrepreneurship",
+            "domain": "Other",
             "workExperience": 9.4,
             "course": "B. Des",
-            "college": "FOOTWEAR DESIGN AND DEVELOPMENT INSTITUTE",
+            "college": "Footwear Design and Development Institute",
             "linkedInUrl": "https://www.linkedin.com/in/vaibhavmahajan-outontrip/",
             "calendarLink": "",
             "img" : "../img/mentorPic-1.png",
@@ -59,7 +59,7 @@ $(document).ready(function () {
             "city": "Mumbai",
             "state": "Maharashtra",
             "experience": "Experience (1-5 years)",
-            "domain": "Other",
+            "domain": "Marketing",
             "workExperience": 4.2,
             "course": "BBA",
             "college": "D.Y. Patil University School of Business, Maharashtra",
@@ -85,7 +85,7 @@ $(document).ready(function () {
             "city": "Khordha",
             "state": "Orissa",
             "experience": "Experience (1-5 years)",
-            "domain": "Other",
+            "domain": "Sales",
             "workExperience": 2.7,
             "course": "B.Tech",
             "college": "Malviya National Institute of Technology, Jaipur, Rajasthan",
@@ -133,7 +133,7 @@ $(document).ready(function () {
             "city": "East Godavari",
             "state": "Andhra Pradesh",
             "experience": "Experience (>5 years)",
-            "domain": "Other",
+            "domain": "Tech",
             "workExperience": 5.8,
             "course": "B.Tech",
             "college": "Amrita Vishwa Vidyapeetham, Tamilnadu",
@@ -158,7 +158,7 @@ $(document).ready(function () {
             "name": "Savrang Jain",
             "city": "Chennai",
             "state": "Tamil Nadu",
-            "experience": "Family Business/Startup background",
+            "experience": "Family Business/ Entrepreneurship",
             "domain": "Other",
             "workExperience": 2.2,
             "course": "B.Com Hons.",
@@ -233,7 +233,7 @@ $(document).ready(function () {
             "name": "Prishta Grover",
             "city": "Gurugram",
             "state": "Haryana",
-            "experience": "Experience (1-5 years)",
+            "experience": "Experience (>5 years)",
             "domain": "Other",
             "workExperience": 5,
             "course": "B.A. (Hons.)",
@@ -349,7 +349,7 @@ $(document).ready(function () {
             "city": "Bardhaman",
             "state": "West Bengal",
             "experience": "Fresher (0-1 year)",
-            "domain": "NA",
+            "domain": "Other",
             "workExperience": 0,
             "course": "BBA",
             "college": "Savitribai Phule Pune University, Maharashtra",
@@ -357,13 +357,19 @@ $(document).ready(function () {
             "calendarLink": "https://calendly.com/harsh-patel-08/meeting-with-harsh",
             "img" : "../img/mentorPic-14.webp",
             "mobileImg" : "../img/mentorMobile-14.png",
-            "ComapniesAndroles": []
+            "ComapniesAndroles": [
+                {
+                    "role": "Founder",
+                    "company": "BeingHiveBeingHive",
+                    "current": true
+                }
+            ]
         }, {
             "name": "Harsh Mudgil",
             "city": " Delhi",
             "state": "Delhi",
             "experience": "Fresher (0-1 year)",
-            "domain": "NA",
+            "domain": "Other",
             "workExperience": 0.8,
             "course": "B.Tech",
             "college": "Jaypee Institute Of Information Technology, Uttar Pradesh",
@@ -546,10 +552,10 @@ function createMentorCard(mentorObj){
                     mentorHtml += `<span>${mentorObj[i].ComapniesAndroles[j].role} @ ${mentorObj[i].ComapniesAndroles[j].company} | </span>`
                 }
                 else{
-                    mentorHtml += `<span>${mentorObj[i].ComapniesAndroles[j].role} @ ${mentorObj[i].ComapniesAndroles[j].company}.</span>`
+                    mentorHtml += `<span>${mentorObj[i].ComapniesAndroles[j].role} @ ${mentorObj[i].ComapniesAndroles[j].company}</span>`
                 }
             } else {
-                mentorHtml += `<span>${mentorObj[i].ComapniesAndroles[j].role} @ ${mentorObj[i].ComapniesAndroles[j].company} .</span>`
+                mentorHtml += `<span>${mentorObj[i].ComapniesAndroles[j].role} @ ${mentorObj[i].ComapniesAndroles[j].company}</span>`
             }
         }
         mentorHtml += `</p></div>
