@@ -1,5 +1,10 @@
 var mentorObj;
 var mentorsOrder =[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
+var filterApplied = false
+let clonedMentorObj
+let experiencedFiltered="";
+let stateFiltered="";
+let domainFiltered="";
 $(document).ready(function () {
 
 
@@ -493,6 +498,10 @@ $(document).ready(function () {
 
 function initilise(){
     filterApplied = false
+    experiencedFiltered="";
+    stateFiltered="";
+    domainFiltered="";
+
     var filterObj = {
         "domain": [],
         "state": [],
@@ -747,11 +756,7 @@ function createStateFilter(filter){
     $("#state").html(filterHtml)
 }
 
-var filterApplied = false
-let clonedMentorObj
-let experiencedFiltered;
-let stateFiltered;
-let domainFiltered;
+
 function applyFilter(elem,filter){
   
     if(!filterApplied){
@@ -773,20 +778,23 @@ function applyFilter(elem,filter){
     }
 
     if(filter == 'domain'){
-        if(experiencedFiltered == undefined){
-            experiencedFiltered = clonedMentorObj.filter(d=> d['domain'] == currentFilter)
+        if(experiencedFiltered == ""){
+            domainFiltered = clonedMentorObj.filter(d=> d['domain'] == currentFilter)
+           // experiencedFiltered = clonedMentorObj.filter(d=> d['domain'] == currentFilter)
+        }else{
+            domainFiltered = experiencedFiltered.filter(d=> d['domain'] == currentFilter)
         }
-        domainFiltered = experiencedFiltered.filter(d=> d['domain'] == currentFilter)
         state  =[ ...new Set(domainFiltered.map((element) => element['state']))];
         createStateFilter(state)
         createMentorCard(domainFiltered)
 
     }
     if(filter == 'state'){
-        if(domainFiltered == undefined){
-            domainFiltered = clonedMentorObj.filter(d=> d['domain'] == currentFilter)
+        if(domainFiltered == ""){
+            stateFiltered = clonedMentorObj.filter(d=> d['state'] == currentFilter)
+        }else{
+            stateFiltered = domainFiltered.filter(d=> d['state'] == currentFilter)
         }
-        stateFiltered = domainFiltered.filter(d=> d['state'] == currentFilter)
         createMentorCard(stateFiltered)
     }
     //reateMentorCard(clonedMentorObj)
