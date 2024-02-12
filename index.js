@@ -1,6 +1,6 @@
 var mentorObj;
 // var mentorsOrder =[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
-var mentorsOrder =[4,5,11,12,13,15,0,2,3,8,9,10,14,16,17,18,19]
+var mentorsOrder =[12,3,2,10,4,8,11,15,0,14,5,13,7,17,1,9,16,6]
 var filterApplied = false
 let clonedMentorObj
 let experiencedFiltered="";
@@ -37,32 +37,32 @@ $(document).ready(function () {
                 }
             ]
         },
-        {
-            "name": "Vaibhav Mahajan",
-            "city": "Sonipat",
-            "state": "Haryana",
-            "experience": "Family Business/ Entrepreneurship",
-            "domain": "Other",
-            "workExperience": 9.4,
-            "course": "B. Des",
-            "college": "Footwear Design and Development Institute",
-            "linkedInUrl": "https://www.linkedin.com/in/vaibhavmahajan-outontrip/",
-            "calendarLink": "",
-            "img" : "../img/mentorPic-1.png",
-            "mobileImg" : "../img/mentorMobile-1.png",
-            "ComapniesAndroles": [
-                {
-                    "role": "Managing Partner",
-                    "company": "Glassrock Traders Llp",
-                    "current": true
-                },
-                {
-                    "role": "Ecommerce Specialist And General Manager",
-                    "company": "Glassrock Traders Llp",
-                    "current": true
-                }
-            ]
-        },
+        // {
+        //     "name": "Vaibhav Mahajan",
+        //     "city": "Sonipat",
+        //     "state": "Haryana",
+        //     "experience": "Family Business/ Entrepreneurship",
+        //     "domain": "Other",
+        //     "workExperience": 9.4,
+        //     "course": "B. Des",
+        //     "college": "Footwear Design and Development Institute",
+        //     "linkedInUrl": "https://www.linkedin.com/in/vaibhavmahajan-outontrip/",
+        //     "calendarLink": "",
+        //     "img" : "../img/mentorPic-1.png",
+        //     "mobileImg" : "../img/mentorMobile-1.png",
+        //     "ComapniesAndroles": [
+        //         {
+        //             "role": "Managing Partner",
+        //             "company": "Glassrock Traders Llp",
+        //             "current": true
+        //         },
+        //         {
+        //             "role": "Ecommerce Specialist And General Manager",
+        //             "company": "Glassrock Traders Llp",
+        //             "current": true
+        //         }
+        //     ]
+        // },
         {
             "name": "Udit Agarwal",
             "city": "Mumbai",
@@ -369,7 +369,7 @@ $(document).ready(function () {
             "ComapniesAndroles": [
                 {
                     "role": "Founder",
-                    "company": "BeingHiveBeingHive",
+                    "company": "BeingHive",
                     "current": true
                 }
             ]
@@ -454,7 +454,7 @@ $(document).ready(function () {
             "course": "B.Tech",
             "college": "Vishwakarma Institute of Technology",
             "linkedInUrl": "https://www.linkedin.com/in/aditi-lahane/",
-            "calendarLink": "https://calendly.com/aditi-lahane/office-hours",
+            "calendarLink": "https://calendly.com/aditi-lahane/30min",
             "img" : "../img/mentorPic-18.webp",
             "mobileImg" : "../img/mentorMobile-18.png",
             "ComapniesAndroles": [
