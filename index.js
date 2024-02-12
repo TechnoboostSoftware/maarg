@@ -552,19 +552,19 @@ function createMentorCard(mentorObj){
                             <div class="flex gap-x-3 items-center">
                             <img src="../img/briefcase.svg" class="mentorLinked">
                             <p class="mentorName font-normal md:text-base text-sm text-main">`
-            for (let j = 0; j < mentorObj[i].ComapniesAndroles.length; j++) {
-                if (mentorObj[i].ComapniesAndroles.length > 1) {
-                    if (mentorObj[i].ComapniesAndroles.length -1 != j){
-                        mentorHtml += `<span>${mentorObj[i].ComapniesAndroles[j].role} @ ${mentorObj[i].ComapniesAndroles[j].company} | </span>`
-                    }
-                    else{
-                        mentorHtml += `<span>${mentorObj[i].ComapniesAndroles[j].role} @ ${mentorObj[i].ComapniesAndroles[j].company}.</span>`
-                    }
-                } else {
-                    mentorHtml += `<span>${mentorObj[i].ComapniesAndroles[j].role} @ ${mentorObj[i].ComapniesAndroles[j].company} .</span>`
-                }
-               
-            } 
+                        for (let j = 0; j < mentorObj[i].ComapniesAndroles.length; j++) {
+                            if (mentorObj[i].ComapniesAndroles.length > 1) {
+                                if (mentorObj[i].ComapniesAndroles.length -1 != j){
+                                    mentorHtml += `<span>${mentorObj[i].ComapniesAndroles[j].role} @ ${mentorObj[i].ComapniesAndroles[j].company} | </span>`
+                                }
+                                else{
+                                    mentorHtml += `<span>${mentorObj[i].ComapniesAndroles[j].role} @ ${mentorObj[i].ComapniesAndroles[j].company}</span>`
+                                }
+                            } else {
+                                mentorHtml += `<span>${mentorObj[i].ComapniesAndroles[j].role} @ ${mentorObj[i].ComapniesAndroles[j].company} </span>`
+                            }
+                        
+                        } 
             mentorHtml += `</p></div>
                             <div class="flex gap-x-3 items-center">
                                 <img src="../img/brifecase-timer.svg" class="mentorLinked">
