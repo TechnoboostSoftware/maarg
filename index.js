@@ -603,7 +603,7 @@ function createMentorCard(mentorObj){
                         </div>
     
                         <div class="md:mt-5 m-0">
-                            <a href="javascript:;" onclick="openCalendar(${[i]})"
+                            <a href="javascript:;" onclick="openCalendar('${mentorObj[i].calendarLink}')"
                                 class="w-full flex items-center justify-center text-sm text-white btn-Bg font-semibold py-2 text-center rounded-lg">
                                 <span>Book Now</span></a>
                         </div>
@@ -695,7 +695,7 @@ function createMentorCard(mentorObj){
                         </div>
     
                         <div class="md:mt-5 m-0">
-                            <a href="javascript:;" onclick="openCalendar(${[i]})"
+                            <a href="javascript:;" onclick="openCalendar('${mentorObj[i].calendarLink}')"
                                 class="w-full flex items-center justify-center text-sm text-white btn-Bg font-semibold py-2 text-center rounded-lg">
                                 <span>Book Now</span></a>
                         </div>
@@ -850,8 +850,8 @@ function mobileFilterDisplay(id) {
     $(id).toggleClass('hidden')
 }
 
-function openCalendar(index){
-    let calendarLink = mentorObj[index].calendarLink
+function openCalendar(calendarLink){
+    // let calendarLink = mentorObj.calendarLink
     if(calendarLink == ""){
         alert("Something went wrong ! please try after sometime")
     }else{
