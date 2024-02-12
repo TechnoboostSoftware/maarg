@@ -10,8 +10,8 @@ $(document).ready(function () {
             "city": "Sri Ganganagar",
             "state": "Rajasthan",
             "experience": "Fresher (0-1 year)",
-            "domain": "NA",
-            "workExperience": 2.5,
+            "domain": "Other",
+            "workExperience": 0,
             "course": "BBA",
             "college": "Maharaja Ganga Singh University, Rajasthan",
             "linkedInUrl": "https://www.linkedin.com/in/vanshmiglani01/",
@@ -35,11 +35,11 @@ $(document).ready(function () {
             "name": "Vaibhav Mahajan",
             "city": "Sonipat",
             "state": "Haryana",
-            "experience": "Family Business/Startup background",
-            "domain": "NA",
+            "experience": "Family Business/ Entrepreneurship",
+            "domain": "Other",
             "workExperience": 9.4,
             "course": "B. Des",
-            "college": "FOOTWEAR DESIGN AND DEVELOPMENT INSTITUTE",
+            "college": "Footwear Design and Development Institute",
             "linkedInUrl": "https://www.linkedin.com/in/vaibhavmahajan-outontrip/",
             "calendarLink": "",
             "img" : "../img/mentorPic-1.png",
@@ -62,12 +62,12 @@ $(document).ready(function () {
             "city": "Mumbai",
             "state": "Maharashtra",
             "experience": "Experience (1-5 years)",
-            "domain": "Other",
+            "domain": "Marketing",
             "workExperience": 4.2,
             "course": "BBA",
             "college": "D.Y. Patil University School of Business, Maharashtra",
-            "linkedInUrl": "https://calendly.com/udit-pym/30min",
-            "calendarLink": "",
+            "linkedInUrl": "https://www.linkedin.com/in/uditt/",
+            "calendarLink": "https://calendly.com/udit-pym/30min",
             "img" : "../img/mentorPic-2.webp",
             "mobileImg" : "../img/mentorMobile-2.png",
             "ComapniesAndroles": [
@@ -88,12 +88,12 @@ $(document).ready(function () {
             "city": "Khordha",
             "state": "Orissa",
             "experience": "Experience (1-5 years)",
-            "domain": "Other",
+            "domain": "Sales",
             "workExperience": 2.7,
             "course": "B.Tech",
             "college": "Malviya National Institute of Technology, Jaipur, Rajasthan",
             "linkedInUrl": "https://www.linkedin.com/in/taabish-iqbal",
-            "calendarLink": "https://calendly.com/tabish-iqbal/30min?month=2024-02",
+            "calendarLink": "https://calendly.com/tabish-iqbal/30min",
             "img" : "../img/mentorPic-3.webp",
             "mobileImg" : "../img/mentorMobile-3.png",
             "ComapniesAndroles": [
@@ -136,7 +136,7 @@ $(document).ready(function () {
             "city": "East Godavari",
             "state": "Andhra Pradesh",
             "experience": "Experience (>5 years)",
-            "domain": "Other",
+            "domain": "Tech",
             "workExperience": 5.8,
             "course": "B.Tech",
             "college": "Amrita Vishwa Vidyapeetham, Tamilnadu",
@@ -161,13 +161,13 @@ $(document).ready(function () {
             "name": "Savrang Jain",
             "city": "Chennai",
             "state": "Tamil Nadu",
-            "experience": "Family Business/Startup background",
+            "experience": "Family Business/ Entrepreneurship",
             "domain": "Other",
             "workExperience": 2.2,
             "course": "B.Com Hons.",
             "college": "Loyola College, Madras",
             "linkedInUrl": "https://www.linkedin.com/in/savrang-jain/",
-            "calendarLink": "https://calendly.com/savrang-jain",
+            "calendarLink": "https://calendly.com/savrang-jain/30min",
             "img" : "../img/mentorPic-6.webp",
             "mobileImg" : "../img/mentorMobile-6.png",
             "ComapniesAndroles": [
@@ -216,8 +216,8 @@ $(document).ready(function () {
             "workExperience": 1.8,
             "course": "B.Tech",
             "college": "SRM Institute Of Sciences And Technology, Chennai",
-            "linkedInUrl": "https://www.linkedin.com/in/aadi-jainn/",
-            "calendarLink": "",
+            "linkedInUrl": "https://www.linkedin.com/in/rohan-tomar/",
+            "calendarLink": "https://calendly.com/meetrohantomar/30min",
             "img" : "../img/mentorPic-8.webp",
             "mobileImg" : "../img/mentorMobile-8.png",
             "ComapniesAndroles": [
@@ -236,9 +236,9 @@ $(document).ready(function () {
             "name": "Prishta Grover",
             "city": "Gurugram",
             "state": "Haryana",
-            "experience": "Experience (1-5 years)",
+            "experience": "Experience (>5 years)",
             "domain": "Other",
-            "workExperience": 4.9,
+            "workExperience": 5,
             "course": "B.A. (Hons.)",
             "college": "Moti Lal Nehru College, Delhi University",
             "linkedInUrl": "https://www.linkedin.com/in/prishtagrover/",
@@ -267,7 +267,7 @@ $(document).ready(function () {
             "course": "B.Com",
             "college": "Institute of Distance Education, University Of Madras, Tamil Nadu",
             "linkedInUrl": "https://www.linkedin.com/in/pavan-krishna-/",
-            "calendarLink": "https://calendly.com/pavan-krishna/30min?back=1&month=2024-02",
+            "calendarLink": "https://calendly.com/pavan-krishna/30min",
             "img" : "../img/mentorPic-10.webp",
             "mobileImg" : "../img/mentorMobile-10.png",
             "ComapniesAndroles": [
@@ -312,7 +312,7 @@ $(document).ready(function () {
             "course": "B.Tech",
             "college": "Vishwakarma Institute of Technology",
             "linkedInUrl": "www.linkedin.com/in/nandan-tawari",
-            "calendarLink": "https://calendly.com/nandan-tawari",
+            "calendarLink": "https://calendly.com/nandan-tawari/30min",
             "img" : "../img/mentorPic-12.webp",
             "mobileImg" : "../img/mentorMobile-12.png",
             "ComapniesAndroles": [
@@ -352,7 +352,7 @@ $(document).ready(function () {
             "city": "Bardhaman",
             "state": "West Bengal",
             "experience": "Fresher (0-1 year)",
-            "domain": "NA",
+            "domain": "Other",
             "workExperience": 0,
             "course": "BBA",
             "college": "Savitribai Phule Pune University, Maharashtra",
@@ -360,13 +360,19 @@ $(document).ready(function () {
             "calendarLink": "https://calendly.com/harsh-patel-08/meeting-with-harsh",
             "img" : "../img/mentorPic-14.webp",
             "mobileImg" : "../img/mentorMobile-14.png",
-            "ComapniesAndroles": []
+            "ComapniesAndroles": [
+                {
+                    "role": "Founder",
+                    "company": "BeingHiveBeingHive",
+                    "current": true
+                }
+            ]
         }, {
             "name": "Harsh Mudgil",
             "city": " Delhi",
             "state": "Delhi",
             "experience": "Fresher (0-1 year)",
-            "domain": "NA",
+            "domain": "Other",
             "workExperience": 0.8,
             "course": "B.Tech",
             "college": "Jaypee Institute Of Information Technology, Uttar Pradesh",
@@ -442,7 +448,7 @@ $(document).ready(function () {
             "course": "B.Tech",
             "college": "Vishwakarma Institute of Technology",
             "linkedInUrl": "https://www.linkedin.com/in/aditi-lahane/",
-            "calendarLink": "https://calendly.com/aditi-lahane",
+            "calendarLink": "https://calendly.com/aditi-lahane/office-hours",
             "img" : "../img/mentorPic-18.webp",
             "mobileImg" : "../img/mentorMobile-18.png",
             "ComapniesAndroles": [
@@ -462,7 +468,7 @@ $(document).ready(function () {
             "course": "B.Tech",
             "college": "Jawaharlal Nehru Technological University, Hyderabad, Telangana",
             "linkedInUrl": "https://www.linkedin.com/in/aadi-jainn/",
-            "calendarLink": "https://calendly.com/aadi-jain",
+            "calendarLink": "https://calendly.com/aadi-jain/30min",
             "img" : "../img/mentorPic-19.webp",
             "mobileImg" : "../img/mentorMobile-19.png",
             "ComapniesAndroles": [
@@ -557,7 +563,8 @@ function createMentorCard(mentorObj){
                 } else {
                     mentorHtml += `<span>${mentorObj[i].ComapniesAndroles[j].role} @ ${mentorObj[i].ComapniesAndroles[j].company} .</span>`
                 }
-            }
+               
+            } 
             mentorHtml += `</p></div>
                             <div class="flex gap-x-3 items-center">
                                 <img src="../img/brifecase-timer.svg" class="mentorLinked">
