@@ -1,26 +1,5 @@
 var mentorObj = [
     {
-        "name": "Amit Kundu",
-        "city": "Delhi NCR",
-        // "state": "Rajasthan",
-        "experience": " > 5 Years",
-        "domain": "Finance/Operations",
-        "workExperience": 9.8,
-        // "course": "",
-        "college": "Geetanjali Institute of Technical Studies",
-        "linkedInUrl": "https://www.linkedin.com/in/amit-kundu-39b20a253/",
-        "calendarLink": "https://calendly.com/amit-kundu",
-        "img": "img/newMentorPic-0.webp",
-        "mobileImg": "img/newMentorMobile-0.webp",
-        "ComapniesAndroles": [
-            {
-                "role": "AVP - Enterprise Demand and Forecasting",
-                "company": "National Australia Bank - India",
-                "current": true
-            }
-        ]
-    },
-    {
         "name": "Anikait Chakraborty",
         "city": "Delhi NCR",
         // "state": "Maharashtra",
@@ -42,6 +21,27 @@ var mentorObj = [
             {
                 "role": "Co-Founder",
                 "company": "Practical Dreams",
+                "current": true
+            }
+        ]
+    },
+    {
+        "name": "Amit Kundu",
+        "city": "Delhi NCR",
+        // "state": "Rajasthan",
+        "experience": " > 5 Years",
+        "domain": "Finance/Operations",
+        "workExperience": 9.8,
+        // "course": "",
+        "college": "Geetanjali Institute of Technical Studies",
+        "linkedInUrl": "https://www.linkedin.com/in/amit-kundu-39b20a253/",
+        "calendarLink": "https://calendly.com/amit-kundu",
+        "img": "img/newMentorPic-0.webp",
+        "mobileImg": "img/newMentorMobile-0.webp",
+        "ComapniesAndroles": [
+            {
+                "role": "AVP - Enterprise Demand and Forecasting",
+                "company": "National Australia Bank - India",
                 "current": true
             }
         ]
