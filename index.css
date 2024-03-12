@@ -155,6 +155,11 @@
     background-size: cover;
 }
 
+.newMaster {
+    background-image: url('img/newMaster.webp');
+    background-size: cover;
+}
+
 .dropImg {
     height: 10px;
     width: 15px;

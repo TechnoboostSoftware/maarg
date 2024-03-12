@@ -811,6 +811,7 @@ function dropDownAnswer(element) {
         element.parentElement.classList.remove('open');
     }
 }
+
 function resourcesDropDown(id, name) {
     if (id == 'web' && name == 'resouce') {
         $("#resourcesDropDownResouce").toggleClass("hidden")
