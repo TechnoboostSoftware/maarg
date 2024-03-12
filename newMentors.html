@@ -58,161 +58,19 @@
     </head>
 
     <body>
-        <!-- Main navigation container -->
-        <nav style="position: sticky;top: 0px;z-index: 100;"
-            class="relative flex w-full flex-nowrap items-center justify-between bg-[#FBFBFB] py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 bg-white lg:flex-wrap lg:justify-start lg:py-3"
-            data-te-navbar-ref>
-            <div class="flex w-full flex-wrap items-center justify-between px-3">
-                <div class="ml-2">
-                    <a class="text-xl text-neutral-800 dark:text-neutral-200" href="/">
-                        <img src="img/logo.svg" alt="maarg">
-                    </a>
-                </div>
-                <!-- Hamburger button for mobile view -->
-                <button
-                    class="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
-                    type="button" data-te-collapse-init data-te-target="#navbarSupportedContent14"
-                    aria-controls="navbarSupportedContent14" aria-expanded="false" aria-label="Toggle navigation">
-                    <!-- Hamburger icon -->
-                    <span class="[&>svg]:w-7">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7">
-                            <path fill-rule="evenodd"
-                                d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </span>
-                </button>
-
-                <!-- Collapsible navbar container -->
-                <div class="!visible mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"
-                    id="navbarSupportedContent14" data-te-collapse-item>
-                    <!-- Left links -->
-                    <ul class="list-style-none lg:ml-auto flex flex-col pl-0 lg:mt-1 lg:flex-row text-sm font-semibold md:gap-x-5 "
-                        data-te-navbar-nav-ref>
-                        <!-- Home link -->
-                        <li class="my-4 pl-2 lg:my-0 lg:pl-2 lg:pr-1 text-black/90" data-te-nav-item-ref>
-                            <a class="" aria-current="page" data-te-nav-link-ref href="/mentor.html">Become a Mentor</a>
-                        </li>
-                        <!-- Link -->
-                        <!-- <li class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1  relative md:flex hidden" data-te-nav-item-ref
-                            data-te-dropdown-ref>
-           
-                            <a class="flex items-center text-black/90 lg:pl-4" href="javascript:;" type="button"
-                                id="dropdownMenuButton2" data-te-dropdown-toggle-ref aria-expanded="false"
-                                onclick="resourcesDropDown('web','resouce')">
-                                Resources
-                                <span class="ml-1 w-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                        class="h-5 w-5">
-                                        <path fill-rule="evenodd"
-                                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                </span>
-                            </a>
-                            <div class="flex bg-white flex-col z-50 md:absolute flex md:items-center items-start justify-center md:mt-6 py-2 px-1 hidden"
-                                id="resourcesDropDownResouce" style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);">
-                                <a href=""
-                                    class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect border-b">Blog</a>
-                                <a href=""
-                                    class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect">Webinar</a>
-                            </div>
-                        </li> -->
-                        <li class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1  relative md:flex hidden" data-te-nav-item-ref
-                            data-te-dropdown-ref>
-                            <!-- Dropdown -->
-                            <a class="flex items-center text-black/90 lg:pl-3 lg:pr-9" href="javascript:;" type="button"
-                                id="dropdownMenuButton3" data-te-dropdown-toggle-ref aria-expanded="false"
-                                onclick="resourcesDropDown('web','college')">
-                                Colleges
-                                <span class="ml-1 w-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                        class="h-5 w-5">
-                                        <path fill-rule="evenodd"
-                                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                </span>
-                            </a>
-                            <div class="flex bg-white flex-col  z-50 md:absolute flex md:items-center items-start justify-center md:mt-6 py-2 px-1 hidden"
-                                id="resourcesDropDownCollege" style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);">
-                                <a href="/college/mastersunion"
-                                    class="md:text-sm text-xs w-full py-2 md:px-2 font-semibold navDropEffect">Masters'
-                                    Union</a>
-                            </div>
-                        </li>
-
-                        <!-- mobile view -->
-
-                        <!-- <li class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1  w-full flex-col relative md:hidden flex"
-                            data-te-nav-item-ref data-te-dropdown-ref>
-                            <a class="flex items-center text-black/90 lg:pl-4" href="javascript:;" type="button"
-                                id="dropdownMenuButton2" data-te-dropdown-toggle-ref aria-expanded="false"
-                                onclick="resourcesDropDown('phone','resouce')">
-                                Resources
-                                <span class="ml-1 w-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                        class="h-5 w-5">
-                                        <path fill-rule="evenodd"
-                                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                </span>
-                            </a>
-
-                            <div class="flex bg-white flex-col flex w-full  items-start justify-center rounded py-2 px-5 hidden"
-                                id="resourcesDropDownMobileResource"
-                                style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10); background: rgba(96, 187, 224, 0.20);">
-                                <a href=""
-                                    class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect border-b">Blog</a>
-                                <a href=""
-                                    class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect">Webinar</a>
-                            </div>
-                        </li> -->
-                        <li class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1  w-full flex-col relative md:hidden flex"
-                            data-te-nav-item-ref data-te-dropdown-ref>
-                            <!-- Dropdown -->
-                            <a class="flex items-center text-black/90 lg:pl-4" href="javascript:;" type="button"
-                                id="dropdownMenuButton2" data-te-dropdown-toggle-ref aria-expanded="false"
-                                onclick="resourcesDropDown('phone','college')">
-                                Colleges
-                                <span class="ml-1 w-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                        class="h-5 w-5">
-                                        <path fill-rule="evenodd"
-                                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                </span>
-                            </a>
-
-                            <div class="flex bg-white flex-col flex w-full  items-start justify-center rounded py-2 px-5 hidden"
-                                id="resourcesDropDownMobileCollege"
-                                style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10); background: rgba(96, 187, 224, 0.20);">
-                                <a href="/college/mastersunion"
-                                    class="md:text-sm text-xs w-full py-2 md:px-7 font-semibold navDropEffect">Masters'
-                                    Union</a>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <div class="md:w-[350px] w-full lg:pr-2 lg:ml-auto">
-                        <div class="items-center flex lg:gap-x-4  flex-col lg:flex-row">
-                            <a class="text-center text-sm font-semibold text-main flex gap-x-2 items-center justify-center py-2 md:my-0 my-1 px-3 rounded-xl w-full h-[38px]"
-                                style="border: 1px solid #1D2D5A;"
-                                href="#tally-open=mDz1zE&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
-                                role="button"><img src="img/sms-tracking.svg" class="inline"><span> Contact
-                                    Us</span></a>
-
-                            <a href="#tally-open=3jPMl1&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
-                                class="text-center text-sm font-semibold flex gap-x-2 items-center justify-center md:py-2 py-2.5 md:my-0 my-1 px-3 rounded-xl w-full h-[38px btn-Bg"
-                                style="border: 1px solid #1D2D5A;" role="button">
-                                <img src="img/diamond.svg" class="inline" width="15px">
-                                <span class=" md:text-sm text-xs font-semibold text-white ">Get early access</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+        <nav
+            class="flex items-center justify-between py-2 px-3 bg-[#FBFBFB] text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 bg-white">
+            <div class="md:ml-2 ml-0">
+                <a class="text-xl text-neutral-800 dark:text-neutral-200" href="/">
+                    <img src="img/logo.svg" alt="maarg">
+                </a>
+            </div>
+            <div class="">
+                <a class="text-center md:text-sm text-xs font-semibold text-main flex gap-x-2 items-center justify-center md:py-2 py-0 md:my-0 my-1 md:px-3 px-2 rounded-xl w-full h-[38px]"
+                    style="border: 1px solid #1D2D5A;"
+                    href="#tally-open=mDz1zE&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave"
+                    role="button"><img src="img/sms-tracking.svg" class="inline"><span> Contact
+                        Us</span></a>
             </div>
         </nav>
 
@@ -561,7 +419,7 @@
                     <p class="font-bold md:text-4xl text-2xl md:w-3/5 text-center md:text-start text-white">Let’s shape
                         the future together!</p>
                     <div class="flex items-center md:justify-end justify-center pt-5">
-                        <a href="/mentor" class="flex items-center gap-x-2 bg-white my-3 py-2 px-5 rounded-xl btn-Bg"
+                        <a href="#mentors" class="flex items-center gap-x-2 bg-white my-3 py-2 px-5 rounded-xl btn-Bg"
                             role="button">
                             <span class="text-main text-sm font-semibold text-main">Book Now</span>
                         </a>
@@ -590,76 +448,52 @@
                         <div class="flex flex-col border w-full radius-10 my-2 close rounded-lg bg-white">
                             <div class="flex justify-between py-4 px-5 items-center gap-7"
                                 onclick="dropDownAnswer(this)" id="question-1">
-                                <p class="text-base font-semibold text-main">Is the mentorship program free?
-                                </p>
+                                <p class="text-base font-semibold text-main">Are the calls free</p>
                                 <img src="img/Plus.svg" class="dropUp">
                                 <img src="img/dash.svg" class="dropDown d-none">
                             </div>
                             <div class="d-none body px-5 py-3" id="answer-1">
                                 <p class="text-base font-normal text-main text-justify">
-                                    Yes, our mentorship program is currently offered as a complimentary service.
-
-                                </p>
+                                    Yes, our mentorship calls are currently offered as a complimentary service.</p>
                             </div>
                         </div>
                         <div class="flex flex-col border w-full radius-10 my-2 close rounded-lg bg-white">
                             <div class="flex justify-between py-4 px-5 items-center gap-7"
                                 onclick="dropDownAnswer(this)" id="question-2">
-                                <p class="text-base font-semibold text-main"> How long does it take to get matched with
-                                    a mentor?</p>
+                                <p class="text-base font-semibold text-main">How long is a call?</p>
                                 <img src="img/Plus.svg" class="dropUp">
                                 <img src="img/dash.svg" class="dropDown d-none">
                             </div>
                             <div class="d-none body px-5 py-3" id="answer-2">
                                 <p class="text-base font-normal text-main text-justify">
-                                    We aim to match you within 24 hours of submitting your 'Book a Call' form.
+                                    Each call is scheduled for 30 minutes.
                                 </p>
                             </div>
                         </div>
                         <div class="flex flex-col border w-full radius-10 my-2 close rounded-lg bg-white">
                             <div class="flex justify-between py-4 px-5 items-center gap-7"
                                 onclick="dropDownAnswer(this)" id="question-3">
-                                <p class="text-base font-semibold text-main">Can I choose my mentor?
-                                </p>
+                                <p class="text-base font-semibold text-main">Where will the call take place?</p>
                                 <img src="img/Plus.svg" class="dropUp">
                                 <img src="img/dash.svg" class="dropDown d-none">
                             </div>
                             <div class="d-none body px-5 py-3" id="answer-3">
                                 <p class="text-base font-normal text-main text-justify">
-                                    We carefully match you with a mentor based on your pre-MBA background for the best
-                                    fit.
-                                </p>
+                                    You will receive a Google Meet link in the invite after booking a call.</p>
                             </div>
                         </div>
 
                         <div class="flex flex-col border w-full radius-10 my-2 close rounded-lg bg-white">
                             <div class="flex justify-between py-4 px-5 items-center gap-7"
                                 onclick="dropDownAnswer(this)" id="question-3">
-                                <p class="text-base font-semibold text-main">How often can I connect with my mentor?
-                                </p>
+                                <p class="text-base font-semibold text-main">Is my information kept confidential?</p>
                                 <img src="img/Plus.svg" class="dropUp">
                                 <img src="img/dash.svg" class="dropDown d-none">
                             </div>
                             <div class="d-none body px-5 py-3" id="answer-3">
                                 <p class="text-base font-normal text-main text-justify">
-                                    Mentorship sessions are typically scheduled for 30 minutes. Further sessions can be
-                                    arranged based on availability.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="flex flex-col border w-full radius-10 my-2 close rounded-lg bg-white">
-                            <div class="flex justify-between py-4 px-5 items-center gap-7"
-                                onclick="dropDownAnswer(this)" id="question-3">
-                                <p class="text-base font-semibold text-main">Is my information kept confidential?
-                                </p>
-                                <img src="img/Plus.svg" class="dropUp">
-                                <img src="img/dash.svg" class="dropDown d-none">
-                            </div>
-                            <div class="d-none body px-5 py-3" id="answer-3">
-                                <p class="text-base font-normal text-main text-justify">
-                                    Yes, we prioritize the confidentiality and privacy of your information. Rest assured
-                                    that your details are handled with utmost care.
-                                </p>
+                                    - Absolutely. We prioritize the confidentiality and privacy of your information.
+                                    Rest assured that your details are handled with the utmost care.</p>
                             </div>
                         </div>
                     </div>
