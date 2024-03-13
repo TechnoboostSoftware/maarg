@@ -119,7 +119,7 @@ var mentorObj = [
         "name": "Ramsha Mustafa",
         "city": "Delhi NCR",
         // "state": "Andhra Pradesh",
-        "experience": " > 5 Years",
+        "experience": " 0-5 Years",
         "domain": "Hotel Management",
         "workExperience": 4.3,
         // "course": "B.Tech",
