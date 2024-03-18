@@ -161,8 +161,8 @@ function createMentors(obj) {
                             class="text-sm font-semibold text-main">High School Stream</span> - ${obj[i].stream}</p>
                 </div>
             </div>
-            <button class="btn-Bg text-sm text-white font-semibold w-full rounded-lg py-2">Get Early
-                Access</button>
+            <a href="#tally-open=3jPMl1&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave" class="btn-Bg text-sm text-center text-white font-semibold w-full rounded-lg py-2">Get Early
+                Access</a>
         </div>
     </div>`
         $('#browsermentors').html(html)
