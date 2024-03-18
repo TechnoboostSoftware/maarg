@@ -4,7 +4,7 @@ var obj = [
         "stream": "Science",
         "college": "Shaheed Sukhdev College of Business Studies",
         "course": "BBA - Financial Investment Analysis",
-        "pic": 'img/browserMentor-0.svg',
+        "pic": 'img/browserMentor-0.png',
         "yog": '2024'
     },
     {
@@ -12,7 +12,7 @@ var obj = [
         "stream": "Commerce",
         "college": "IIM Rohtak",
         "course": "IPM - Integrated Programme in Management",
-        "pic": 'img/browserMentor-1.svg',
+        "pic": 'img/browserMentor-1.png',
         "yog": '2023'
     },
     {
@@ -20,7 +20,7 @@ var obj = [
         "stream": "Other",
         "college": "Kristu Jayanti College",
         "course": "BBA - Finance and Marketing",
-        "pic": 'img/browserMentor-2.svg',
+        "pic": 'img/browserMentor-2.png',
         "yog": '2024'
     },
     {
@@ -28,7 +28,7 @@ var obj = [
         "stream": "Commerce",
         "college": "IIM Indore",
         "course": "IPM - Integrated Programme in Management ",
-        "pic": 'img/browserMentor-3.svg',
+        "pic": 'img/browserMentor-3.png',
         "yog": '2021'
     },
     {
@@ -36,7 +36,7 @@ var obj = [
         "stream": "Commerce",
         "college": "Christ University Bangalore",
         "course": "BBA - Finance and International Business",
-        "pic": 'img/browserMentor-4.svg',
+        "pic": 'img/browserMentor-4.png',
         "yog": '2024'
     },
     {
@@ -44,7 +44,7 @@ var obj = [
         "stream": "Commerce",
         "college": "IIM Ranchi",
         "course": "IPM - Integrated Programme In Management",
-        "pic": 'img/browserMentor-5.svg',
+        "pic": 'img/browserMentor-5.png',
         "yog": '2026'
     },
     {
@@ -52,7 +52,7 @@ var obj = [
         "stream": "Commerce",
         "college": "Shri Ram College of Commerce",
         "course": "B.Com Hons",
-        "pic": 'img/browserMentor-6.svg',
+        "pic": 'img/browserMentor-6.png',
         "yog": '2026'
     },
     {
@@ -60,7 +60,7 @@ var obj = [
         "stream": "Commerce",
         "college": "Christ University, Bangalore",
         "course": "BBA Hons - Marketing",
-        "pic": 'img/browserMentor-7.svg',
+        "pic": 'img/browserMentor-7.png',
         "yog": '2024'
     },
     {
@@ -68,7 +68,7 @@ var obj = [
         "stream": "Other",
         "college": "Jamia Millia Islamia",
         "course": "BBA",
-        "pic": 'img/browserMentor-8.svg',
+        "pic": 'img/browserMentor-8.png',
         "yog": '2026'
     },
     {
@@ -126,7 +126,7 @@ function createMentors(obj) {
         <div class="rounded flex flex-col p-3 h-full" style="background-color: rgba(247, 248, 251, 1);">
             <div class="grid grid-cols-12 flex items-center md:gap-x-3 gap-x-6">
                 <div class="col-span-5 flex justify-center">
-                    <img src="${obj[i].pic}" class="md:h-32 md:w-32 h-28 w-28 px-3">
+                    <img src="${obj[i].pic}" class="md:h-32 md:w-32 h-28 w-28 ">
                 </div>
                 <div class="col-span-7">
                     <div class="flex flex-col gap-y-3">
