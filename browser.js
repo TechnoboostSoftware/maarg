@@ -27,7 +27,7 @@ var obj = [
         "name": "sneha arora",
         "stream": "Commerce",
         "college": "Shaheed Sukhdev College of Business Studies",
-        "course": "IPM - Integrated Programme in Management ",
+        "course": "BBA - Financial Investment Analysis",
         "pic": 'img/browserMentor-3.png',
         "yog": '2021'
     },
@@ -73,9 +73,9 @@ var obj = [
     },
     {
         "name": "vasu golyan",
-        "stream": "Commerce",
-        "college": "Shaheed Sukhdev College of Business Studies",
-        "course": "BBA - Financial Investment Analysis",
+        "stream": "Science",
+        "college": "IIM Indore",
+        "course": "IPM - Integrated Programme in Management ",
         "pic": 'img/boyDummy.svg',
         "yog": '2025'
     },
