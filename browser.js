@@ -26,7 +26,7 @@ var obj = [
     {
         "name": "sneha arora",
         "stream": "Commerce",
-        "college": "IIM Indore",
+        "college": "Shaheed Sukhdev College of Business Studies",
         "course": "IPM - Integrated Programme in Management ",
         "pic": 'img/browserMentor-3.png',
         "yog": '2021'
